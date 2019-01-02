@@ -35,6 +35,7 @@
     "dist",
     "src",
     "!**/__tests__",
+    "!**/__mocks__",
     "index.d.ts",
     "CHANGELOG.md",
     "README.md"
