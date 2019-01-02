@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "baseUrl": ".",
+    "lib": ["es2015"],
+    "sourceMap": false,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "jsx": "react-native",
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "pretty": true,
+    "removeComments": true,
+    "strictNullChecks": true
+  },
+  "include": ["**/*"],
+  "exclude": ["node_modules"]
+}
