@@ -2,1008 +2,1085 @@
 
 exports[`render props control buttons should allow custom next and prev buttons (show next) 1`] = `
 <View
+  onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "position": "relative",
-      },
-      Object {
-        "height": 800,
-        "width": 480,
-      },
-    ]
+    Object {
+      "flex": 1,
+      "position": "relative",
+    }
   }
 >
-  <ScrollView
-    automaticallyAdjustContentInsets={false}
-    bounces={false}
-    horizontal={true}
-    onMomentumScrollEnd={[Function]}
-    onScrollEndDrag={[Function]}
-    pagingEnabled={true}
-    removeClippedSubviews={true}
-    scrollEnabled={true}
-    scrollEventThrottle={16}
-    scrollsToTop={false}
-    showsHorizontalScrollIndicator={false}
-    showsVerticalScrollIndicator={false}
-  >
-    <View
-      accessible={true}
-      key=".0"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          1
-        </Text>
-      </View>
-    </View>
-    <View
-      accessible={true}
-      key=".1"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          2
-        </Text>
-      </View>
-    </View>
-    <View
-      accessible={true}
-      key=".2"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          3
-        </Text>
-      </View>
-    </View>
-  </ScrollView>
   <View
     style={
       Object {
-        "alignItems": "center",
-        "bottom": 25,
-        "display": "flex",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
+        "height": undefined,
+        "width": undefined,
       }
     }
   >
-    <View
-      key="0/.0"
-      style={
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      contentOffset={
         Object {
-          "backgroundColor": "#333",
-          "borderRadius": 4,
-          "height": 8,
-          "marginBottom": 3,
-          "marginLeft": 3,
-          "marginRight": 3,
-          "marginTop": 3,
-          "width": 8,
+          "x": 0,
+          "y": 0,
         }
       }
-    />
-    <View
-      key="1/.1"
-      style={
-        Object {
-          "backgroundColor": "rgba(0,0,0,.2)",
-          "borderRadius": 4,
-          "height": 8,
-          "marginBottom": 3,
-          "marginLeft": 3,
-          "marginRight": 3,
-          "marginTop": 3,
-          "width": 8,
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key=".0"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
         }
-      }
-    />
-    <View
-      key="2/.2"
-      style={
-        Object {
-          "backgroundColor": "rgba(0,0,0,.2)",
-          "borderRadius": 4,
-          "height": 8,
-          "marginBottom": 3,
-          "marginLeft": 3,
-          "marginRight": 3,
-          "marginTop": 3,
-          "width": 8,
+      >
+        <View>
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key=".1"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
         }
-      }
-    />
-  </View>
-  <View
-    pointerEvents="box-none"
-    style={
-      Array [
+      >
+        <View>
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key=".2"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View>
+          <Text>
+            3
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "transparent",
-          "flex": 1,
+          "bottom": 25,
+          "display": "flex",
           "flexDirection": "row",
-          "justifyContent": "space-between",
+          "justifyContent": "center",
           "left": 0,
-          "paddingHorizontal": 10,
-          "paddingVertical": 10,
           "position": "absolute",
-          "top": 0,
-        },
-        Object {
-          "height": 800,
-          "width": 480,
-        },
-      ]
-    }
-  >
-    <View />
-    <TouchableOpacity
-      accessibilityLabel="Custom next button"
-      accessibilityRole="button"
-      activeOpacity={0.2}
-      onPress={[Function]}
+          "right": 0,
+        }
+      }
     >
-      <Text>
-        Next
-      </Text>
-    </TouchableOpacity>
+      <View
+        key="0/.0"
+        style={
+          Object {
+            "backgroundColor": "#333",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="2/.2"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 800,
+            "width": 480,
+          },
+        ]
+      }
+    >
+      <View />
+      <TouchableOpacity
+        accessibilityLabel="Custom next button"
+        accessibilityRole="button"
+        activeOpacity={0.2}
+        onPress={[Function]}
+      >
+        <Text>
+          Next
+        </Text>
+      </TouchableOpacity>
+    </View>
   </View>
 </View>
 `;
 
 exports[`render props control buttons should allow custom next and prev buttons (show prev and next) 1`] = `
 <View
+  onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "position": "relative",
-      },
-      Object {
-        "height": 800,
-        "width": 480,
-      },
-    ]
+    Object {
+      "flex": 1,
+      "position": "relative",
+    }
   }
 >
-  <ScrollView
-    automaticallyAdjustContentInsets={false}
-    bounces={false}
-    horizontal={true}
-    onMomentumScrollEnd={[Function]}
-    onScrollEndDrag={[Function]}
-    pagingEnabled={true}
-    removeClippedSubviews={true}
-    scrollEnabled={true}
-    scrollEventThrottle={16}
-    scrollsToTop={false}
-    showsHorizontalScrollIndicator={false}
-    showsVerticalScrollIndicator={false}
-  >
-    <View
-      accessible={true}
-      key=".0"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          1
-        </Text>
-      </View>
-    </View>
-    <View
-      accessible={true}
-      key=".1"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          2
-        </Text>
-      </View>
-    </View>
-    <View
-      accessible={true}
-      key=".2"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          3
-        </Text>
-      </View>
-    </View>
-  </ScrollView>
   <View
     style={
       Object {
-        "alignItems": "center",
-        "bottom": 25,
-        "display": "flex",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
+        "height": undefined,
+        "width": undefined,
       }
     }
   >
-    <View
-      key="0/.0"
-      style={
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      contentOffset={
         Object {
-          "backgroundColor": "rgba(0,0,0,.2)",
-          "borderRadius": 4,
-          "height": 8,
-          "marginBottom": 3,
-          "marginLeft": 3,
-          "marginRight": 3,
-          "marginTop": 3,
-          "width": 8,
+          "x": 0,
+          "y": 0,
         }
       }
-    />
-    <View
-      key="1/.1"
-      style={
-        Object {
-          "backgroundColor": "#333",
-          "borderRadius": 4,
-          "height": 8,
-          "marginBottom": 3,
-          "marginLeft": 3,
-          "marginRight": 3,
-          "marginTop": 3,
-          "width": 8,
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key=".0"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
         }
-      }
-    />
-    <View
-      key="2/.2"
-      style={
-        Object {
-          "backgroundColor": "rgba(0,0,0,.2)",
-          "borderRadius": 4,
-          "height": 8,
-          "marginBottom": 3,
-          "marginLeft": 3,
-          "marginRight": 3,
-          "marginTop": 3,
-          "width": 8,
+      >
+        <View>
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key=".1"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
         }
-      }
-    />
-  </View>
-  <View
-    pointerEvents="box-none"
-    style={
-      Array [
+      >
+        <View>
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key=".2"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View>
+          <Text>
+            3
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "transparent",
-          "flex": 1,
+          "bottom": 25,
+          "display": "flex",
           "flexDirection": "row",
-          "justifyContent": "space-between",
+          "justifyContent": "center",
           "left": 0,
-          "paddingHorizontal": 10,
-          "paddingVertical": 10,
           "position": "absolute",
-          "top": 0,
-        },
-        Object {
-          "height": 800,
-          "width": 480,
-        },
-      ]
-    }
-  >
-    <TouchableOpacity
-      accessibilityLabel="Custom prev button"
-      accessibilityRole="button"
-      activeOpacity={0.2}
-      onPress={[Function]}
+          "right": 0,
+        }
+      }
     >
-      <Text>
-        Prev
-      </Text>
-    </TouchableOpacity>
-    <TouchableOpacity
-      accessibilityLabel="Custom next button"
-      accessibilityRole="button"
-      activeOpacity={0.2}
-      onPress={[Function]}
+      <View
+        key="0/.0"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Object {
+            "backgroundColor": "#333",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="2/.2"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 800,
+            "width": 480,
+          },
+        ]
+      }
     >
-      <Text>
-        Next
-      </Text>
-    </TouchableOpacity>
+      <TouchableOpacity
+        accessibilityLabel="Custom prev button"
+        accessibilityRole="button"
+        activeOpacity={0.2}
+        onPress={[Function]}
+      >
+        <Text>
+          Prev
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        accessibilityLabel="Custom next button"
+        accessibilityRole="button"
+        activeOpacity={0.2}
+        onPress={[Function]}
+      >
+        <Text>
+          Next
+        </Text>
+      </TouchableOpacity>
+    </View>
   </View>
 </View>
 `;
 
 exports[`render props control buttons should allow custom next and prev buttons (show prev) 1`] = `
 <View
+  onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "position": "relative",
-      },
-      Object {
-        "height": 800,
-        "width": 480,
-      },
-    ]
+    Object {
+      "flex": 1,
+      "position": "relative",
+    }
   }
 >
-  <ScrollView
-    automaticallyAdjustContentInsets={false}
-    bounces={false}
-    horizontal={true}
-    onMomentumScrollEnd={[Function]}
-    onScrollEndDrag={[Function]}
-    pagingEnabled={true}
-    removeClippedSubviews={true}
-    scrollEnabled={true}
-    scrollEventThrottle={16}
-    scrollsToTop={false}
-    showsHorizontalScrollIndicator={false}
-    showsVerticalScrollIndicator={false}
-  >
-    <View
-      accessible={true}
-      key=".0"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          1
-        </Text>
-      </View>
-    </View>
-    <View
-      accessible={true}
-      key=".1"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          2
-        </Text>
-      </View>
-    </View>
-    <View
-      accessible={true}
-      key=".2"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          3
-        </Text>
-      </View>
-    </View>
-  </ScrollView>
   <View
     style={
       Object {
-        "alignItems": "center",
-        "bottom": 25,
-        "display": "flex",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
+        "height": undefined,
+        "width": undefined,
       }
     }
   >
-    <View
-      key="0/.0"
-      style={
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      contentOffset={
         Object {
-          "backgroundColor": "rgba(0,0,0,.2)",
-          "borderRadius": 4,
-          "height": 8,
-          "marginBottom": 3,
-          "marginLeft": 3,
-          "marginRight": 3,
-          "marginTop": 3,
-          "width": 8,
+          "x": 0,
+          "y": 0,
         }
       }
-    />
-    <View
-      key="1/.1"
-      style={
-        Object {
-          "backgroundColor": "rgba(0,0,0,.2)",
-          "borderRadius": 4,
-          "height": 8,
-          "marginBottom": 3,
-          "marginLeft": 3,
-          "marginRight": 3,
-          "marginTop": 3,
-          "width": 8,
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key=".0"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
         }
-      }
-    />
-    <View
-      key="2/.2"
-      style={
-        Object {
-          "backgroundColor": "#333",
-          "borderRadius": 4,
-          "height": 8,
-          "marginBottom": 3,
-          "marginLeft": 3,
-          "marginRight": 3,
-          "marginTop": 3,
-          "width": 8,
+      >
+        <View>
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key=".1"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
         }
-      }
-    />
-  </View>
-  <View
-    pointerEvents="box-none"
-    style={
-      Array [
+      >
+        <View>
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key=".2"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View>
+          <Text>
+            3
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
         Object {
           "alignItems": "center",
-          "backgroundColor": "transparent",
-          "flex": 1,
+          "bottom": 25,
+          "display": "flex",
           "flexDirection": "row",
-          "justifyContent": "space-between",
+          "justifyContent": "center",
           "left": 0,
-          "paddingHorizontal": 10,
-          "paddingVertical": 10,
           "position": "absolute",
-          "top": 0,
-        },
-        Object {
-          "height": 800,
-          "width": 480,
-        },
-      ]
-    }
-  >
-    <TouchableOpacity
-      accessibilityLabel="Custom prev button"
-      accessibilityRole="button"
-      activeOpacity={0.2}
-      onPress={[Function]}
+          "right": 0,
+        }
+      }
     >
-      <Text>
-        Prev
-      </Text>
-    </TouchableOpacity>
-    <View />
+      <View
+        key="0/.0"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="2/.2"
+        style={
+          Object {
+            "backgroundColor": "#333",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 800,
+            "width": 480,
+          },
+        ]
+      }
+    >
+      <TouchableOpacity
+        accessibilityLabel="Custom prev button"
+        accessibilityRole="button"
+        activeOpacity={0.2}
+        onPress={[Function]}
+      >
+        <Text>
+          Prev
+        </Text>
+      </TouchableOpacity>
+      <View />
+    </View>
   </View>
 </View>
 `;
 
 exports[`render props control buttons should not show custom next and prev buttons when there is only one slide 1`] = `
 <View
+  onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "position": "relative",
-      },
-      Object {
-        "height": 800,
-        "width": 480,
-      },
-    ]
+    Object {
+      "flex": 1,
+      "position": "relative",
+    }
   }
 >
-  <ScrollView
-    automaticallyAdjustContentInsets={false}
-    bounces={false}
-    horizontal={true}
-    onMomentumScrollEnd={[Function]}
-    onScrollEndDrag={[Function]}
-    pagingEnabled={true}
-    removeClippedSubviews={true}
-    scrollEnabled={true}
-    scrollEventThrottle={16}
-    scrollsToTop={false}
-    showsHorizontalScrollIndicator={false}
-    showsVerticalScrollIndicator={false}
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
   >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      contentOffset={
+        Object {
+          "x": 0,
+          "y": 0,
+        }
+      }
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key=".0"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View>
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
     <View
-      accessible={true}
-      key=".0"
       style={
         Object {
-          "height": 800,
-          "width": 480,
+          "alignItems": "center",
+          "bottom": 25,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
         }
       }
     >
-      <View>
-        <Text>
-          1
-        </Text>
-      </View>
-    </View>
-  </ScrollView>
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "bottom": 25,
-        "display": "flex",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-      }
-    }
-  >
-    <View
-      key="0/.0"
-      style={
-        Object {
-          "backgroundColor": "#333",
-          "borderRadius": 4,
-          "height": 8,
-          "marginBottom": 3,
-          "marginLeft": 3,
-          "marginRight": 3,
-          "marginTop": 3,
-          "width": 8,
+      <View
+        key="0/.0"
+        style={
+          Object {
+            "backgroundColor": "#333",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
         }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 800,
+            "width": 480,
+          },
+        ]
       }
-    />
-  </View>
-  <View
-    pointerEvents="box-none"
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "transparent",
-          "flex": 1,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "left": 0,
-          "paddingHorizontal": 10,
-          "paddingVertical": 10,
-          "position": "absolute",
-          "top": 0,
-        },
-        Object {
-          "height": 800,
-          "width": 480,
-        },
-      ]
-    }
-  >
-    <View />
-    <View />
+    >
+      <View />
+      <View />
+    </View>
   </View>
 </View>
 `;
 
 exports[`render props custom dots should allow custom active and regular dot 1`] = `
 <View
+  onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "position": "relative",
-      },
-      Object {
-        "height": 800,
-        "width": 480,
-      },
-    ]
+    Object {
+      "flex": 1,
+      "position": "relative",
+    }
   }
 >
-  <ScrollView
-    automaticallyAdjustContentInsets={false}
-    bounces={false}
-    horizontal={true}
-    onMomentumScrollEnd={[Function]}
-    onScrollEndDrag={[Function]}
-    pagingEnabled={true}
-    removeClippedSubviews={true}
-    scrollEnabled={true}
-    scrollEventThrottle={16}
-    scrollsToTop={false}
-    showsHorizontalScrollIndicator={false}
-    showsVerticalScrollIndicator={false}
-  >
-    <View
-      accessible={true}
-      key=".0"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          1
-        </Text>
-      </View>
-    </View>
-    <View
-      accessible={true}
-      key=".1"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          2
-        </Text>
-      </View>
-    </View>
-  </ScrollView>
   <View
     style={
       Object {
-        "alignItems": "center",
-        "bottom": 25,
-        "display": "flex",
-        "flexDirection": "row",
-        "justifyContent": "center",
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
+        "height": undefined,
+        "width": undefined,
       }
     }
   >
-    <View
-      accessibilityLabel="Custom active dot"
-      key=".0"
-    />
-    <View
-      accessibilityLabel="Custom dot"
-      key=".1"
-    />
-  </View>
-  <View
-    pointerEvents="box-none"
-    style={
-      Array [
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      contentOffset={
         Object {
-          "alignItems": "center",
-          "backgroundColor": "transparent",
-          "flex": 1,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "left": 0,
-          "paddingHorizontal": 10,
-          "paddingVertical": 10,
-          "position": "absolute",
-          "top": 0,
-        },
-        Object {
-          "height": 800,
-          "width": 480,
-        },
-      ]
-    }
-  >
-    <View />
-    <TouchableOpacity
-      accessibilityComponentType="button"
-      accessibilityLabel="Next"
-      accessibilityRole="button"
-      accessibilityTraits="button"
-      accessible={true}
-      activeOpacity={0.2}
-      onPress={[Function]}
+          "x": 0,
+          "y": 0,
+        }
+      }
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
     >
-      <Text
-        accessibilityLabel="Next"
+      <View
+        accessible={true}
+        key=".0"
         style={
           Object {
-            "color": "#333",
-            "fontSize": 50,
-            "padding": 20,
+            "height": 800,
+            "width": 480,
           }
         }
       >
-        ›
-      </Text>
-    </TouchableOpacity>
+        <View>
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key=".1"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View>
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "bottom": 25,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Custom active dot"
+        key=".0"
+      />
+      <View
+        accessibilityLabel="Custom dot"
+        key=".1"
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 800,
+            "width": 480,
+          },
+        ]
+      }
+    >
+      <View />
+      <TouchableOpacity
+        accessibilityComponentType="button"
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessibilityTraits="button"
+        accessible={true}
+        activeOpacity={0.2}
+        onPress={[Function]}
+      >
+        <Text
+          accessibilityLabel="Next"
+          style={
+            Object {
+              "color": "#333",
+              "fontSize": 50,
+              "padding": 20,
+            }
+          }
+        >
+          ›
+        </Text>
+      </TouchableOpacity>
+    </View>
   </View>
 </View>
 `;
 
 exports[`render props custom dots should allow showing page numbers instead of dots 1`] = `
 <View
+  onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "position": "relative",
-      },
-      Object {
-        "height": 800,
-        "width": 480,
-      },
-    ]
+    Object {
+      "flex": 1,
+      "position": "relative",
+    }
   }
 >
-  <ScrollView
-    automaticallyAdjustContentInsets={false}
-    bounces={false}
-    horizontal={true}
-    onMomentumScrollEnd={[Function]}
-    onScrollEndDrag={[Function]}
-    pagingEnabled={true}
-    removeClippedSubviews={true}
-    scrollEnabled={true}
-    scrollEventThrottle={16}
-    scrollsToTop={false}
-    showsHorizontalScrollIndicator={false}
-    showsVerticalScrollIndicator={false}
-  >
-    <View
-      accessible={true}
-      key=".0"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          1
-        </Text>
-      </View>
-    </View>
-    <View
-      accessible={true}
-      key=".1"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          2
-        </Text>
-      </View>
-    </View>
-  </ScrollView>
-  <View>
-    <Text>
-      1
-      /
-      2
-    </Text>
-  </View>
   <View
-    pointerEvents="box-none"
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "transparent",
-          "flex": 1,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "left": 0,
-          "paddingHorizontal": 10,
-          "paddingVertical": 10,
-          "position": "absolute",
-          "top": 0,
-        },
-        Object {
-          "height": 800,
-          "width": 480,
-        },
-      ]
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
     }
   >
-    <View />
-    <TouchableOpacity
-      accessibilityComponentType="button"
-      accessibilityLabel="Next"
-      accessibilityRole="button"
-      accessibilityTraits="button"
-      accessible={true}
-      activeOpacity={0.2}
-      onPress={[Function]}
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      contentOffset={
+        Object {
+          "x": 0,
+          "y": 0,
+        }
+      }
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
     >
-      <Text
-        accessibilityLabel="Next"
+      <View
+        accessible={true}
+        key=".0"
         style={
           Object {
-            "color": "#333",
-            "fontSize": 50,
-            "padding": 20,
+            "height": 800,
+            "width": 480,
           }
         }
       >
-        ›
+        <View>
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key=".1"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View>
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View>
+      <Text>
+        1
+        /
+        2
       </Text>
-    </TouchableOpacity>
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 800,
+            "width": 480,
+          },
+        ]
+      }
+    >
+      <View />
+      <TouchableOpacity
+        accessibilityComponentType="button"
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessibilityTraits="button"
+        accessible={true}
+        activeOpacity={0.2}
+        onPress={[Function]}
+      >
+        <Text
+          accessibilityLabel="Next"
+          style={
+            Object {
+              "color": "#333",
+              "fontSize": 50,
+              "padding": 20,
+            }
+          }
+        >
+          ›
+        </Text>
+      </TouchableOpacity>
+    </View>
   </View>
 </View>
 `;
 
 exports[`render props custom dots should allow showing page numbers instead of dots and initialIndex 1`] = `
 <View
+  onLayout={[Function]}
   style={
-    Array [
-      Object {
-        "position": "relative",
-      },
-      Object {
-        "height": 800,
-        "width": 480,
-      },
-    ]
+    Object {
+      "flex": 1,
+      "position": "relative",
+    }
   }
 >
-  <ScrollView
-    automaticallyAdjustContentInsets={false}
-    bounces={false}
-    horizontal={true}
-    onMomentumScrollEnd={[Function]}
-    onScrollEndDrag={[Function]}
-    pagingEnabled={true}
-    removeClippedSubviews={true}
-    scrollEnabled={true}
-    scrollEventThrottle={16}
-    scrollsToTop={false}
-    showsHorizontalScrollIndicator={false}
-    showsVerticalScrollIndicator={false}
-  >
-    <View
-      accessible={true}
-      key=".0"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          1
-        </Text>
-      </View>
-    </View>
-    <View
-      accessible={true}
-      key=".1"
-      style={
-        Object {
-          "height": 800,
-          "width": 480,
-        }
-      }
-    >
-      <View>
-        <Text>
-          2
-        </Text>
-      </View>
-    </View>
-  </ScrollView>
-  <View>
-    <Text>
-      2
-      /
-      2
-    </Text>
-  </View>
   <View
-    pointerEvents="box-none"
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "transparent",
-          "flex": 1,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "left": 0,
-          "paddingHorizontal": 10,
-          "paddingVertical": 10,
-          "position": "absolute",
-          "top": 0,
-        },
-        Object {
-          "height": 800,
-          "width": 480,
-        },
-      ]
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
     }
   >
-    <TouchableOpacity
-      accessibilityComponentType="button"
-      accessibilityLabel="Previous"
-      accessibilityRole="button"
-      accessibilityTraits="button"
-      accessible={true}
-      activeOpacity={0.2}
-      onPress={[Function]}
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      contentOffset={
+        Object {
+          "x": 0,
+          "y": 0,
+        }
+      }
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
     >
-      <Text
-        accessibilityLabel="Previous"
+      <View
+        accessible={true}
+        key=".0"
         style={
           Object {
-            "color": "#333",
-            "fontSize": 50,
-            "padding": 20,
+            "height": 800,
+            "width": 480,
           }
         }
       >
-        ‹
+        <View>
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key=".1"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View>
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View>
+      <Text>
+        2
+        /
+        2
       </Text>
-    </TouchableOpacity>
-    <View />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 800,
+            "width": 480,
+          },
+        ]
+      }
+    >
+      <TouchableOpacity
+        accessibilityComponentType="button"
+        accessibilityLabel="Previous"
+        accessibilityRole="button"
+        accessibilityTraits="button"
+        accessible={true}
+        activeOpacity={0.2}
+        onPress={[Function]}
+      >
+        <Text
+          accessibilityLabel="Previous"
+          style={
+            Object {
+              "color": "#333",
+              "fontSize": 50,
+              "padding": 20,
+            }
+          }
+        >
+          ‹
+        </Text>
+      </TouchableOpacity>
+      <View />
+    </View>
   </View>
 </View>
 `;

@@ -55,6 +55,10 @@ export interface State {
   width: number;
   height: number;
   total: number;
+  offset: {
+    x: number;
+    y: number;
+  };
 }
 
 declare module "pinar" {

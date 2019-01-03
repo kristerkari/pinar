@@ -2,6 +2,7 @@ import React from "react";
 import {
   AccessibilityInfo,
   Dimensions,
+  LayoutChangeEvent,
   NativeScrollEvent,
   NativeSyntheticEvent,
   Platform,
@@ -45,7 +46,13 @@ export class Pinar extends React.PureComponent<Props, State> {
     super(props);
     const { height, width } = this.getCarouselDimensions();
     const total = React.Children.toArray(props.children).length;
-    this.state = { activePageIndex: 0, height, width, total };
+    this.state = {
+      activePageIndex: 0,
+      height,
+      width,
+      total,
+      offset: { x: 0, y: 0 }
+    };
     this.scrollView = null;
   }
 
@@ -56,9 +63,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     if (initialIndex && initialIndex !== activePageIndex) {
       this.scrollBy(initialIndex, false);
       /* eslint-disable react/no-did-mount-set-state */
-      this.setState({
-        activePageIndex: initialIndex
-      });
+      this.setState({ activePageIndex: initialIndex });
       /* eslint-enable react/no-did-mount-set-state */
     }
   }
@@ -71,10 +76,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     const needsToUpdateTotal = prevState.total !== total;
     if (needsToUpdateHeight || needsToUpdateWidth || needsToUpdateTotal) {
       /* eslint-disable react/no-did-update-set-state */
-      this.setState({
-        ...this.getCarouselDimensions(),
-        total
-      });
+      this.setState({ ...this.getCarouselDimensions(), total });
       /* eslint-enable react/no-did-update-set-state */
     }
   }
@@ -106,9 +108,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       onIndexChanged(nextActivePageIndex);
     }
 
-    this.setState({
-      activePageIndex: nextActivePageIndex
-    });
+    this.setState({ activePageIndex: nextActivePageIndex });
 
     const nextActivePage = nextActivePageIndex + 1;
 
@@ -148,6 +148,34 @@ export class Pinar extends React.PureComponent<Props, State> {
 
   private scrollToNext(): void {
     this.scrollBy(1);
+  }
+
+  private onLayout(e: LayoutChangeEvent): void {
+    const { activePageIndex, total } = this.state;
+    // Rename height and width when destructuring
+    // to avoid conflicting variable names.
+    const { height: stateHeight, width: stateWidth } = this.state;
+    const { height: propsHeight, width: propsWidth } = this.props;
+    const { height: layoutHeight, width: layoutWidth } = e.nativeEvent.layout;
+    const width = propsWidth !== undefined ? propsWidth : layoutWidth;
+    const height = propsHeight !== undefined ? propsHeight : layoutHeight;
+    const needsToUpdateHeight = height !== stateHeight;
+    const needsToUpdateWidth = width !== stateWidth;
+
+    if (!needsToUpdateHeight && !needsToUpdateWidth) {
+      return;
+    }
+
+    const offset = { x: 0, y: 0 };
+
+    if (total > 1) {
+      const { horizontal } = this.props;
+      const dir = horizontal ? "x" : "y";
+      offset[dir] =
+        dir === "x" ? width * activePageIndex : height * activePageIndex;
+    }
+
+    this.setState({ height, width, offset });
   }
 
   private renderNextButton(): JSX.Element {
@@ -301,31 +329,36 @@ export class Pinar extends React.PureComponent<Props, State> {
       scrollsToTop,
       removeClippedSubviews,
       automaticallyAdjustContentInsets,
-      scrollEnabled
+      scrollEnabled,
+      width,
+      height
     } = this.props;
-    const { width, height } = this.state;
+    const { offset } = this.state;
 
     return (
-      <View style={[styles.wrapper, { height, width }]}>
-        <ScrollView
-          automaticallyAdjustContentInsets={automaticallyAdjustContentInsets}
-          bounces={bounces}
-          horizontal={horizontal}
-          onMomentumScrollEnd={e => this.onScrollEnd(e)}
-          onScrollEndDrag={e => this.onScrollEnd(e)}
-          pagingEnabled={pagingEnabled}
-          ref={view => this.refScrollView(view)}
-          removeClippedSubviews={removeClippedSubviews}
-          scrollEnabled={scrollEnabled}
-          scrollEventThrottle={16}
-          scrollsToTop={scrollsToTop}
-          showsHorizontalScrollIndicator={showsHorizontalScrollIndicator}
-          showsVerticalScrollIndicator={showsVerticalScrollIndicator}
-        >
-          {this.renderChildren(children)}
-        </ScrollView>
-        {showsDots && this.renderDots()}
-        {showsControls && this.renderControls()}
+      <View onLayout={e => this.onLayout(e)} style={styles.wrapper}>
+        <View style={{ height, width }}>
+          <ScrollView
+            automaticallyAdjustContentInsets={automaticallyAdjustContentInsets}
+            bounces={bounces}
+            contentOffset={offset}
+            horizontal={horizontal}
+            onMomentumScrollEnd={e => this.onScrollEnd(e)}
+            onScrollEndDrag={e => this.onScrollEnd(e)}
+            pagingEnabled={pagingEnabled}
+            ref={view => this.refScrollView(view)}
+            removeClippedSubviews={removeClippedSubviews}
+            scrollEnabled={scrollEnabled}
+            scrollEventThrottle={16}
+            scrollsToTop={scrollsToTop}
+            showsHorizontalScrollIndicator={showsHorizontalScrollIndicator}
+            showsVerticalScrollIndicator={showsVerticalScrollIndicator}
+          >
+            {this.renderChildren(children)}
+          </ScrollView>
+          {showsDots && this.renderDots()}
+          {showsControls && this.renderControls()}
+        </View>
       </View>
     );
   }
