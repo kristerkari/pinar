@@ -29,6 +29,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
       }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
       removeClippedSubviews={true}
@@ -40,7 +41,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
     >
       <View
         accessible={true}
-        key=".0"
+        key="0"
         style={
           Object {
             "height": 1334,
@@ -48,7 +49,9 @@ exports[`style props should allow custom activeDotStyle 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".0"
+        >
           <Text>
             1
           </Text>
@@ -56,7 +59,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
       </View>
       <View
         accessible={true}
-        key=".1"
+        key="1"
         style={
           Object {
             "height": 1334,
@@ -64,7 +67,9 @@ exports[`style props should allow custom activeDotStyle 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".1"
+        >
           <Text>
             2
           </Text>
@@ -189,6 +194,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
       }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
       removeClippedSubviews={true}
@@ -200,7 +206,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
     >
       <View
         accessible={true}
-        key=".0"
+        key="0"
         style={
           Object {
             "height": 1334,
@@ -208,7 +214,9 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".0"
+        >
           <Text>
             1
           </Text>
@@ -216,7 +224,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
       </View>
       <View
         accessible={true}
-        key=".1"
+        key="1"
         style={
           Object {
             "height": 1334,
@@ -224,7 +232,9 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".1"
+        >
           <Text>
             2
           </Text>
@@ -341,6 +351,7 @@ exports[`style props should allow custom dotStyle 1`] = `
       }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
       removeClippedSubviews={true}
@@ -352,7 +363,7 @@ exports[`style props should allow custom dotStyle 1`] = `
     >
       <View
         accessible={true}
-        key=".0"
+        key="0"
         style={
           Object {
             "height": 1334,
@@ -360,7 +371,9 @@ exports[`style props should allow custom dotStyle 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".0"
+        >
           <Text>
             1
           </Text>
@@ -368,7 +381,7 @@ exports[`style props should allow custom dotStyle 1`] = `
       </View>
       <View
         accessible={true}
-        key=".1"
+        key="1"
         style={
           Object {
             "height": 1334,
@@ -376,7 +389,9 @@ exports[`style props should allow custom dotStyle 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".1"
+        >
           <Text>
             2
           </Text>
@@ -501,6 +516,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
       }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
       removeClippedSubviews={true}
@@ -512,7 +528,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
     >
       <View
         accessible={true}
-        key=".0"
+        key="0"
         style={
           Object {
             "height": 1334,
@@ -520,7 +536,9 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".0"
+        >
           <Text>
             1
           </Text>
@@ -528,7 +546,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
       </View>
       <View
         accessible={true}
-        key=".1"
+        key="1"
         style={
           Object {
             "height": 1334,
@@ -536,7 +554,9 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".1"
+        >
           <Text>
             2
           </Text>

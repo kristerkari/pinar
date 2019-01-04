@@ -29,6 +29,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
       }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
       removeClippedSubviews={true}
@@ -40,7 +41,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
     >
       <View
         accessible={true}
-        key=".0"
+        key="0"
         style={
           Object {
             "height": 800,
@@ -48,7 +49,9 @@ exports[`basic options should not show prev/next buttons when there is only one 
           }
         }
       >
-        <View>
+        <View
+          key=".0"
+        >
           <Text>
             1
           </Text>
@@ -144,6 +147,7 @@ exports[`basic options should render with default settings 1`] = `
       }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
       removeClippedSubviews={true}
@@ -155,7 +159,7 @@ exports[`basic options should render with default settings 1`] = `
     >
       <View
         accessible={true}
-        key=".0"
+        key="0"
         style={
           Object {
             "height": 800,
@@ -163,7 +167,9 @@ exports[`basic options should render with default settings 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".0"
+        >
           <Text>
             1
           </Text>
@@ -171,7 +177,7 @@ exports[`basic options should render with default settings 1`] = `
       </View>
       <View
         accessible={true}
-        key=".1"
+        key="1"
         style={
           Object {
             "height": 800,
@@ -179,7 +185,9 @@ exports[`basic options should render with default settings 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".1"
+        >
           <Text>
             2
           </Text>
@@ -311,6 +319,7 @@ exports[`basic options should support disabling dots 1`] = `
       }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
       removeClippedSubviews={true}
@@ -322,7 +331,7 @@ exports[`basic options should support disabling dots 1`] = `
     >
       <View
         accessible={true}
-        key=".0"
+        key="0"
         style={
           Object {
             "height": 800,
@@ -330,7 +339,9 @@ exports[`basic options should support disabling dots 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".0"
+        >
           <Text>
             1
           </Text>
@@ -338,7 +349,7 @@ exports[`basic options should support disabling dots 1`] = `
       </View>
       <View
         accessible={true}
-        key=".1"
+        key="1"
         style={
           Object {
             "height": 800,
@@ -346,7 +357,9 @@ exports[`basic options should support disabling dots 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".1"
+        >
           <Text>
             2
           </Text>
@@ -433,6 +446,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
       }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
       removeClippedSubviews={true}
@@ -444,7 +458,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
     >
       <View
         accessible={true}
-        key=".0"
+        key="0"
         style={
           Object {
             "height": 800,
@@ -452,7 +466,9 @@ exports[`basic options should support disabling prev/next controls 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".0"
+        >
           <Text>
             1
           </Text>
@@ -460,7 +476,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
       </View>
       <View
         accessible={true}
-        key=".1"
+        key="1"
         style={
           Object {
             "height": 800,
@@ -468,7 +484,9 @@ exports[`basic options should support disabling prev/next controls 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".1"
+        >
           <Text>
             2
           </Text>
@@ -524,6 +542,268 @@ exports[`basic options should support disabling prev/next controls 1`] = `
 </View>
 `;
 
+exports[`basic options should support loop option 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
+      "position": "relative",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      contentOffset={
+        Object {
+          "x": 0,
+          "y": 0,
+        }
+      }
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="0"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View
+          key=".2"
+        >
+          <Text>
+            3
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="1"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="2"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="3"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View
+          key=".2"
+        >
+          <Text>
+            3
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="4"
+        style={
+          Object {
+            "height": 800,
+            "width": 480,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "bottom": 25,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Object {
+            "backgroundColor": "#333",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="2/.2"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 800,
+            "width": 480,
+          },
+        ]
+      }
+    >
+      <TouchableOpacity
+        accessibilityComponentType="button"
+        accessibilityLabel="Previous"
+        accessibilityRole="button"
+        accessibilityTraits="button"
+        accessible={true}
+        activeOpacity={0.2}
+        onPress={[Function]}
+      >
+        <Text
+          accessibilityLabel="Previous"
+          style={
+            Object {
+              "color": "#333",
+              "fontSize": 50,
+              "padding": 20,
+            }
+          }
+        >
+          ‹
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        accessibilityComponentType="button"
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessibilityTraits="button"
+        accessible={true}
+        activeOpacity={0.2}
+        onPress={[Function]}
+      >
+        <Text
+          accessibilityLabel="Next"
+          style={
+            Object {
+              "color": "#333",
+              "fontSize": 50,
+              "padding": 20,
+            }
+          }
+        >
+          ›
+        </Text>
+      </TouchableOpacity>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`basic options should support providing height and width 1`] = `
 <View
   onLayout={[Function]}
@@ -553,6 +833,7 @@ exports[`basic options should support providing height and width 1`] = `
       }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
       removeClippedSubviews={true}
@@ -564,7 +845,7 @@ exports[`basic options should support providing height and width 1`] = `
     >
       <View
         accessible={true}
-        key=".0"
+        key="0"
         style={
           Object {
             "height": 333,
@@ -572,7 +853,9 @@ exports[`basic options should support providing height and width 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".0"
+        >
           <Text>
             1
           </Text>
@@ -580,7 +863,7 @@ exports[`basic options should support providing height and width 1`] = `
       </View>
       <View
         accessible={true}
-        key=".1"
+        key="1"
         style={
           Object {
             "height": 333,
@@ -588,7 +871,9 @@ exports[`basic options should support providing height and width 1`] = `
           }
         }
       >
-        <View>
+        <View
+          key=".1"
+        >
           <Text>
             2
           </Text>

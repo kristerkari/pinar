@@ -47,6 +47,7 @@ export interface Props
   height?: number;
   width?: number;
   initialIndex?: number;
+  loop?: boolean;
   children: JSX.Element | JSX.Element[];
 }
 

@@ -72,4 +72,30 @@ describe("basic options", () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
+
+  it("should support loop option", () => {
+    /*
+    Looping is implemented by modifying the pages:
+    - without loop: 1-2-3
+    - with loop: 3-1-2-3-1
+
+    ...and by changing the logic of updating
+    the page index and scroll offset to work
+    differently when loop is enabled.
+    */
+    const wrapper = shallow(
+      <Carousel loop={true}>
+        <View>
+          <Text>1</Text>
+        </View>
+        <View>
+          <Text>2</Text>
+        </View>
+        <View>
+          <Text>3</Text>
+        </View>
+      </Carousel>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });
