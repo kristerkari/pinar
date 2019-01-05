@@ -30,6 +30,8 @@ const defaultScrollViewProps = {
 const defaultCarouselProps = {
   showsControls: true,
   showsDots: true,
+  autoplay: false,
+  autoplayInterval: 3000,
   index: 0
 };
 
@@ -40,7 +42,13 @@ export class Pinar extends React.PureComponent<Props, State> {
 
   private scrollView: ScrollView | null;
 
-  private internals: { isScrolling: boolean; offset: { x: number; y: number } };
+  private autoplayTimer: number = 0;
+
+  private internals: {
+    isAutoplayEnd: boolean;
+    isScrolling: boolean;
+    offset: { x: number; y: number };
+  };
 
   static defaultProps = { ...defaultScrollViewProps, ...defaultCarouselProps };
 
@@ -52,7 +60,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     const lastIndex = total - 1;
     const activePageIndex = total > 1 ? Math.min(initialIndex, lastIndex) : 0;
     const offset = { x: 0, y: 0 };
-    this.internals = { isScrolling: false, offset };
+    this.internals = { isAutoplayEnd: false, isScrolling: false, offset };
     this.state = {
       activePageIndex,
       height,
@@ -65,7 +73,7 @@ export class Pinar extends React.PureComponent<Props, State> {
 
   componentDidMount() {
     const { activePageIndex } = this.state;
-    const { index } = this.props;
+    const { index, autoplay } = this.props;
 
     if (index && index !== activePageIndex) {
       this.scrollBy(index, false);
@@ -73,6 +81,14 @@ export class Pinar extends React.PureComponent<Props, State> {
       this.setState({ activePageIndex: index });
       /* eslint-enable react/no-did-mount-set-state */
     }
+
+    if (autoplay) {
+      this.autoplay();
+    }
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.autoplayTimer);
   }
 
   componentDidUpdate(prevProps: Props, prevState: State) {
@@ -96,6 +112,29 @@ export class Pinar extends React.PureComponent<Props, State> {
       });
       /* eslint-enable react/no-did-update-set-state */
     }
+  }
+
+  private autoplay() {
+    const { isAutoplayEnd, isScrolling } = this.internals;
+
+    if (isScrolling || isAutoplayEnd) {
+      return;
+    }
+
+    const { autoplayInterval } = this.props;
+
+    clearTimeout(this.autoplayTimer);
+
+    this.autoplayTimer = setTimeout((): void => {
+      const { loop } = this.props;
+      const { total, activePageIndex } = this.state;
+
+      if (!loop && activePageIndex === total - 1) {
+        this.internals.isAutoplayEnd = true;
+      } else {
+        this.scrollToNext();
+      }
+    }, autoplayInterval);
   }
 
   private getCarouselDimensions(): { height: number; width: number } {
@@ -196,6 +235,12 @@ export class Pinar extends React.PureComponent<Props, State> {
         "Changed to page " + nextActivePage
       );
     }
+
+    const { autoplay } = this.props;
+
+    if (autoplay) {
+      this.autoplay();
+    }
   }
 
   private isActivePageIndex(index: number): boolean {
@@ -222,6 +267,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     const y = horizontal ? min : diff * height;
     this.scrollView.scrollTo({ animated, x, y });
     this.internals.isScrolling = true;
+    this.internals.isAutoplayEnd = false;
   }
 
   private scrollToPrev(): void {

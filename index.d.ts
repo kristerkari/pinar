@@ -48,6 +48,8 @@ export interface Props
   width?: number;
   index: number;
   loop?: boolean;
+  autoplay: boolean;
+  autoplayInterval: number;
   children: JSX.Element | JSX.Element[];
 }
 
