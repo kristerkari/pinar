@@ -46,7 +46,7 @@ describe("render props", () => {
     it("should allow custom next and prev buttons (show prev)", () => {
       const wrapper = shallow(
         <Carousel
-          initialIndex={2}
+          index={2}
           renderNextButton={scrollToNext => (
             <TouchableOpacity
               accessibilityLabel="Custom next button"
@@ -83,7 +83,7 @@ describe("render props", () => {
     it("should allow custom next and prev buttons (show prev and next)", () => {
       const wrapper = shallow(
         <Carousel
-          initialIndex={1}
+          index={1}
           renderNextButton={scrollToNext => (
             <TouchableOpacity
               accessibilityLabel="Custom next button"
@@ -193,7 +193,7 @@ describe("render props", () => {
     it("should allow showing page numbers instead of dots and initialIndex", () => {
       const wrapper = shallow(
         <Carousel
-          initialIndex={1}
+          index={1}
           renderDots={(pageIndex, total, context) => (
             <View>
               <Text>
