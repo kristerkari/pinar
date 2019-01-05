@@ -2,15 +2,15 @@ import { PureComponent } from "react";
 import { ScrollViewProps, StyleProp, ViewStyle } from "react-native";
 
 interface CustomScrollViewProps {
-  horizontal?: ScrollViewProps["horizontal"];
-  pagingEnabled?: ScrollViewProps["pagingEnabled"];
-  showsHorizontalScrollIndicator?: ScrollViewProps["showsHorizontalScrollIndicator"];
-  showsVerticalScrollIndicator?: ScrollViewProps["showsVerticalScrollIndicator"];
-  bounces?: ScrollViewProps["bounces"];
-  scrollsToTop?: ScrollViewProps["scrollsToTop"];
-  removeClippedSubviews?: ScrollViewProps["removeClippedSubviews"];
-  automaticallyAdjustContentInsets?: ScrollViewProps["automaticallyAdjustContentInsets"];
-  scrollEnabled?: ScrollViewProps["scrollEnabled"];
+  horizontal: ScrollViewProps["horizontal"];
+  pagingEnabled: ScrollViewProps["pagingEnabled"];
+  showsHorizontalScrollIndicator: ScrollViewProps["showsHorizontalScrollIndicator"];
+  showsVerticalScrollIndicator: ScrollViewProps["showsVerticalScrollIndicator"];
+  bounces: ScrollViewProps["bounces"];
+  scrollsToTop: ScrollViewProps["scrollsToTop"];
+  removeClippedSubviews: ScrollViewProps["removeClippedSubviews"];
+  automaticallyAdjustContentInsets: ScrollViewProps["automaticallyAdjustContentInsets"];
+  scrollEnabled: ScrollViewProps["scrollEnabled"];
 }
 
 interface CustomRenderProps {
