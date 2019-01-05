@@ -42,11 +42,11 @@ export interface Props
     CustomRenderProps,
     CustomStyleProps,
     CallbackProps {
-  showsDots?: boolean;
-  showsControls?: boolean;
+  showsDots: boolean;
+  showsControls: boolean;
   height?: number;
   width?: number;
-  index?: number;
+  index: number;
   loop?: boolean;
   children: JSX.Element | JSX.Element[];
 }

@@ -30,7 +30,7 @@ const defaultScrollViewProps = {
 const defaultCarouselProps = {
   showsControls: true,
   showsDots: true,
-  initialIndex: 0
+  index: 0
 };
 
 const styles = StyleSheet.create(defaultStyles);
@@ -89,7 +89,11 @@ export class Pinar extends React.PureComponent<Props, State> {
       needsToUpdateIndex
     ) {
       /* eslint-disable react/no-did-update-set-state */
-      this.setState({ ...this.getCarouselDimensions(), total, index });
+      this.setState({
+        ...this.getCarouselDimensions(),
+        total,
+        activePageIndex: index
+      });
       /* eslint-enable react/no-did-update-set-state */
     }
   }
