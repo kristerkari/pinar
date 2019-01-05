@@ -48,7 +48,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     super(props);
     const { height, width } = this.getCarouselDimensions();
     const total = React.Children.toArray(props.children).length;
-    const initialIndex = props.initialIndex || 0;
+    const initialIndex = props.index || 0;
     const lastIndex = total - 1;
     const activePageIndex = total > 1 ? Math.min(initialIndex, lastIndex) : 0;
     const offset = { x: 0, y: 0 };
@@ -65,25 +65,31 @@ export class Pinar extends React.PureComponent<Props, State> {
 
   componentDidMount() {
     const { activePageIndex } = this.state;
-    const { initialIndex } = this.props;
+    const { index } = this.props;
 
-    if (initialIndex && initialIndex !== activePageIndex) {
-      this.scrollBy(initialIndex, false);
+    if (index && index !== activePageIndex) {
+      this.scrollBy(index, false);
       /* eslint-disable react/no-did-mount-set-state */
-      this.setState({ activePageIndex: initialIndex });
+      this.setState({ activePageIndex: index });
       /* eslint-enable react/no-did-mount-set-state */
     }
   }
 
   componentDidUpdate(prevProps: Props, prevState: State) {
-    const { height, width, children } = this.props;
+    const { height, width, index, children } = this.props;
     const needsToUpdateWidth = prevProps.width !== width;
     const needsToUpdateHeight = prevProps.height !== height;
     const total = React.Children.toArray(children).length;
     const needsToUpdateTotal = prevState.total !== total;
-    if (needsToUpdateHeight || needsToUpdateWidth || needsToUpdateTotal) {
+    const needsToUpdateIndex = prevProps.index !== index;
+    if (
+      needsToUpdateHeight ||
+      needsToUpdateWidth ||
+      needsToUpdateTotal ||
+      needsToUpdateIndex
+    ) {
       /* eslint-disable react/no-did-update-set-state */
-      this.setState({ ...this.getCarouselDimensions(), total });
+      this.setState({ ...this.getCarouselDimensions(), total, index });
       /* eslint-enable react/no-did-update-set-state */
     }
   }
