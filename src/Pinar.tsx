@@ -229,11 +229,10 @@ export class Pinar extends React.PureComponent<Props, State> {
       this.setState(newState);
     }
 
-    const nextActivePage = nextActivePageIndex + 1;
-
     const { accessibility } = this.props;
 
     if (accessibility && Platform.OS === "ios") {
+      const nextActivePage = newState.activePageIndex + 1;
       AccessibilityInfo.announceForAccessibility(
         "Changed to page " + nextActivePage
       );
