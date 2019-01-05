@@ -50,6 +50,7 @@ export interface Props
   loop?: boolean;
   autoplay: boolean;
   autoplayInterval: number;
+  accessibility: boolean;
   children: JSX.Element | JSX.Element[];
 }
 

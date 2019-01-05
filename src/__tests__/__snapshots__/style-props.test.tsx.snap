@@ -149,6 +149,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
       >
         <Text
           accessibilityLabel="Next"
+          accessible={true}
           style={
             Object {
               "color": "#333",
@@ -306,6 +307,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
       >
         <Text
           accessibilityLabel="Next"
+          accessible={true}
           style={
             Object {
               "color": "#333",
@@ -471,6 +473,7 @@ exports[`style props should allow custom dotStyle 1`] = `
       >
         <Text
           accessibilityLabel="Next"
+          accessible={true}
           style={
             Object {
               "color": "#333",
@@ -636,6 +639,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
       >
         <Text
           accessibilityLabel="Next"
+          accessible={true}
           style={
             Object {
               "color": "#333",

@@ -32,6 +32,7 @@ const defaultCarouselProps = {
   showsDots: true,
   autoplay: false,
   autoplayInterval: 3000,
+  accessibility: true,
   index: 0
 };
 
@@ -230,7 +231,9 @@ export class Pinar extends React.PureComponent<Props, State> {
 
     const nextActivePage = nextActivePageIndex + 1;
 
-    if (Platform.OS === "ios") {
+    const { accessibility } = this.props;
+
+    if (accessibility && Platform.OS === "ios") {
       AccessibilityInfo.announceForAccessibility(
         "Changed to page " + nextActivePage
       );
@@ -310,16 +313,21 @@ export class Pinar extends React.PureComponent<Props, State> {
       if (typeof renderNextButton === "function") {
         return renderNextButton(this.scrollToNext);
       }
+      const { accessibility } = this.props;
       return (
         <TouchableOpacity
           accessibilityComponentType="button"
           accessibilityLabel="Next"
           accessibilityRole="button"
           accessibilityTraits="button"
-          accessible={true}
+          accessible={accessibility}
           onPress={() => this.scrollToNext()}
         >
-          <Text accessibilityLabel="Next" style={styles.buttonText}>
+          <Text
+            accessibilityLabel="Next"
+            accessible={accessibility}
+            style={styles.buttonText}
+          >
             ›
           </Text>
         </TouchableOpacity>
@@ -337,16 +345,21 @@ export class Pinar extends React.PureComponent<Props, State> {
       if (typeof renderPrevButton === "function") {
         return renderPrevButton(this.scrollToPrev);
       }
+      const { accessibility } = this.props;
       return (
         <TouchableOpacity
           accessibilityComponentType="button"
           accessibilityLabel="Previous"
           accessibilityRole="button"
           accessibilityTraits="button"
-          accessible={true}
+          accessible={accessibility}
           onPress={() => this.scrollToPrev()}
         >
-          <Text accessibilityLabel="Previous" style={styles.buttonText}>
+          <Text
+            accessibilityLabel="Previous"
+            accessible={accessibility}
+            style={styles.buttonText}
+          >
             ‹
           </Text>
         </TouchableOpacity>
@@ -428,7 +441,7 @@ export class Pinar extends React.PureComponent<Props, State> {
 
   private renderChildren(children: React.ReactNode): React.ReactNode {
     const { height, width, total } = this.state;
-    const { loop } = this.props;
+    const { accessibility, loop } = this.props;
     const needsToLoop = loop && total > 1;
     const childrenArray = React.Children.toArray(children);
     const keys: string[] = Object.keys(childrenArray);
@@ -446,7 +459,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     return keys.map((key: string, i: number) => {
       /* eslint-disable react-native-a11y/accessibility-label */
       return (
-        <View accessible={true} key={i} style={{ height, width }}>
+        <View accessible={accessibility} key={i} style={{ height, width }}>
           {childrenArray[Number(key)]}
         </View>
       );

@@ -840,6 +840,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
       >
         <Text
           accessibilityLabel="Next"
+          accessible={true}
           style={
             Object {
               "color": "#333",
@@ -974,6 +975,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
       >
         <Text
           accessibilityLabel="Next"
+          accessible={true}
           style={
             Object {
               "color": "#333",
@@ -1107,6 +1109,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
       >
         <Text
           accessibilityLabel="Previous"
+          accessible={true}
           style={
             Object {
               "color": "#333",
