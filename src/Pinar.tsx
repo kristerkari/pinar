@@ -150,7 +150,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     this.internals.isScrolling = true;
   }
 
-  onScrollEndDrag(e: NativeSyntheticEvent<NativeScrollEvent>): void {
+  private onScrollEndDrag(e: NativeSyntheticEvent<NativeScrollEvent>): void {
     const { contentOffset } = e.nativeEvent;
     const { horizontal } = this.props;
     const { activePageIndex, total } = this.state;
