@@ -3,6 +3,8 @@ import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import Carousel from "../index";
 
+/* eslint-disable react/jsx-no-bind */
+
 jest.mock("Dimensions");
 
 describe("render props", () => {

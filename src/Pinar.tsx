@@ -61,13 +61,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     const activePageIndex = total > 1 ? Math.min(initialIndex, lastIndex) : 0;
     const offset = { x: 0, y: 0 };
     this.internals = { isAutoplayEnd: false, isScrolling: false, offset };
-    this.state = {
-      activePageIndex,
-      height,
-      width,
-      total,
-      offset
-    };
+    this.state = { activePageIndex, height, width, total, offset };
     this.scrollView = null;
   }
 
@@ -114,7 +108,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     }
   }
 
-  private autoplay() {
+  private autoplay = () => {
     const { isAutoplayEnd, isScrolling } = this.internals;
 
     if (isScrolling || isAutoplayEnd) {
@@ -135,22 +129,26 @@ export class Pinar extends React.PureComponent<Props, State> {
         this.scrollToNext();
       }
     }, autoplayInterval);
-  }
+  };
 
-  private getCarouselDimensions(): { height: number; width: number } {
+  private getCarouselDimensions = (): { height: number; width: number } => {
     const { height, width } = this.props;
     const dimensions = Dimensions.get("window");
     return {
       height: height !== undefined ? height : dimensions.height,
       width: width !== undefined ? width : dimensions.width
     };
-  }
+  };
 
-  private onScrollBegin(_: NativeSyntheticEvent<NativeScrollEvent>): void {
+  private onScrollBegin = (
+    _: NativeSyntheticEvent<NativeScrollEvent>
+  ): void => {
     this.internals.isScrolling = true;
-  }
+  };
 
-  private onScrollEndDrag(e: NativeSyntheticEvent<NativeScrollEvent>): void {
+  private onScrollEndDrag = (
+    e: NativeSyntheticEvent<NativeScrollEvent>
+  ): void => {
     const { contentOffset } = e.nativeEvent;
     const { horizontal } = this.props;
     const { activePageIndex, total } = this.state;
@@ -163,9 +161,9 @@ export class Pinar extends React.PureComponent<Props, State> {
     if (previousOffset === newOffset && (isFirstPage || isLastPage)) {
       this.internals.isScrolling = false;
     }
-  }
+  };
 
-  private onScrollEnd(e: NativeSyntheticEvent<NativeScrollEvent>): void {
+  private onScrollEnd = (e: NativeSyntheticEvent<NativeScrollEvent>): void => {
     this.internals.isScrolling = false;
 
     const { activePageIndex, total, height, width } = this.state;
@@ -233,9 +231,9 @@ export class Pinar extends React.PureComponent<Props, State> {
     if (autoplay) {
       this.autoplay();
     }
-  }
+  };
 
-  private isActivePageIndex(index: number): boolean {
+  private isActivePageIndex = (index: number): boolean => {
     const { activePageIndex, total } = this.state;
     const min = 0;
     const max = total;
@@ -243,9 +241,9 @@ export class Pinar extends React.PureComponent<Props, State> {
     const isSmallerThanMin = index === min && activePageIndex < min;
     const isBiggerThanMax = index === max && activePageIndex > max;
     return isCurrentIndex || isSmallerThanMin || isBiggerThanMax;
-  }
+  };
 
-  public scrollBy(index: number, animated: boolean = true): void {
+  public scrollBy = (index: number, animated: boolean = true): void => {
     const { total } = this.state;
     const { isScrolling } = this.internals;
     if (this.scrollView === null || isScrolling || total < 2) {
@@ -260,17 +258,17 @@ export class Pinar extends React.PureComponent<Props, State> {
     this.scrollView.scrollTo({ animated, x, y });
     this.internals.isScrolling = true;
     this.internals.isAutoplayEnd = false;
-  }
+  };
 
-  private scrollToPrev(): void {
+  private scrollToPrev = (): void => {
     this.scrollBy(-1);
-  }
+  };
 
-  private scrollToNext(): void {
+  private scrollToNext = (): void => {
     this.scrollBy(1);
-  }
+  };
 
-  private onLayout(e: LayoutChangeEvent): void {
+  private onLayout = (e: LayoutChangeEvent): void => {
     const { activePageIndex, total } = this.state;
     // Rename height and width when destructuring
     // to avoid conflicting variable names.
@@ -291,9 +289,9 @@ export class Pinar extends React.PureComponent<Props, State> {
     }
 
     this.setState({ height, width, offset });
-  }
+  };
 
-  private renderNextButton(): JSX.Element {
+  private renderNextButton = (): JSX.Element => {
     const { renderNextButton, loop } = this.props;
     const { activePageIndex, total } = this.state;
     const isShown = loop || activePageIndex < total - 1;
@@ -310,7 +308,7 @@ export class Pinar extends React.PureComponent<Props, State> {
           accessibilityRole="button"
           accessibilityTraits="button"
           accessible={accessibility}
-          onPress={() => this.scrollToNext()}
+          onPress={this.scrollToNext}
         >
           <Text
             accessibilityLabel="Next"
@@ -323,9 +321,9 @@ export class Pinar extends React.PureComponent<Props, State> {
       );
     }
     return <View />;
-  }
+  };
 
-  private renderPrevButton(): JSX.Element {
+  private renderPrevButton = (): JSX.Element => {
     const { renderPrevButton, loop } = this.props;
     const { activePageIndex } = this.state;
     const isShown = loop || activePageIndex > 0;
@@ -342,7 +340,7 @@ export class Pinar extends React.PureComponent<Props, State> {
           accessibilityRole="button"
           accessibilityTraits="button"
           accessible={accessibility}
-          onPress={() => this.scrollToPrev()}
+          onPress={this.scrollToPrev}
         >
           <Text
             accessibilityLabel="Previous"
@@ -355,16 +353,16 @@ export class Pinar extends React.PureComponent<Props, State> {
       );
     }
     return <View />;
-  }
+  };
 
-  private refScrollView(view: ScrollView | null): void {
+  private refScrollView = (view: ScrollView | null): void => {
     if (view === null) {
       return;
     }
     this.scrollView = view;
-  }
+  };
 
-  private renderControls(): JSX.Element {
+  private renderControls = (): JSX.Element => {
     const { renderControls } = this.props;
 
     if (typeof renderControls === "function") {
@@ -387,9 +385,9 @@ export class Pinar extends React.PureComponent<Props, State> {
         {this.renderNextButton()}
       </View>
     );
-  }
+  };
 
-  private renderDots(): JSX.Element {
+  private renderDots = (): JSX.Element => {
     const { renderDots } = this.props;
 
     if (typeof renderDots === "function") {
@@ -428,9 +426,9 @@ export class Pinar extends React.PureComponent<Props, State> {
         })}
       </View>
     );
-  }
+  };
 
-  private renderChildren(children: React.ReactNode): React.ReactNode {
+  private renderChildren = (children: React.ReactNode): React.ReactNode => {
     const { height, width, total } = this.state;
     const { accessibility, loop } = this.props;
     const needsToLoop = loop && total > 1;
@@ -460,7 +458,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       );
       /* eslint-enable react-native-a11y/accessibility-label, react/no-array-index-key */
     });
-  }
+  };
 
   render(): JSX.Element {
     const {
@@ -483,18 +481,18 @@ export class Pinar extends React.PureComponent<Props, State> {
     const { offset } = this.state;
 
     return (
-      <View onLayout={e => this.onLayout(e)} style={styles.wrapper}>
+      <View onLayout={this.onLayout} style={styles.wrapper}>
         <View style={{ height, width }}>
           <ScrollView
             automaticallyAdjustContentInsets={automaticallyAdjustContentInsets}
             bounces={bounces}
             contentOffset={offset}
             horizontal={horizontal}
-            onMomentumScrollEnd={e => this.onScrollEnd(e)}
-            onScrollBeginDrag={e => this.onScrollBegin(e)}
-            onScrollEndDrag={e => this.onScrollEndDrag(e)}
+            onMomentumScrollEnd={this.onScrollEnd}
+            onScrollBeginDrag={this.onScrollBegin}
+            onScrollEndDrag={this.onScrollEndDrag}
             pagingEnabled={pagingEnabled}
-            ref={view => this.refScrollView(view)}
+            ref={this.refScrollView}
             removeClippedSubviews={removeClippedSubviews}
             scrollEnabled={scrollEnabled}
             scrollEventThrottle={scrollEventThrottle}

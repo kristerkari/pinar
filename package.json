@@ -183,6 +183,7 @@
         "always"
       ],
       "react/jsx-no-duplicate-props": "error",
+      "react/jsx-no-bind": "error",
       "react/no-access-state-in-setstate": "error",
       "react/no-did-mount-set-state": "error",
       "react/no-did-update-set-state": "error",
