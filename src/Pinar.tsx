@@ -411,6 +411,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     return (
       <View style={dotsContainerStyle || defaultDotsContainerStyle}>
         {React.Children.map(children, (_: React.ReactChild, i: number) => {
+          /* eslint-disable react/no-array-index-key */
           const isActive = this.isActivePageIndex(i);
           if (isActive && typeof renderActiveDot === "function") {
             return renderActiveDot();
@@ -423,6 +424,7 @@ export class Pinar extends React.PureComponent<Props, State> {
             ? activeDotStyle || styles.dotActive
             : dotStyle || styles.dot;
           return <View key={i} style={style} />;
+          /* eslint-enable react/no-array-index-key */
         })}
       </View>
     );
