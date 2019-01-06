@@ -201,7 +201,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     this.internals.offset = offset;
 
     if (typeof onIndexChanged === "function") {
-      onIndexChanged(nextActivePageIndex);
+      onIndexChanged(newState.activePageIndex);
     }
 
     if (needsToUpdateOffset) {
