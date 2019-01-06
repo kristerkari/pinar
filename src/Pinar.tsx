@@ -446,13 +446,17 @@ export class Pinar extends React.PureComponent<Props, State> {
     }
 
     return keys.map((key: string, i: number) => {
-      /* eslint-disable react-native-a11y/accessibility-label */
+      /* eslint-disable react-native-a11y/accessibility-label, react/no-array-index-key */
       return (
-        <View accessible={accessibility} key={i} style={{ height, width }}>
+        <View
+          accessible={accessibility}
+          key={i + key}
+          style={{ height, width }}
+        >
           {childrenArray[Number(key)]}
         </View>
       );
-      /* eslint-enable react-native-a11y/accessibility-label */
+      /* eslint-enable react-native-a11y/accessibility-label, react/no-array-index-key */
     });
   }
 

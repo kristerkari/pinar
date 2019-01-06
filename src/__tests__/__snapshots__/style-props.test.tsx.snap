@@ -41,7 +41,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
     >
       <View
         accessible={true}
-        key="0"
+        key="00"
         style={
           Object {
             "height": 1334,
@@ -59,7 +59,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
       </View>
       <View
         accessible={true}
-        key="1"
+        key="11"
         style={
           Object {
             "height": 1334,
@@ -207,7 +207,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
     >
       <View
         accessible={true}
-        key="0"
+        key="00"
         style={
           Object {
             "height": 1334,
@@ -225,7 +225,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
       </View>
       <View
         accessible={true}
-        key="1"
+        key="11"
         style={
           Object {
             "height": 1334,
@@ -365,7 +365,7 @@ exports[`style props should allow custom dotStyle 1`] = `
     >
       <View
         accessible={true}
-        key="0"
+        key="00"
         style={
           Object {
             "height": 1334,
@@ -383,7 +383,7 @@ exports[`style props should allow custom dotStyle 1`] = `
       </View>
       <View
         accessible={true}
-        key="1"
+        key="11"
         style={
           Object {
             "height": 1334,
@@ -531,7 +531,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
     >
       <View
         accessible={true}
-        key="0"
+        key="00"
         style={
           Object {
             "height": 1334,
@@ -549,7 +549,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
       </View>
       <View
         accessible={true}
-        key="1"
+        key="11"
         style={
           Object {
             "height": 1334,
