@@ -10,6 +10,7 @@ interface CustomScrollViewProps {
   scrollsToTop: ScrollViewProps["scrollsToTop"];
   removeClippedSubviews: ScrollViewProps["removeClippedSubviews"];
   automaticallyAdjustContentInsets: ScrollViewProps["automaticallyAdjustContentInsets"];
+  scrollEventThrottle: ScrollViewProps["scrollEventThrottle"];
   scrollEnabled: ScrollViewProps["scrollEnabled"];
 }
 

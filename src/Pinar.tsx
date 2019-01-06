@@ -24,6 +24,7 @@ const defaultScrollViewProps = {
   scrollsToTop: false,
   removeClippedSubviews: true,
   automaticallyAdjustContentInsets: false,
+  scrollEventThrottle: 16,
   scrollEnabled: true
 };
 
@@ -479,6 +480,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       scrollsToTop,
       removeClippedSubviews,
       automaticallyAdjustContentInsets,
+      scrollEventThrottle,
       scrollEnabled,
       width,
       height
@@ -500,7 +502,7 @@ export class Pinar extends React.PureComponent<Props, State> {
             ref={view => this.refScrollView(view)}
             removeClippedSubviews={removeClippedSubviews}
             scrollEnabled={scrollEnabled}
-            scrollEventThrottle={16}
+            scrollEventThrottle={scrollEventThrottle}
             scrollsToTop={scrollsToTop}
             showsHorizontalScrollIndicator={showsHorizontalScrollIndicator}
             showsVerticalScrollIndicator={showsVerticalScrollIndicator}
