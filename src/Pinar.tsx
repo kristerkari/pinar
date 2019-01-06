@@ -1,11 +1,9 @@
 import React from "react";
 import {
-  AccessibilityInfo,
   Dimensions,
   LayoutChangeEvent,
   NativeScrollEvent,
   NativeSyntheticEvent,
-  Platform,
   ScrollView,
   StyleSheet,
   Text,
@@ -201,7 +199,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     this.internals.offset = offset;
 
     if (typeof onIndexChanged === "function") {
-      onIndexChanged(newState.activePageIndex);
+      onIndexChanged(newState.activePageIndex, total);
     }
 
     if (needsToUpdateOffset) {
@@ -228,15 +226,6 @@ export class Pinar extends React.PureComponent<Props, State> {
       }
     } else {
       this.setState(newState);
-    }
-
-    const { accessibility } = this.props;
-
-    if (accessibility && Platform.OS === "ios") {
-      const nextActivePage = newState.activePageIndex + 1;
-      AccessibilityInfo.announceForAccessibility(
-        "Changed to page " + nextActivePage
-      );
     }
 
     const { autoplay } = this.props;

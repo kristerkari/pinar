@@ -35,7 +35,7 @@ interface CustomStyleProps {
 }
 
 interface CallbackProps {
-  onIndexChanged?: (pageIndex: number) => void;
+  onIndexChanged?: (pageIndex: number, totalPages: number) => void;
 }
 
 export interface Props
