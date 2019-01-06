@@ -32,6 +32,8 @@ const defaultCarouselProps = {
   autoplay: false,
   autoplayInterval: 3000,
   accessibility: true,
+  accessibilityLabelPrev: "Previous",
+  accessibilityLabelNext: "Next",
   index: 0
 };
 
@@ -300,18 +302,18 @@ export class Pinar extends React.PureComponent<Props, State> {
       if (typeof renderNextButton === "function") {
         return renderNextButton(this.scrollToNext);
       }
-      const { accessibility } = this.props;
+      const { accessibility, accessibilityLabelNext } = this.props;
       return (
         <TouchableOpacity
           accessibilityComponentType="button"
-          accessibilityLabel="Next"
+          accessibilityLabel={accessibilityLabelNext}
           accessibilityRole="button"
           accessibilityTraits="button"
           accessible={accessibility}
           onPress={this.scrollToNext}
         >
           <Text
-            accessibilityLabel="Next"
+            accessibilityLabel={accessibilityLabelNext}
             accessible={accessibility}
             style={styles.buttonText}
           >
@@ -332,18 +334,18 @@ export class Pinar extends React.PureComponent<Props, State> {
       if (typeof renderPrevButton === "function") {
         return renderPrevButton(this.scrollToPrev);
       }
-      const { accessibility } = this.props;
+      const { accessibility, accessibilityLabelPrev } = this.props;
       return (
         <TouchableOpacity
           accessibilityComponentType="button"
-          accessibilityLabel="Previous"
+          accessibilityLabel={accessibilityLabelPrev}
           accessibilityRole="button"
           accessibilityTraits="button"
           accessible={accessibility}
           onPress={this.scrollToPrev}
         >
           <Text
-            accessibilityLabel="Previous"
+            accessibilityLabel={accessibilityLabelPrev}
             accessible={accessibility}
             style={styles.buttonText}
           >

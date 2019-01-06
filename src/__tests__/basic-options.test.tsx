@@ -45,6 +45,27 @@ describe("basic options", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it("should support custom a11y labels for prev/next controls", () => {
+    const wrapper = shallow(
+      <Carousel
+        accessibilityLabelNext="custom next label"
+        accessibilityLabelPrev="custom prev label"
+        index={1}
+      >
+        <View>
+          <Text>1</Text>
+        </View>
+        <View>
+          <Text>2</Text>
+        </View>
+        <View>
+          <Text>3</Text>
+        </View>
+      </Carousel>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it("should support disabling dots", () => {
     const wrapper = shallow(
       <Carousel showsDots={false}>

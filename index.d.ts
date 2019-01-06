@@ -52,6 +52,8 @@ export interface Props
   autoplay: boolean;
   autoplayInterval: number;
   accessibility: boolean;
+  accessibilityLabelPrev: string;
+  accessibilityLabelNext: string;
   children: JSX.Element | JSX.Element[];
 }
 
