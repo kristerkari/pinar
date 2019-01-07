@@ -27,33 +27,30 @@ class HomeScreen extends React.Component<Props, State> {
           justifyContent: "flex-start"
         }}
       >
-        <Button
-          onPress={() => navigation.navigate("Basic")}
-          title="Basic example"
-        />
+        <Button onPress={() => navigation.navigate("Basic")} title="Basic" />
         <Button
           onPress={() => navigation.navigate("BasicVertical")}
-          title="Vertical example"
+          title="Vertical"
         />
         <Button
           onPress={() => navigation.navigate("CustomSize")}
-          title="Custom height and width example"
+          title="Custom height and width"
         />
         <Button
           onPress={() => navigation.navigate("Loop")}
-          title="Looping pages example"
+          title="Looping pages"
         />
         <Button
           onPress={() => navigation.navigate("Autoplay")}
-          title="Autoplay example"
+          title="Autoplay"
         />
         <Button
           onPress={() => navigation.navigate("AutoplayVertical")}
-          title="Autoplay (vertical) example"
+          title="Autoplay (vertical)"
         />
         <Button
           onPress={() => navigation.navigate("DisabledControls")}
-          title="Hide prev/next buttons example"
+          title="Hide prev/next buttons"
         />
         <Button
           onPress={() => navigation.navigate("CustomIndex")}
@@ -71,25 +68,25 @@ const AppNavigator = createStackNavigator({
   Autoplay: {
     screen: Autoplay,
     navigationOptions: {
-      title: "Autoplay example"
+      title: "Autoplay"
     }
   },
   AutoplayVertical: {
     screen: AutoplayVertical,
     navigationOptions: {
-      title: "Autoplay (vertical) example"
+      title: "Autoplay (vertical)"
     }
   },
   Basic: {
     screen: Basic,
     navigationOptions: {
-      title: "Basic example"
+      title: "Basic"
     }
   },
   BasicVertical: {
     screen: BasicVertical,
     navigationOptions: {
-      title: "Vertical example"
+      title: "Vertical"
     }
   },
   CustomIndex: {
@@ -101,19 +98,19 @@ const AppNavigator = createStackNavigator({
   CustomSize: {
     screen: CustomSize,
     navigationOptions: {
-      title: "Custom height and width example"
+      title: "Custom height and width"
     }
   },
   DisabledControls: {
     screen: DisabledControls,
     navigationOptions: {
-      title: "Hide prev/next buttons example"
+      title: "Hide prev/next buttons"
     }
   },
   Loop: {
     screen: Loop,
     navigationOptions: {
-      title: "Looping pages example"
+      title: "Looping pages"
     }
   }
 });
