@@ -1,7 +1,7 @@
 import { TextStyle, ViewStyle } from "react-native";
 
 export const defaultStyles = {
-  wrapper: { position: "relative", flex: 1 } as ViewStyle,
+  wrapper: { position: "relative" } as ViewStyle,
   dotsContainerHorizontal: {
     position: "absolute",
     bottom: 25,

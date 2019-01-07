@@ -1,7 +1,13 @@
 import React from "react";
 import { Button, View } from "react-native";
 import { createAppContainer, createStackNavigator } from "react-navigation";
-import { Autoplay, Basic, DisabledControls, Loop } from "./components";
+import {
+  Autoplay,
+  Basic,
+  CustomSize,
+  DisabledControls,
+  Loop
+} from "./components";
 
 type Props = any;
 type State = {};
@@ -21,6 +27,10 @@ class HomeScreen extends React.Component<Props, State> {
         <Button
           onPress={() => navigation.navigate("Basic")}
           title="Basic example"
+        />
+        <Button
+          onPress={() => navigation.navigate("CustomSize")}
+          title="Custom height and width example"
         />
         <Button
           onPress={() => navigation.navigate("Loop")}
@@ -53,6 +63,12 @@ const AppNavigator = createStackNavigator({
     screen: Basic,
     navigationOptions: {
       title: "Basic example"
+    }
+  },
+  CustomSize: {
+    screen: CustomSize,
+    navigationOptions: {
+      title: "Custom height and width example"
     }
   },
   DisabledControls: {

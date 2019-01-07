@@ -482,8 +482,13 @@ export class Pinar extends React.PureComponent<Props, State> {
     } = this.props;
     const { offset } = this.state;
 
+    const hasHeightAndWidthProps = width !== undefined && height !== undefined;
+
     return (
-      <View onLayout={this.onLayout} style={styles.wrapper}>
+      <View
+        onLayout={this.onLayout}
+        style={[styles.wrapper, !hasHeightAndWidthProps && { flex: 1 }]}
+      >
         <View style={{ height, width }}>
           <ScrollView
             automaticallyAdjustContentInsets={automaticallyAdjustContentInsets}
