@@ -4,6 +4,7 @@ import { createAppContainer, createStackNavigator } from "react-navigation";
 import {
   Autoplay,
   Basic,
+  CustomIndex,
   CustomSize,
   DisabledControls,
   Loop
@@ -44,6 +45,10 @@ class HomeScreen extends React.Component<Props, State> {
           onPress={() => navigation.navigate("DisabledControls")}
           title="Hide prev/next buttons example"
         />
+        <Button
+          onPress={() => navigation.navigate("CustomIndex")}
+          title="Custom start page (page 2)"
+        />
       </View>
     );
   }
@@ -63,6 +68,12 @@ const AppNavigator = createStackNavigator({
     screen: Basic,
     navigationOptions: {
       title: "Basic example"
+    }
+  },
+  CustomIndex: {
+    screen: CustomIndex,
+    navigationOptions: {
+      title: "Custom start page (page 2)"
     }
   },
   CustomSize: {
