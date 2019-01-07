@@ -4,6 +4,7 @@ import {
   LayoutChangeEvent,
   NativeScrollEvent,
   NativeSyntheticEvent,
+  Platform,
   ScrollView,
   StyleSheet,
   Text,
@@ -50,6 +51,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     isAutoplayEnd: boolean;
     isScrolling: boolean;
     offset: { x: number; y: number };
+    onScrollEndCallbackTargetOffset: number;
   };
 
   static defaultProps = { ...defaultScrollViewProps, ...defaultCarouselProps };
@@ -62,7 +64,12 @@ export class Pinar extends React.PureComponent<Props, State> {
     const lastIndex = total - 1;
     const activePageIndex = total > 1 ? Math.min(initialIndex, lastIndex) : 0;
     const offset = { x: 0, y: 0 };
-    this.internals = { isAutoplayEnd: false, isScrolling: false, offset };
+    this.internals = {
+      isAutoplayEnd: false,
+      isScrolling: false,
+      offset,
+      onScrollEndCallbackTargetOffset: 0
+    };
     this.state = { activePageIndex, height, width, total, offset };
     this.scrollView = null;
   }
@@ -165,6 +172,18 @@ export class Pinar extends React.PureComponent<Props, State> {
     }
   };
 
+  private onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>): void => {
+    if (Platform.OS === "android") {
+      const { horizontal } = this.props;
+      const { contentOffset } = e.nativeEvent;
+      const offset = horizontal ? contentOffset.x : contentOffset.y;
+
+      if (offset === this.internals.onScrollEndCallbackTargetOffset) {
+        this.onScrollEnd(e);
+      }
+    }
+  };
+
   private onScrollEnd = (e: NativeSyntheticEvent<NativeScrollEvent>): void => {
     this.internals.isScrolling = false;
 
@@ -258,6 +277,9 @@ export class Pinar extends React.PureComponent<Props, State> {
     const x = horizontal ? diff * width : min;
     const y = horizontal ? min : diff * height;
     this.scrollView.scrollTo({ animated, x, y });
+    if (Platform.OS === "android") {
+      this.internals.onScrollEndCallbackTargetOffset = horizontal ? x : y;
+    }
     this.internals.isScrolling = true;
     this.internals.isAutoplayEnd = false;
   };
@@ -496,6 +518,7 @@ export class Pinar extends React.PureComponent<Props, State> {
             contentOffset={offset}
             horizontal={horizontal}
             onMomentumScrollEnd={this.onScrollEnd}
+            onScroll={this.onScroll}
             onScrollBeginDrag={this.onScrollBegin}
             onScrollEndDrag={this.onScrollEndDrag}
             pagingEnabled={pagingEnabled}
