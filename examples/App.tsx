@@ -3,7 +3,9 @@ import { Button, View } from "react-native";
 import { createAppContainer, createStackNavigator } from "react-navigation";
 import {
   Autoplay,
+  AutoplayVertical,
   Basic,
+  BasicVertical,
   CustomIndex,
   CustomSize,
   DisabledControls,
@@ -30,6 +32,10 @@ class HomeScreen extends React.Component<Props, State> {
           title="Basic example"
         />
         <Button
+          onPress={() => navigation.navigate("BasicVertical")}
+          title="Vertical example"
+        />
+        <Button
           onPress={() => navigation.navigate("CustomSize")}
           title="Custom height and width example"
         />
@@ -40,6 +46,10 @@ class HomeScreen extends React.Component<Props, State> {
         <Button
           onPress={() => navigation.navigate("Autoplay")}
           title="Autoplay example"
+        />
+        <Button
+          onPress={() => navigation.navigate("AutoplayVertical")}
+          title="Autoplay (vertical) example"
         />
         <Button
           onPress={() => navigation.navigate("DisabledControls")}
@@ -64,10 +74,22 @@ const AppNavigator = createStackNavigator({
       title: "Autoplay example"
     }
   },
+  AutoplayVertical: {
+    screen: AutoplayVertical,
+    navigationOptions: {
+      title: "Autoplay (vertical) example"
+    }
+  },
   Basic: {
     screen: Basic,
     navigationOptions: {
       title: "Basic example"
+    }
+  },
+  BasicVertical: {
+    screen: BasicVertical,
+    navigationOptions: {
+      title: "Vertical example"
     }
   },
   CustomIndex: {
