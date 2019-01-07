@@ -1,0 +1,6 @@
+{
+  "extends": "../.eslintrc",
+  "rules": {
+    "react/jsx-no-bind": 0
+  }
+}

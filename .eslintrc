@@ -1,0 +1,99 @@
+{
+  "parser": "typescript-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "16.0.0"
+    }
+  },
+  "env": {
+    "react-native/react-native": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended"
+  ],
+  "plugins": ["react", "react-native", "react-native-a11y", "jest"],
+  "rules": {
+    "eqeqeq": ["error", "smart"],
+    "for-direction": "error",
+    "no-prototype-builtins": "error",
+    "no-template-curly-in-string": "error",
+    "no-empty-function": "error",
+    "no-loop-func": "error",
+    "no-param-reassign": "error",
+    "no-proto": "error",
+    "no-return-assign": "error",
+    "no-self-compare": "error",
+    "no-throw-literal": "error",
+    "no-sequences": "error",
+    "no-unused-expressions": "error",
+    "no-useless-return": "error",
+    "no-void": "error",
+    "no-with": "error",
+    "no-catch-shadow": "error",
+    "no-delete-var": "error",
+    "no-use-before-define": "error",
+    "no-const-assign": "error",
+    "no-dupe-class-members": "error",
+    "no-duplicate-imports": "error",
+    "no-unused-vars": "off",
+    "strict": ["error", "never"],
+    "radix": ["error", "always"],
+    "wrap-iife": "error",
+    "lines-between-class-members": ["error", "always"],
+    "object-shorthand": ["error", "always"],
+    "react/prop-types": 0,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-sort-props": ["error"],
+    "react/button-has-type": "error",
+    "react/destructuring-assignment": ["error", "always"],
+    "react/display-name": "error",
+    "react/no-deprecated": "error",
+    "react/no-danger": "error",
+    "react/no-direct-mutation-state": "error",
+    "react/no-render-return-value": "error",
+    "react/no-string-refs": "error",
+    "react/no-typos": "error",
+    "react/prefer-es6-class": ["error", "always"],
+    "react/require-render-return": "error",
+    "react/no-unescaped-entities": "error",
+    "react/react-in-jsx-scope": "error",
+    "react/jsx-boolean-value": ["error", "always"],
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-bind": "error",
+    "react/no-access-state-in-setstate": "error",
+    "react/no-did-mount-set-state": "error",
+    "react/no-did-update-set-state": "error",
+    "react/no-array-index-key": "error",
+    "react-native-a11y/accessibility-label": "error",
+    "react-native-a11y/has-accessibility-props": "error",
+    "react-native-a11y/has-valid-accessibility-component-type": "error",
+    "react-native-a11y/has-valid-accessibility-role": "error",
+    "react-native-a11y/has-valid-accessibility-states": "error",
+    "react-native-a11y/has-valid-accessibility-traits": "error",
+    "react-native-a11y/has-valid-important-for-accessibility": "error",
+    "react-native-a11y/no-nested-touchables": "error",
+    "jest/consistent-test-it": [
+      "error",
+      {
+        "fn": "it"
+      }
+    ],
+    "jest/expect-expect": "error",
+    "jest/no-alias-methods": "error",
+    "jest/no-test-prefixes": "error",
+    "jest/no-test-return-statement": "error"
+  }
+}
