@@ -4,10 +4,14 @@ exports[`style props should allow custom activeDotStyle 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -21,14 +25,9 @@ exports[`style props should allow custom activeDotStyle 1`] = `
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -170,10 +169,14 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -187,14 +190,9 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -328,10 +326,14 @@ exports[`style props should allow custom dotStyle 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -345,14 +347,9 @@ exports[`style props should allow custom dotStyle 1`] = `
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -494,10 +491,14 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -511,14 +512,9 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}

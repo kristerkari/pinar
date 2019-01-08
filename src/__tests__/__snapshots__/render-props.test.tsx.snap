@@ -4,10 +4,14 @@ exports[`render props control buttons should allow custom next and prev buttons 
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -21,14 +25,9 @@ exports[`render props control buttons should allow custom next and prev buttons 
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -197,10 +196,14 @@ exports[`render props control buttons should allow custom next and prev buttons 
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -214,14 +217,9 @@ exports[`render props control buttons should allow custom next and prev buttons 
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -399,10 +397,14 @@ exports[`render props control buttons should allow custom next and prev buttons 
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -416,14 +418,9 @@ exports[`render props control buttons should allow custom next and prev buttons 
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -592,10 +589,14 @@ exports[`render props control buttons should not show custom next and prev butto
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -609,14 +610,9 @@ exports[`render props control buttons should not show custom next and prev butto
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -710,10 +706,14 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -727,14 +727,9 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -861,10 +856,14 @@ exports[`render props custom dots should allow showing page numbers instead of d
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -878,14 +877,9 @@ exports[`render props custom dots should allow showing page numbers instead of d
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -996,10 +990,14 @@ exports[`render props custom dots should allow showing page numbers instead of d
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -1013,14 +1011,9 @@ exports[`render props custom dots should allow showing page numbers instead of d
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}

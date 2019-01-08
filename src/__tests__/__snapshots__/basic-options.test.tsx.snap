@@ -4,10 +4,14 @@ exports[`basic options should not show prev/next buttons when there is only one 
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -21,14 +25,9 @@ exports[`basic options should not show prev/next buttons when there is only one 
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -122,10 +121,14 @@ exports[`basic options should render with default settings 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -139,14 +142,9 @@ exports[`basic options should render with default settings 1`] = `
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -295,10 +293,14 @@ exports[`basic options should support custom a11y labels for prev/next controls 
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -312,14 +314,9 @@ exports[`basic options should support custom a11y labels for prev/next controls 
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -523,10 +520,14 @@ exports[`basic options should support disabling accessibility 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -540,14 +541,9 @@ exports[`basic options should support disabling accessibility 1`] = `
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -754,10 +750,14 @@ exports[`basic options should support disabling dots 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -771,14 +771,9 @@ exports[`basic options should support disabling dots 1`] = `
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -882,10 +877,14 @@ exports[`basic options should support disabling prev/next controls 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -899,14 +898,9 @@ exports[`basic options should support disabling prev/next controls 1`] = `
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -1007,10 +1001,14 @@ exports[`basic options should support loop option 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
   }
 >
   <View
@@ -1024,14 +1022,9 @@ exports[`basic options should support loop option 1`] = `
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}
@@ -1271,10 +1264,12 @@ exports[`basic options should support providing height and width 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Object {
-      "flex": 1,
-      "position": "relative",
-    }
+    Array [
+      Object {
+        "position": "relative",
+      },
+      false,
+    ]
   }
 >
   <View
@@ -1288,14 +1283,9 @@ exports[`basic options should support providing height and width 1`] = `
     <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
-      contentOffset={
-        Object {
-          "x": 0,
-          "y": 0,
-        }
-      }
       horizontal={true}
       onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
       onScrollBeginDrag={[Function]}
       onScrollEndDrag={[Function]}
       pagingEnabled={true}

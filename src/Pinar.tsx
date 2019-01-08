@@ -237,11 +237,28 @@ export class Pinar extends React.PureComponent<Props, State> {
             offset: newOffset
           },
           () => {
-            this.setState({ offset });
+            this.scrollTo({
+              x: newOffset.x,
+              y: newOffset.y,
+              animated: false
+            });
+            this.setState({ offset }, () => {
+              this.scrollTo({
+                x: offset.x,
+                y: offset.y,
+                animated: false
+              });
+            });
           }
         );
       } else {
-        this.setState({ ...newState, offset });
+        this.setState({ ...newState, offset }, () => {
+          this.scrollTo({
+            x: offset.x,
+            y: offset.y,
+            animated: false
+          });
+        });
       }
     } else {
       this.setState(newState);
@@ -264,6 +281,25 @@ export class Pinar extends React.PureComponent<Props, State> {
     return isCurrentIndex || isSmallerThanMin || isBiggerThanMax;
   };
 
+  private scrollTo = ({
+    x,
+    y,
+    animated
+  }: {
+    x: number;
+    y: number;
+    animated: boolean;
+  }): void => {
+    if (this.scrollView === null) {
+      return;
+    }
+    this.scrollView.scrollTo({
+      x,
+      y,
+      animated
+    });
+  };
+
   public scrollBy = (index: number, animated: boolean = true): void => {
     const { total } = this.state;
     const { isScrolling } = this.internals;
@@ -276,7 +312,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     const min = 0;
     const x = horizontal ? diff * width : min;
     const y = horizontal ? min : diff * height;
-    this.scrollView.scrollTo({ animated, x, y });
+    this.scrollTo({ animated, x, y });
     if (Platform.OS === "android") {
       this.internals.onScrollEndCallbackTargetOffset = horizontal ? x : y;
     }
@@ -313,6 +349,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     }
 
     this.setState({ height, width, offset });
+    this.scrollTo({ x: offset.x, y: offset.y, animated: false });
   };
 
   private renderNextButton = (): JSX.Element => {
@@ -502,7 +539,6 @@ export class Pinar extends React.PureComponent<Props, State> {
       width,
       height
     } = this.props;
-    const { offset } = this.state;
 
     const hasHeightAndWidthProps = width !== undefined && height !== undefined;
 
@@ -515,7 +551,6 @@ export class Pinar extends React.PureComponent<Props, State> {
           <ScrollView
             automaticallyAdjustContentInsets={automaticallyAdjustContentInsets}
             bounces={bounces}
-            contentOffset={offset}
             horizontal={horizontal}
             onMomentumScrollEnd={this.onScrollEnd}
             onScroll={this.onScroll}
