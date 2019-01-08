@@ -1,6 +1,10 @@
 import React from "react";
 import { Button, View } from "react-native";
-import { createAppContainer, createStackNavigator } from "react-navigation";
+import {
+  createAppContainer,
+  createStackNavigator,
+  NavigationScreenProps
+} from "react-navigation";
 import {
   Autoplay,
   AutoplayVertical,
@@ -12,7 +16,7 @@ import {
   Loop
 } from "./components";
 
-type Props = any;
+type Props = NavigationScreenProps;
 type State = {};
 
 class HomeScreen extends React.Component<Props, State> {
