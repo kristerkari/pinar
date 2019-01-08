@@ -175,8 +175,7 @@ export class Pinar extends React.PureComponent<Props, State> {
   private onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>): void => {
     if (Platform.OS === "android") {
       const { horizontal } = this.props;
-      const { contentOffset } = e.nativeEvent;
-      const { x, y } = contentOffset;
+      const { x, y } = e.nativeEvent.contentOffset;
       const offset = horizontal ? Math.floor(x) : Math.floor(y);
       if (offset === this.internals.onScrollEndCallbackTargetOffset) {
         this.onScrollEnd(e);
