@@ -9,6 +9,7 @@ import {
   Autoplay,
   AutoplayVertical,
   Basic,
+  Basic2Carousels,
   BasicVertical,
   CustomHeight,
   CustomIndex,
@@ -34,9 +35,14 @@ class HomeScreen extends React.Component<Props, State> {
         }}
       >
         <Button onPress={() => navigation.navigate("Basic")} title="Basic" />
+
         <Button
           onPress={() => navigation.navigate("BasicVertical")}
           title="Vertical"
+        />
+        <Button
+          onPress={() => navigation.navigate("Basic2Carousels")}
+          title="2 carousels on the same page"
         />
         <Button
           onPress={() => navigation.navigate("CustomIndex")}
@@ -95,6 +101,12 @@ const AppNavigator = createStackNavigator({
     screen: Basic,
     navigationOptions: {
       title: "Basic"
+    }
+  },
+  Basic2Carousels: {
+    screen: Basic2Carousels,
+    navigationOptions: {
+      title: "2 carousels on the same page"
     }
   },
   BasicVertical: {

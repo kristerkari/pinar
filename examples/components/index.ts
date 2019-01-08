@@ -1,6 +1,7 @@
 export { Autoplay } from "./Autoplay";
 export { AutoplayVertical } from "./AutoplayVertical";
 export { Basic } from "./Basic";
+export { Basic2Carousels } from "./Basic2Carousels";
 export { BasicVertical } from "./BasicVertical";
 export { CustomHeight } from "./CustomHeight";
 export { CustomIndex } from "./CustomIndex";
