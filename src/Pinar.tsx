@@ -226,8 +226,8 @@ export class Pinar extends React.PureComponent<Props, State> {
       // Setting the offset to the same thing will not do anything,
       // so we increment it by 1 then immediately set it to what it should be,
       // after render.
-      const isChangedOffset = offset[dir] !== this.internals.offset[dir];
-      if (!isChangedOffset) {
+      const hasOffsetChanged = offset[dir] !== this.internals.offset[dir];
+      if (!hasOffsetChanged) {
         const newOffset = { x: 0, y: 0 };
         newOffset[dir] = offset[dir] + 1;
         this.setState(
@@ -252,11 +252,7 @@ export class Pinar extends React.PureComponent<Props, State> {
         );
       } else {
         this.setState({ ...newState, offset }, () => {
-          this.scrollTo({
-            x: offset.x,
-            y: offset.y,
-            animated: false
-          });
+          this.scrollTo({ x: offset.x, y: offset.y, animated: false });
         });
       }
     } else {
