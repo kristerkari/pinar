@@ -176,8 +176,8 @@ export class Pinar extends React.PureComponent<Props, State> {
     if (Platform.OS === "android") {
       const { horizontal } = this.props;
       const { contentOffset } = e.nativeEvent;
-      const offset = horizontal ? contentOffset.x : contentOffset.y;
-
+      const { x, y } = contentOffset;
+      const offset = horizontal ? Math.floor(x) : Math.floor(y);
       if (offset === this.internals.onScrollEndCallbackTargetOffset) {
         this.onScrollEnd(e);
       }
@@ -314,7 +314,9 @@ export class Pinar extends React.PureComponent<Props, State> {
     const y = horizontal ? min : diff * height;
     this.scrollTo({ animated, x, y });
     if (Platform.OS === "android") {
-      this.internals.onScrollEndCallbackTargetOffset = horizontal ? x : y;
+      this.internals.onScrollEndCallbackTargetOffset = horizontal
+        ? Math.floor(x)
+        : Math.floor(y);
     }
     this.internals.isScrolling = true;
     this.internals.isAutoplayEnd = false;
