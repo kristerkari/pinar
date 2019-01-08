@@ -71,5 +71,6 @@ export interface State {
 declare module "pinar" {
   export default class Pinar extends PureComponent<Props, State> {
     public scrollBy(pageIndex: number, animated: boolean): void;
+    public scrollTo(options: { x: number; y: number; animated: boolean }): void;
   }
 }
