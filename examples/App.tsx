@@ -37,6 +37,10 @@ class HomeScreen extends React.Component<Props, State> {
           title="Vertical"
         />
         <Button
+          onPress={() => navigation.navigate("CustomIndex")}
+          title="Custom start page (page 2)"
+        />
+        <Button
           onPress={() => navigation.navigate("CustomSize")}
           title="Custom height and width"
         />
@@ -55,10 +59,6 @@ class HomeScreen extends React.Component<Props, State> {
         <Button
           onPress={() => navigation.navigate("DisabledControls")}
           title="Autoplay with hidden prev/next buttons"
-        />
-        <Button
-          onPress={() => navigation.navigate("CustomIndex")}
-          title="Custom start page (page 2)"
         />
       </View>
     );
