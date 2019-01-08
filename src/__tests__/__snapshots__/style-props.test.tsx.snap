@@ -9,6 +9,10 @@ exports[`style props should allow custom activeDotStyle 1`] = `
         "position": "relative",
       },
       Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
         "flex": 1,
       },
     ]
@@ -174,6 +178,10 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
         "position": "relative",
       },
       Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
         "flex": 1,
       },
     ]
@@ -329,6 +337,10 @@ exports[`style props should allow custom dotStyle 1`] = `
     Array [
       Object {
         "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
       },
       Object {
         "flex": 1,
@@ -494,6 +506,10 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
     Array [
       Object {
         "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
       },
       Object {
         "flex": 1,

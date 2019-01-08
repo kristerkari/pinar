@@ -9,6 +9,10 @@ exports[`basic options should not show prev/next buttons when there is only one 
         "position": "relative",
       },
       Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
         "flex": 1,
       },
     ]
@@ -124,6 +128,10 @@ exports[`basic options should render with default settings 1`] = `
     Array [
       Object {
         "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
       },
       Object {
         "flex": 1,
@@ -296,6 +304,10 @@ exports[`basic options should support custom a11y labels for prev/next controls 
     Array [
       Object {
         "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
       },
       Object {
         "flex": 1,
@@ -523,6 +535,10 @@ exports[`basic options should support disabling accessibility 1`] = `
     Array [
       Object {
         "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
       },
       Object {
         "flex": 1,
@@ -755,6 +771,10 @@ exports[`basic options should support disabling dots 1`] = `
         "position": "relative",
       },
       Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
         "flex": 1,
       },
     ]
@@ -882,6 +902,10 @@ exports[`basic options should support disabling prev/next controls 1`] = `
         "position": "relative",
       },
       Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
         "flex": 1,
       },
     ]
@@ -1004,6 +1028,10 @@ exports[`basic options should support loop option 1`] = `
     Array [
       Object {
         "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
       },
       Object {
         "flex": 1,
@@ -1267,6 +1295,10 @@ exports[`basic options should support providing height and width 1`] = `
     Array [
       Object {
         "position": "relative",
+      },
+      Object {
+        "maxHeight": 333,
+        "maxWidth": 444,
       },
       false,
     ]
