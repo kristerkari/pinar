@@ -10,8 +10,10 @@ import {
   AutoplayVertical,
   Basic,
   BasicVertical,
+  CustomHeight,
   CustomIndex,
   CustomSize,
+  CustomWidth,
   DisabledControls,
   Loop
 } from "./components";
@@ -43,6 +45,14 @@ class HomeScreen extends React.Component<Props, State> {
         <Button
           onPress={() => navigation.navigate("CustomSize")}
           title="Custom height and width"
+        />
+        <Button
+          onPress={() => navigation.navigate("CustomHeight")}
+          title="Custom height / auto width"
+        />
+        <Button
+          onPress={() => navigation.navigate("CustomWidth")}
+          title="Custom width / auto height"
         />
         <Button
           onPress={() => navigation.navigate("Loop")}
@@ -93,6 +103,12 @@ const AppNavigator = createStackNavigator({
       title: "Vertical"
     }
   },
+  CustomHeight: {
+    screen: CustomHeight,
+    navigationOptions: {
+      title: "Custom height with default width"
+    }
+  },
   CustomIndex: {
     screen: CustomIndex,
     navigationOptions: {
@@ -103,6 +119,12 @@ const AppNavigator = createStackNavigator({
     screen: CustomSize,
     navigationOptions: {
       title: "Custom height and width"
+    }
+  },
+  CustomWidth: {
+    screen: CustomWidth,
+    navigationOptions: {
+      title: "Custom width with default height"
     }
   },
   DisabledControls: {

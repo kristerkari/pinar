@@ -547,7 +547,11 @@ export class Pinar extends React.PureComponent<Props, State> {
     return (
       <View
         onLayout={this.onLayout}
-        style={[styles.wrapper, !hasHeightAndWidthProps && { flex: 1 }]}
+        style={[
+          styles.wrapper,
+          { maxHeight: height, maxWidth: width },
+          !hasHeightAndWidthProps && { flex: 1 }
+        ]}
       >
         <View style={{ height, width }}>
           <ScrollView
