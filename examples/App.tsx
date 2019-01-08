@@ -54,7 +54,7 @@ class HomeScreen extends React.Component<Props, State> {
         />
         <Button
           onPress={() => navigation.navigate("DisabledControls")}
-          title="Hide prev/next buttons"
+          title="Autoplay with hidden prev/next buttons"
         />
         <Button
           onPress={() => navigation.navigate("CustomIndex")}
@@ -108,7 +108,7 @@ const AppNavigator = createStackNavigator({
   DisabledControls: {
     screen: DisabledControls,
     navigationOptions: {
-      title: "Hide prev/next buttons"
+      title: "Autoplay with hidden prev/next buttons"
     }
   },
   Loop: {
