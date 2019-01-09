@@ -9,13 +9,15 @@ cache:
 matrix:
   include:
     - node_js: "11"
-      script: npm run tsc && npm run test && npm run lint
+      script: npm run tsc && npm test && npm run lint
     - node_js: "10"
-      script: npm run tsc && npm run test && npm run lint
+      script: npm run tsc && npm test && npm run lint
     - node_js: "9"
-      script: npm run tsc && npm run test && npm run lint
+      script: npm run tsc && npm test && npm run lint
     - node_js: "8"
-      script: npm run tsc && npm run test && npm run lint
+      script: npm run tsc && npm test && npm run lint
 
 before_install:
   - npm install -g npm@latest
+  - cd examples
+  - npm install
