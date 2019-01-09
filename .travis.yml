@@ -1,0 +1,21 @@
+language: node_js
+sudo: false
+git:
+  depth: 1
+cache:
+  directories:
+    - $HOME/.npm
+    - node_modules
+matrix:
+  include:
+    - node_js: "11"
+      script: npm run tsc && npm run test && npm run lint
+    - node_js: "10"
+      script: npm run tsc && npm run test && npm run lint
+    - node_js: "9"
+      script: npm run tsc && npm run test && npm run lint
+    - node_js: "8"
+      script: npm run tsc && npm run test && npm run lint
+
+before_install:
+  - npm install -g npm@latest

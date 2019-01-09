@@ -1,0 +1,23 @@
+# http://www.appveyor.com/docs/appveyor-yml
+
+environment:
+  matrix:
+    - nodejs_version: 11
+    - nodejs_version: 10
+    - nodejs_version: 9
+    - nodejs_version: 8
+
+version: "{build}"
+build: off
+deploy: off
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm install
+
+test_script:
+  - node --version
+  - npm --version
+  - npm run tsc
+  - npm test
+  - npm run lint
