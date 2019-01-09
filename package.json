@@ -22,7 +22,7 @@
     "swiper"
   ],
   "scripts": {
-    "postinstall": "./scripts/postinstall.sh",
+    "postinstall": "rimraf node_modules/@types/node/",
     "prepublish": "npm run build",
     "prebuild": "rimraf dist",
     "build": "tsc --outDir dist",
