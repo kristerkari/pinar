@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, View } from "react-native";
+import { Button, ScrollView, Text, TextStyle } from "react-native";
 import {
   createAppContainer,
   createStackNavigator,
@@ -24,20 +24,25 @@ import {
 type Props = NavigationScreenProps;
 type State = {};
 
+const styles = {
+  heading: {
+    fontSize: 24,
+    fontWeight: "700",
+    paddingTop: 12,
+    paddingBottom: 12
+  } as TextStyle
+};
+
 class HomeScreen extends React.Component<Props, State> {
   render() {
     const { navigation } = this.props;
     return (
-      <View
-        style={{
-          padding: 20,
-          flex: 1,
-          alignItems: "flex-start",
-          justifyContent: "flex-start"
-        }}
+      <ScrollView
+        style={{ padding: 20 }}
+        contentContainerStyle={{ alignItems: "flex-start", paddingBottom: 40 }}
       >
+        <Text style={styles.heading}>Basic examples</Text>
         <Button onPress={() => navigation.navigate("Basic")} title="Basic" />
-
         <Button
           onPress={() => navigation.navigate("BasicVertical")}
           title="Vertical"
@@ -46,6 +51,7 @@ class HomeScreen extends React.Component<Props, State> {
           onPress={() => navigation.navigate("Basic2Carousels")}
           title="2 carousels on the same page"
         />
+        <Text style={styles.heading}>Customizing</Text>
         <Button
           onPress={() => navigation.navigate("CustomIndex")}
           title="Custom start page (page 2)"
@@ -70,10 +76,12 @@ class HomeScreen extends React.Component<Props, State> {
           onPress={() => navigation.navigate("CustomRender")}
           title="Custom next/prev/dot elements"
         />
+        <Text style={styles.heading}>Looping</Text>
         <Button
           onPress={() => navigation.navigate("Loop")}
           title="Looping pages"
         />
+        <Text style={styles.heading}>Autoplay</Text>
         <Button
           onPress={() => navigation.navigate("Autoplay")}
           title="Autoplay"
@@ -86,7 +94,7 @@ class HomeScreen extends React.Component<Props, State> {
           onPress={() => navigation.navigate("DisabledControls")}
           title="Autoplay with hidden prev/next buttons"
         />
-      </View>
+      </ScrollView>
     );
   }
 }
