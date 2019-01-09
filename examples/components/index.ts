@@ -6,6 +6,7 @@ export { BasicVertical } from "./BasicVertical";
 export { CustomHeight } from "./CustomHeight";
 export { CustomIndex } from "./CustomIndex";
 export { CustomSize } from "./CustomSize";
+export { CustomStyles } from "./CustomStyles";
 export { CustomWidth } from "./CustomWidth";
 export { DisabledControls } from "./DisabledControls";
 export { Loop } from "./Loop";

@@ -1,5 +1,5 @@
 import { PureComponent } from "react";
-import { ScrollViewProps, StyleProp, ViewStyle } from "react-native";
+import { ScrollViewProps, StyleProp, TextStyle, ViewStyle } from "react-native";
 
 interface CustomScrollViewProps {
   horizontal: ScrollViewProps["horizontal"];
@@ -32,6 +32,7 @@ interface CustomStyleProps {
   dotsContainerStyle?: StyleProp<ViewStyle>;
   dotStyle?: StyleProp<ViewStyle>;
   activeDotStyle?: StyleProp<ViewStyle>;
+  controlsTextStyle?: StyleProp<TextStyle>;
 }
 
 interface CallbackProps {

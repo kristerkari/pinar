@@ -14,6 +14,7 @@ import {
   CustomHeight,
   CustomIndex,
   CustomSize,
+  CustomStyles,
   CustomWidth,
   DisabledControls,
   Loop
@@ -59,6 +60,10 @@ class HomeScreen extends React.Component<Props, State> {
         <Button
           onPress={() => navigation.navigate("CustomWidth")}
           title="Custom width / auto height"
+        />
+        <Button
+          onPress={() => navigation.navigate("CustomStyles")}
+          title="Custom styling"
         />
         <Button
           onPress={() => navigation.navigate("Loop")}
@@ -131,6 +136,12 @@ const AppNavigator = createStackNavigator({
     screen: CustomSize,
     navigationOptions: {
       title: "Custom height and width"
+    }
+  },
+  CustomStyles: {
+    screen: CustomStyles,
+    navigationOptions: {
+      title: "Custom styling"
     }
   },
   CustomWidth: {

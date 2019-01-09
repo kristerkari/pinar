@@ -358,7 +358,11 @@ export class Pinar extends React.PureComponent<Props, State> {
       if (typeof renderNextButton === "function") {
         return renderNextButton(this.scrollToNext);
       }
-      const { accessibility, accessibilityLabelNext } = this.props;
+      const {
+        accessibility,
+        accessibilityLabelNext,
+        controlsTextStyle
+      } = this.props;
       return (
         <TouchableOpacity
           accessibilityComponentType="button"
@@ -371,7 +375,7 @@ export class Pinar extends React.PureComponent<Props, State> {
           <Text
             accessibilityLabel={accessibilityLabelNext}
             accessible={accessibility}
-            style={styles.buttonText}
+            style={controlsTextStyle || styles.buttonText}
           >
             ›
           </Text>
@@ -390,7 +394,11 @@ export class Pinar extends React.PureComponent<Props, State> {
       if (typeof renderPrevButton === "function") {
         return renderPrevButton(this.scrollToPrev);
       }
-      const { accessibility, accessibilityLabelPrev } = this.props;
+      const {
+        accessibility,
+        accessibilityLabelPrev,
+        controlsTextStyle
+      } = this.props;
       return (
         <TouchableOpacity
           accessibilityComponentType="button"
@@ -403,7 +411,7 @@ export class Pinar extends React.PureComponent<Props, State> {
           <Text
             accessibilityLabel={accessibilityLabelPrev}
             accessible={accessibility}
-            style={styles.buttonText}
+            style={controlsTextStyle || styles.buttonText}
           >
             ‹
           </Text>
