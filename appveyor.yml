@@ -11,14 +11,11 @@ version: "{build}"
 build: off
 deploy: off
 
-before_install:
+install:
   - ps: Install-Product node $env:nodejs_version
   - cd examples
   - npm install
   - cd ..
-
-install:
-  - ps: Install-Product node $env:nodejs_version
   - npm install
 
 test_script:
