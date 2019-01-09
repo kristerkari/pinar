@@ -13,6 +13,7 @@ import {
   BasicVertical,
   CustomHeight,
   CustomIndex,
+  CustomRender,
   CustomSize,
   CustomStyles,
   CustomWidth,
@@ -64,6 +65,10 @@ class HomeScreen extends React.Component<Props, State> {
         <Button
           onPress={() => navigation.navigate("CustomStyles")}
           title="Custom styling"
+        />
+        <Button
+          onPress={() => navigation.navigate("CustomRender")}
+          title="Custom next/prev/dot elements"
         />
         <Button
           onPress={() => navigation.navigate("Loop")}
@@ -130,6 +135,12 @@ const AppNavigator = createStackNavigator({
     screen: CustomIndex,
     navigationOptions: {
       title: "Custom start page (page 2)"
+    }
+  },
+  CustomRender: {
+    screen: CustomRender,
+    navigationOptions: {
+      title: "Custom next/prev/dot elements"
     }
   },
   CustomSize: {

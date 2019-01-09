@@ -5,6 +5,7 @@ export { Basic2Carousels } from "./Basic2Carousels";
 export { BasicVertical } from "./BasicVertical";
 export { CustomHeight } from "./CustomHeight";
 export { CustomIndex } from "./CustomIndex";
+export { CustomRender } from "./CustomRender";
 export { CustomSize } from "./CustomSize";
 export { CustomStyles } from "./CustomStyles";
 export { CustomWidth } from "./CustomWidth";
