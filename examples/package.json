@@ -12,8 +12,6 @@
     "react-navigation": "^3.0.9"
   },
   "devDependencies": {
-    "@types/react": "^16.7.18",
-    "@types/react-native": "^0.57.25",
     "@types/react-navigation": "^3.0.1",
     "metro-react-native-babel-preset": "0.51.1"
   }

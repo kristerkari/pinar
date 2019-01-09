@@ -20,5 +20,5 @@ matrix:
 before_install:
   - npm install -g npm@latest
   - cd examples
-  - npm install
+  - yarn install
   - cd ..
