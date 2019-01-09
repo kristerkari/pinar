@@ -28,7 +28,7 @@
     "build": "tsc --outDir dist",
     "release": "npmpub",
     "tsc": "tsc --noEmit",
-    "lint": "eslint '**/*.{js,jsx,ts,tsx}' --fix ",
+    "lint": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "test": "jest"
   },
   "files": [
