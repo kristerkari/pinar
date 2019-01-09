@@ -14,12 +14,13 @@ deploy: off
 install:
   - ps: Install-Product node $env:nodejs_version
   - npm install
-  - cd examples
-  - npm install
 
 test_script:
   - node --version
   - npm --version
+  - cd examples
+  - npm install
+  - cd ..
   - npm run tsc
   - npm test
   - npm run lint
