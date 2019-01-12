@@ -149,7 +149,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     };
   };
 
-  private onScrollBegin = (
+  private onScrollBeginDrag = (
     _: NativeSyntheticEvent<NativeScrollEvent>
   ): void => {
     this.internals.isScrolling = true;
@@ -173,17 +173,31 @@ export class Pinar extends React.PureComponent<Props, State> {
   };
 
   private onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>): void => {
+    const { onScroll } = this.props;
+
+    if (typeof onScroll === "function") {
+      onScroll(e);
+    }
+
     if (Platform.OS === "android") {
       const { horizontal } = this.props;
       const { x, y } = e.nativeEvent.contentOffset;
       const offset = horizontal ? Math.floor(x) : Math.floor(y);
       if (offset === this.internals.onScrollEndCallbackTargetOffset) {
-        this.onScrollEnd(e);
+        this.onMomentumScrollEnd(e);
       }
     }
   };
 
-  private onScrollEnd = (e: NativeSyntheticEvent<NativeScrollEvent>): void => {
+  private onMomentumScrollEnd = (
+    e: NativeSyntheticEvent<NativeScrollEvent>
+  ): void => {
+    const { onMomentumScrollEnd } = this.props;
+
+    if (typeof onMomentumScrollEnd === "function") {
+      onMomentumScrollEnd(e);
+    }
+
     this.internals.isScrolling = false;
 
     const { activePageIndex, total, height, width } = this.state;
@@ -252,7 +266,11 @@ export class Pinar extends React.PureComponent<Props, State> {
         );
       } else {
         this.setState({ ...newState, offset }, () => {
-          this.scrollTo({ x: offset.x, y: offset.y, animated: false });
+          this.scrollTo({
+            x: offset.x,
+            y: offset.y,
+            animated: false
+          });
         });
       }
     } else {
@@ -288,11 +306,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     if (this.scrollView === null) {
       return;
     }
-    this.scrollView.scrollTo({
-      x,
-      y,
-      animated
-    });
+    this.scrollView.scrollTo({ x, y, animated });
   };
 
   public scrollBy = ({ index, animated = true }: ScrollByOptions): void => {
@@ -326,6 +340,12 @@ export class Pinar extends React.PureComponent<Props, State> {
   };
 
   private onLayout = (e: LayoutChangeEvent): void => {
+    const { onLayout } = this.props;
+
+    if (typeof onLayout === "function") {
+      onLayout(e);
+    }
+
     const { activePageIndex, total } = this.state;
     // Rename height and width when destructuring
     // to avoid conflicting variable names.
@@ -356,7 +376,9 @@ export class Pinar extends React.PureComponent<Props, State> {
 
     if (isShown) {
       if (typeof renderNextButton === "function") {
-        return renderNextButton({ scrollToNext: this.scrollToNext });
+        return renderNextButton({
+          scrollToNext: this.scrollToNext
+        });
       }
       const {
         accessibility,
@@ -393,7 +415,9 @@ export class Pinar extends React.PureComponent<Props, State> {
 
     if (isShown) {
       if (typeof renderPrevButton === "function") {
-        return renderPrevButton({ scrollToPrev: this.scrollToPrev });
+        return renderPrevButton({
+          scrollToPrev: this.scrollToPrev
+        });
       }
       const {
         accessibility,
@@ -460,7 +484,11 @@ export class Pinar extends React.PureComponent<Props, State> {
 
     if (typeof renderDots === "function") {
       const { activePageIndex, total } = this.state;
-      return renderDots({ index: activePageIndex, total, context: this });
+      return renderDots({
+        index: activePageIndex,
+        total,
+        context: this
+      });
     }
 
     const {
@@ -563,9 +591,9 @@ export class Pinar extends React.PureComponent<Props, State> {
             automaticallyAdjustContentInsets={automaticallyAdjustContentInsets}
             bounces={bounces}
             horizontal={horizontal}
-            onMomentumScrollEnd={this.onScrollEnd}
+            onMomentumScrollEnd={this.onMomentumScrollEnd}
             onScroll={this.onScroll}
-            onScrollBeginDrag={this.onScrollBegin}
+            onScrollBeginDrag={this.onScrollBeginDrag}
             onScrollEndDrag={this.onScrollEndDrag}
             pagingEnabled={pagingEnabled}
             ref={this.refScrollView}

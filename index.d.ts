@@ -1,5 +1,13 @@
 import { PureComponent } from "react";
-import { ScrollViewProps, StyleProp, TextStyle, ViewStyle } from "react-native";
+import {
+  LayoutChangeEvent,
+  NativeScrollEvent,
+  NativeSyntheticEvent,
+  ScrollViewProps,
+  StyleProp,
+  TextStyle,
+  ViewStyle
+} from "react-native";
 
 interface CustomScrollViewProps {
   horizontal: ScrollViewProps["horizontal"];
@@ -57,6 +65,9 @@ interface CustomStyleProps {
 
 interface CallbackProps {
   onIndexChanged?: (params: OnIndexChangedParams) => void;
+  onScroll?: (e: NativeSyntheticEvent<NativeScrollEvent>) => void;
+  onMomentumScrollEnd?: (e: NativeSyntheticEvent<NativeScrollEvent>) => void;
+  onLayout?: (e: LayoutChangeEvent) => void;
 }
 
 export interface Props
