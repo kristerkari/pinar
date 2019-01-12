@@ -36,10 +36,10 @@ const styles = {
   } as TextStyle
 };
 
-export const Autoplay = () => (
+export const AutoplayWithoutLoop = () => (
   <Carousel
     autoplay={true}
-    loop={true}
+    loop={false}
     onIndexChanged={(index, total) => {
       if (Platform.OS === "ios") {
         const page = index + 1;
