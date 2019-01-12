@@ -8,6 +8,7 @@ import {
 import {
   Autoplay,
   AutoplayVertical,
+  AutoplayWithoutLoop,
   Basic,
   Basic2Carousels,
   BasicVertical,
@@ -38,6 +39,7 @@ class HomeScreen extends React.Component<Props, State> {
     const { navigation } = this.props;
     return (
       <ScrollView
+        testID="scrollview"
         style={{ padding: 20 }}
         contentContainerStyle={{ alignItems: "flex-start", paddingBottom: 40 }}
       >
@@ -88,8 +90,9 @@ class HomeScreen extends React.Component<Props, State> {
         />
         <Text style={styles.heading}>Autoplay</Text>
         <Button
+          testID="autoplay"
           onPress={() => navigation.navigate("Autoplay")}
-          title="Autoplay"
+          title="Autoplay with loop"
         />
         <Button
           onPress={() => navigation.navigate("AutoplayVertical")}
@@ -98,6 +101,11 @@ class HomeScreen extends React.Component<Props, State> {
         <Button
           onPress={() => navigation.navigate("DisabledControls")}
           title="Autoplay with hidden prev/next buttons"
+        />
+        <Button
+          testID="autoplay-without-loop"
+          onPress={() => navigation.navigate("AutoplayWithoutLoop")}
+          title="Autoplay without loop"
         />
       </ScrollView>
     );
@@ -111,13 +119,19 @@ const AppNavigator = createStackNavigator({
   Autoplay: {
     screen: Autoplay,
     navigationOptions: {
-      title: "Autoplay"
+      title: "Autoplay with loop"
     }
   },
   AutoplayVertical: {
     screen: AutoplayVertical,
     navigationOptions: {
       title: "Autoplay (vertical)"
+    }
+  },
+  AutoplayWithoutLoop: {
+    screen: AutoplayWithoutLoop,
+    navigationOptions: {
+      title: "Autoplay without loop"
     }
   },
   Basic: {
