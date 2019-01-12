@@ -82,6 +82,7 @@ class HomeScreen extends React.Component<Props, State> {
         />
         <Text style={styles.heading}>Looping</Text>
         <Button
+          testID="loop"
           onPress={() => navigation.navigate("Loop")}
           title="Looping pages"
         />
