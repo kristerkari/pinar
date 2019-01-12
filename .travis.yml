@@ -1,24 +1,29 @@
-language: node_js
-sudo: false
-git:
-  depth: 1
-cache:
-  directories:
-    - $HOME/.npm
-    - node_modules
-matrix:
-  include:
-    - node_js: "11"
-      script: npm run tsc && npm test && npm run lint
-    - node_js: "10"
-      script: npm run tsc && npm test && npm run lint
-    - node_js: "9"
-      script: npm run tsc && npm test && npm run lint
-    - node_js: "8"
-      script: npm run tsc && npm test && npm run lint
+language: objective-c
+osx_image: xcode9
+xcode_sdk: iphonesimulator11.0
 
-before_install:
-  - npm install -g npm@latest
+env:
+  global:
+    - NODE_VERSION=stable
+
+install:
+  - brew tap wix/brew
+  - brew install applesimutils
+  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+  - export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+  - nvm install $NODE_VERSION
+  - nvm use $NODE_VERSION
   - cd examples
-  - yarn install
+  - npm install
   - cd ..
+  - npm install
+
+  - npm install -g react-native-cli
+  - npm install -g detox-cli
+
+script:
+  - npm run tsc
+  - npm test
+  - npm run lint
+  - detox build --configuration ios.sim.release
+  - detox test --configuration ios.sim.release --cleanup

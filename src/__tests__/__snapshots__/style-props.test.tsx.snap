@@ -149,6 +149,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
         accessible={true}
         activeOpacity={0.2}
         onPress={[Function]}
+        testID="PinarNextButton"
       >
         <Text
           accessibilityLabel="Next"
@@ -310,6 +311,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
         accessible={true}
         activeOpacity={0.2}
         onPress={[Function]}
+        testID="PinarNextButton"
       >
         <Text
           accessibilityLabel="Next"
@@ -479,6 +481,7 @@ exports[`style props should allow custom dotStyle 1`] = `
         accessible={true}
         activeOpacity={0.2}
         onPress={[Function]}
+        testID="PinarNextButton"
       >
         <Text
           accessibilityLabel="Next"
@@ -648,6 +651,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
         accessible={true}
         activeOpacity={0.2}
         onPress={[Function]}
+        testID="PinarNextButton"
       >
         <Text
           accessibilityLabel="Next"
