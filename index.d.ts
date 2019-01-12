@@ -14,17 +14,37 @@ interface CustomScrollViewProps {
   scrollEnabled: ScrollViewProps["scrollEnabled"];
 }
 
+interface RenderDotsParams {
+  index: number;
+  total: number;
+  context: any;
+}
+
+interface RenderNextParams {
+  scrollToNext: () => void;
+}
+
+interface RenderPrevParams {
+  scrollToPrev: () => void;
+}
+
+interface OnIndexChangedParams {
+  index: number;
+  total: number;
+}
+
+export interface ScrollByOptions {
+  index: number;
+  animated?: boolean;
+}
+
 interface CustomRenderProps {
-  renderDots?: (
-    pageIndex: number,
-    totalPages: number,
-    context: any
-  ) => JSX.Element;
+  renderDots?: (params: RenderDotsParams) => JSX.Element;
   renderDot?: () => JSX.Element;
   renderActiveDot?: () => JSX.Element;
   renderControls?: () => JSX.Element;
-  renderNextButton?: (scrollToNext: () => void) => JSX.Element;
-  renderPrevButton?: (scrollToPrev: () => void) => JSX.Element;
+  renderNextButton?: (params: RenderNextParams) => JSX.Element;
+  renderPrevButton?: (params: RenderPrevParams) => JSX.Element;
 }
 
 interface CustomStyleProps {
@@ -36,7 +56,7 @@ interface CustomStyleProps {
 }
 
 interface CallbackProps {
-  onIndexChanged?: (pageIndex: number, totalPages: number) => void;
+  onIndexChanged?: (params: OnIndexChangedParams) => void;
 }
 
 export interface Props
@@ -71,7 +91,7 @@ export interface State {
 
 declare module "pinar" {
   export default class Pinar extends PureComponent<Props, State> {
-    public scrollBy(pageIndex: number, animated: boolean): void;
+    public scrollBy(options: ScrollByOptions): void;
     public scrollTo(options: { x: number; y: number; animated: boolean }): void;
   }
 }

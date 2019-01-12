@@ -41,7 +41,7 @@ export const CustomSize = () => (
     <Carousel
       height={300}
       width={300}
-      onIndexChanged={(index, total) => {
+      onIndexChanged={({ index, total }) => {
         if (Platform.OS === "ios") {
           const page = index + 1;
           AccessibilityInfo.announceForAccessibility(

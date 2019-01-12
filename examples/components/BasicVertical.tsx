@@ -40,7 +40,7 @@ export const BasicVertical = () => (
   <Carousel
     horizontal={false}
     showsControls={false}
-    onIndexChanged={(index, total) => {
+    onIndexChanged={({ index, total }) => {
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(

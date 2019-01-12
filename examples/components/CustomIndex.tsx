@@ -39,7 +39,7 @@ const styles = {
 export const CustomIndex = () => (
   <Carousel
     index={1}
-    onIndexChanged={(index, total) => {
+    onIndexChanged={({ index, total }) => {
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(

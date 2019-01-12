@@ -58,22 +58,22 @@ const styles = {
 
 export const CustomRender = () => (
   <Carousel
-    renderNextButton={scrollToNext => (
+    renderNextButton={({ scrollToNext }) => (
       <TouchableOpacity accessibilityRole="button" onPress={scrollToNext}>
         <Text style={styles.buttonText}>Next</Text>
       </TouchableOpacity>
     )}
-    renderPrevButton={scrollToPrev => (
+    renderPrevButton={({ scrollToPrev }) => (
       <TouchableOpacity accessibilityRole="button" onPress={scrollToPrev}>
         <Text style={styles.buttonText}>Prev</Text>
       </TouchableOpacity>
     )}
-    renderDots={(index, total) => (
+    renderDots={({ index, total }) => (
       <View style={styles.dotsContainer}>
         <Text style={styles.dotsText}>{index + 1 + "/" + total}</Text>
       </View>
     )}
-    onIndexChanged={(index, total) => {
+    onIndexChanged={({ index, total }) => {
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(
