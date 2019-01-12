@@ -29,6 +29,7 @@
     "release": "npmpub",
     "tsc": "tsc --noEmit",
     "lint": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
+    "e2e": "detox build && detox test",
     "test": "jest"
   },
   "files": [
@@ -47,6 +48,7 @@
     "@types/jest": "^23.3.11",
     "@types/react": "^16.7.18",
     "@types/react-native": "^0.57.26",
+    "detox": "^9.1.2",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "enzyme-to-json": "^3.3.5",
@@ -97,7 +99,8 @@
     "testPathIgnorePatterns": [
       "<rootDir>/dist",
       "<rootDir>/node_modules",
-      "<rootDir>/examples"
+      "<rootDir>/examples",
+      "<rootDir>/e2e"
     ],
     "transformIgnorePatterns": [
       "\\.snap$",
@@ -110,5 +113,22 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
+  },
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "examples/ios/build/Build/Products/Debug-iphonesimulator/examples.app",
+        "build": "xcodebuild -project examples/ios/examples.xcodeproj -scheme examples -configuration Debug -sdk iphonesimulator -derivedDataPath examples/ios/build -UseModernBuildSystem=NO",
+        "type": "ios.simulator",
+        "name": "iPhone 8"
+      },
+      "ios.sim.release": {
+        "binaryPath": "examples/ios/build/Build/Products/Release-iphonesimulator/examples.app",
+        "build": "xcodebuild -project examples/ios/examples.xcodeproj -scheme examples -configuration Release -sdk iphonesimulator -derivedDataPath examples/ios/build -UseModernBuildSystem=NO",
+        "type": "ios.simulator",
+        "name": "iPhone 8"
+      }
+    },
+    "test-runner": "jest"
   }
 }

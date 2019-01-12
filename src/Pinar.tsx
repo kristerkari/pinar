@@ -371,6 +371,7 @@ export class Pinar extends React.PureComponent<Props, State> {
           accessibilityTraits="button"
           accessible={accessibility}
           onPress={this.scrollToNext}
+          testID="PinarNextButton"
         >
           <Text
             accessibilityLabel={accessibilityLabelNext}
@@ -407,6 +408,7 @@ export class Pinar extends React.PureComponent<Props, State> {
           accessibilityTraits="button"
           accessible={accessibility}
           onPress={this.scrollToPrev}
+          testID="PinarPrevButton"
         >
           <Text
             accessibilityLabel={accessibilityLabelPrev}

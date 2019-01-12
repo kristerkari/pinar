@@ -42,7 +42,11 @@ class HomeScreen extends React.Component<Props, State> {
         contentContainerStyle={{ alignItems: "flex-start", paddingBottom: 40 }}
       >
         <Text style={styles.heading}>Basic examples</Text>
-        <Button onPress={() => navigation.navigate("Basic")} title="Basic" />
+        <Button
+          testID="basic"
+          onPress={() => navigation.navigate("Basic")}
+          title="Basic"
+        />
         <Button
           onPress={() => navigation.navigate("BasicVertical")}
           title="Vertical"

@@ -852,6 +852,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
         accessible={true}
         activeOpacity={0.2}
         onPress={[Function]}
+        testID="PinarNextButton"
       >
         <Text
           accessibilityLabel="Next"
@@ -990,6 +991,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
         accessible={true}
         activeOpacity={0.2}
         onPress={[Function]}
+        testID="PinarNextButton"
       >
         <Text
           accessibilityLabel="Next"
@@ -1127,6 +1129,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
         accessible={true}
         activeOpacity={0.2}
         onPress={[Function]}
+        testID="PinarPrevButton"
       >
         <Text
           accessibilityLabel="Previous"
