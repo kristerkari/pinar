@@ -29,7 +29,7 @@
     "release": "npmpub",
     "tsc": "tsc --noEmit",
     "lint": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
-    "e2e": "detox build && detox test",
+    "e2e": "detox build --configuration ios.sim.debug && detox test --configuration ios.sim.debug",
     "test": "jest"
   },
   "files": [
