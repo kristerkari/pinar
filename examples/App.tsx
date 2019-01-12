@@ -99,6 +99,7 @@ class HomeScreen extends React.Component<Props, State> {
           title="Autoplay (vertical)"
         />
         <Button
+          testID="disabled-controls"
           onPress={() => navigation.navigate("DisabledControls")}
           title="Autoplay with hidden prev/next buttons"
         />
