@@ -124,9 +124,9 @@
       },
       "ios.sim.release": {
         "binaryPath": "examples/ios/build/Build/Products/Release-iphonesimulator/examples.app",
-        "build": "xcodebuild -project examples/ios/examples.xcodeproj -scheme examples -configuration Release -sdk iphonesimulator -derivedDataPath examples/ios/build -UseModernBuildSystem=NO",
+        "build": "xcodebuild -project examples/ios/examples.xcodeproj -scheme examples -configuration Release -sdk iphonesimulator -derivedDataPath examples/ios/build",
         "type": "ios.simulator",
-        "name": "iPhone 8"
+        "name": "iPhone 7"
       }
     },
     "test-runner": "jest"
