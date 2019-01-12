@@ -78,7 +78,7 @@ export const CustomStyles = () => (
       alignItems: "center"
     }}
     controlsTextStyle={{ fontSize: 100, color: "#eace15" }}
-    onIndexChanged={(index, total) => {
+    onIndexChanged={({ index, total }) => {
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(

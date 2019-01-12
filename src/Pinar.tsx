@@ -11,7 +11,7 @@ import {
   TouchableOpacity,
   View
 } from "react-native";
-import { Props, State } from "../index";
+import { Props, ScrollByOptions, State } from "../index";
 import { defaultStyles } from "./styles";
 
 const defaultScrollViewProps = {
@@ -79,7 +79,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     const { index, autoplay } = this.props;
 
     if (index && index !== activePageIndex) {
-      this.scrollBy(index, false);
+      this.scrollBy({ index, animated: false });
       /* eslint-disable react/no-did-mount-set-state */
       this.setState({ activePageIndex: index });
       /* eslint-enable react/no-did-mount-set-state */
@@ -217,7 +217,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     this.internals.offset = offset;
 
     if (typeof onIndexChanged === "function") {
-      onIndexChanged(newState.activePageIndex, total);
+      onIndexChanged({ index: newState.activePageIndex, total });
     }
 
     if (needsToUpdateOffset) {
@@ -295,7 +295,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     });
   };
 
-  public scrollBy = (index: number, animated: boolean = true): void => {
+  public scrollBy = ({ index, animated = true }: ScrollByOptions): void => {
     const { total } = this.state;
     const { isScrolling } = this.internals;
     if (this.scrollView === null || isScrolling || total < 2) {
@@ -318,11 +318,11 @@ export class Pinar extends React.PureComponent<Props, State> {
   };
 
   private scrollToPrev = (): void => {
-    this.scrollBy(-1);
+    this.scrollBy({ index: -1 });
   };
 
   private scrollToNext = (): void => {
-    this.scrollBy(1);
+    this.scrollBy({ index: 1 });
   };
 
   private onLayout = (e: LayoutChangeEvent): void => {
@@ -356,7 +356,7 @@ export class Pinar extends React.PureComponent<Props, State> {
 
     if (isShown) {
       if (typeof renderNextButton === "function") {
-        return renderNextButton(this.scrollToNext);
+        return renderNextButton({ scrollToNext: this.scrollToNext });
       }
       const {
         accessibility,
@@ -393,7 +393,7 @@ export class Pinar extends React.PureComponent<Props, State> {
 
     if (isShown) {
       if (typeof renderPrevButton === "function") {
-        return renderPrevButton(this.scrollToPrev);
+        return renderPrevButton({ scrollToPrev: this.scrollToPrev });
       }
       const {
         accessibility,
@@ -460,7 +460,7 @@ export class Pinar extends React.PureComponent<Props, State> {
 
     if (typeof renderDots === "function") {
       const { activePageIndex, total } = this.state;
-      return renderDots(activePageIndex, total, this);
+      return renderDots({ index: activePageIndex, total, context: this });
     }
 
     const {
