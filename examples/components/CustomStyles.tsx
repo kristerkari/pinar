@@ -77,7 +77,18 @@ export const CustomStyles = () => (
       justifyContent: "space-between",
       alignItems: "center"
     }}
-    controlsTextStyle={{ fontSize: 100, color: "#eace15" }}
+    controlsButtonStyle={{
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      width: 80,
+      height: 80,
+      backgroundColor: "black",
+      borderRadius: 60,
+      opacity: 0.5
+    }}
+    controlsTextStyle={{ fontSize: 50, color: "#eace15" }}
     onIndexChanged={({ index, total }) => {
       if (Platform.OS === "ios") {
         const page = index + 1;

@@ -62,6 +62,7 @@ interface CustomStyleProps {
   dotsContainerStyle?: StyleProp<ViewStyle>;
   dotStyle?: StyleProp<ViewStyle>;
   activeDotStyle?: StyleProp<ViewStyle>;
+  controlsButtonStyle?: StyleProp<ViewStyle>;
   controlsTextStyle?: StyleProp<TextStyle>;
 }
 

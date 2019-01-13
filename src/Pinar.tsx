@@ -383,6 +383,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       const {
         accessibility,
         accessibilityLabelNext,
+        controlsButtonStyle,
         controlsTextStyle
       } = this.props;
       return (
@@ -393,6 +394,7 @@ export class Pinar extends React.PureComponent<Props, State> {
           accessibilityTraits="button"
           accessible={accessibility}
           onPress={this.scrollToNext}
+          style={controlsButtonStyle}
           testID="PinarNextButton"
         >
           <Text
@@ -422,6 +424,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       const {
         accessibility,
         accessibilityLabelPrev,
+        controlsButtonStyle,
         controlsTextStyle
       } = this.props;
       return (
@@ -432,6 +435,7 @@ export class Pinar extends React.PureComponent<Props, State> {
           accessibilityTraits="button"
           accessible={accessibility}
           onPress={this.scrollToPrev}
+          style={controlsButtonStyle}
           testID="PinarPrevButton"
         >
           <Text
