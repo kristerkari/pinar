@@ -28,6 +28,10 @@ interface RenderDotsParams {
   context: any;
 }
 
+interface RenderDotParams {
+  index: number;
+}
+
 interface RenderNextParams {
   scrollToNext: () => void;
 }
@@ -50,8 +54,8 @@ export interface ScrollByOptions {
 
 interface CustomRenderProps {
   renderDots?: (params: RenderDotsParams) => JSX.Element;
-  renderDot?: () => JSX.Element;
-  renderActiveDot?: () => JSX.Element;
+  renderDot?: (params: RenderDotParams) => JSX.Element;
+  renderActiveDot?: (params: RenderDotParams) => JSX.Element;
   renderControls?: (params: RenderControlParams) => JSX.Element;
   renderNextButton?: (params: RenderNextParams) => JSX.Element;
   renderPrevButton?: (params: RenderPrevParams) => JSX.Element;

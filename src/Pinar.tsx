@@ -515,10 +515,10 @@ export class Pinar extends React.PureComponent<Props, State> {
           /* eslint-disable react/no-array-index-key */
           const isActive = this.isActivePageIndex(i);
           if (isActive && typeof renderActiveDot === "function") {
-            return renderActiveDot();
+            return renderActiveDot({ index: i });
           }
           if (typeof renderDot === "function") {
-            return renderDot();
+            return renderDot({ index: i });
           }
           const { dotStyle, activeDotStyle } = this.props;
           const style = isActive
