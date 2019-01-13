@@ -101,6 +101,8 @@ export default () => (
 
 #### Callbacks
 
+Use these properties to be notified when the user scrolls the carousel or changes the page.
+
 | Property            |         Parameters         |    Type    | Description                                                  |
 | :------------------ | :------------------------: | :--------: | :----------------------------------------------------------- |
 | onIndexChanged      | ({ index, total }) => void | `function` | Called with the new page index when the user changes a page. |
@@ -110,7 +112,7 @@ export default () => (
 
 #### Custom styling properties
 
-Use these properties to customize how big the carousel is and how it is styled.
+Use these properties to customize how the carousel is styled.
 
 | Property               | Default |          Type          | Description                                       |
 | :--------------------- | :-----: | :--------------------: | :------------------------------------------------ |
