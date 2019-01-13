@@ -56,7 +56,7 @@ export class Methods<Props, State> extends React.PureComponent {
             this.carousel = carousel;
           }}
           height={200}
-          autoplayInterval={1000}
+          autoplayInterval={3000}
           onIndexChanged={({ index, total }) => {
             if (Platform.OS === "ios") {
               const page = index + 1;

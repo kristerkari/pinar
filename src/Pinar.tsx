@@ -48,6 +48,7 @@ export class Pinar extends React.PureComponent<Props, State> {
   private autoplayTimer: number = 0;
 
   private internals: {
+    autoplay: boolean;
     isAutoplayEnd: boolean;
     isScrolling: boolean;
     offset: { x: number; y: number };
@@ -65,6 +66,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     const activePageIndex = total > 1 ? Math.min(initialIndex, lastIndex) : 0;
     const offset = { x: 0, y: 0 };
     this.internals = {
+      autoplay: false,
       isAutoplayEnd: false,
       isScrolling: false,
       offset,
@@ -279,7 +281,7 @@ export class Pinar extends React.PureComponent<Props, State> {
 
     const { autoplay } = this.props;
 
-    if (autoplay) {
+    if (autoplay || this.internals.autoplay) {
       this.autoplay();
     }
   };
@@ -345,10 +347,12 @@ export class Pinar extends React.PureComponent<Props, State> {
   };
 
   public startAutoplay = (): void => {
+    this.internals.autoplay = true;
     this.autoplay();
   };
 
   public stopAutoplay = (): void => {
+    this.internals.autoplay = false;
     clearTimeout(this.autoplayTimer);
   };
 
