@@ -4,6 +4,48 @@ import { Text, View } from "react-native";
 import Carousel from "../index";
 
 describe("style props", () => {
+  it("should allow style prop", () => {
+    const wrapper = shallow(
+      <Carousel style={{ backgroundColor: "blue" }}>
+        <View>
+          <Text>1</Text>
+        </View>
+        <View>
+          <Text>2</Text>
+        </View>
+      </Carousel>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("should allow containerStyle prop (ScrollView)", () => {
+    const wrapper = shallow(
+      <Carousel containerStyle={{ backgroundColor: "blue" }}>
+        <View>
+          <Text>1</Text>
+        </View>
+        <View>
+          <Text>2</Text>
+        </View>
+      </Carousel>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("should allow contentContainerStyle prop (ScrollView)", () => {
+    const wrapper = shallow(
+      <Carousel contentContainerStyle={{ backgroundColor: "blue" }}>
+        <View>
+          <Text>1</Text>
+        </View>
+        <View>
+          <Text>2</Text>
+        </View>
+      </Carousel>
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it("should allow custom controlsContainerStyle", () => {
     const wrapper = shallow(
       <Carousel controlsContainerStyle={{ backgroundColor: "blue" }}>

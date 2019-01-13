@@ -579,7 +579,10 @@ export class Pinar extends React.PureComponent<Props, State> {
       scrollEventThrottle,
       scrollEnabled,
       width,
-      height
+      height,
+      style,
+      containerStyle,
+      contentContainerStyle
     } = this.props;
 
     const hasHeightAndWidthProps = width !== undefined && height !== undefined;
@@ -590,13 +593,15 @@ export class Pinar extends React.PureComponent<Props, State> {
         style={[
           styles.wrapper,
           { maxHeight: height, maxWidth: width },
-          !hasHeightAndWidthProps && { flex: 1 }
+          !hasHeightAndWidthProps && { flex: 1 },
+          style
         ]}
       >
         <View style={{ height, width }}>
           <ScrollView
             automaticallyAdjustContentInsets={automaticallyAdjustContentInsets}
             bounces={bounces}
+            contentContainerStyle={contentContainerStyle}
             horizontal={horizontal}
             onMomentumScrollEnd={this.onMomentumScrollEnd}
             onScroll={this.onScroll}
@@ -610,6 +615,7 @@ export class Pinar extends React.PureComponent<Props, State> {
             scrollsToTop={scrollsToTop}
             showsHorizontalScrollIndicator={showsHorizontalScrollIndicator}
             showsVerticalScrollIndicator={showsVerticalScrollIndicator}
+            style={containerStyle}
           >
             {this.renderChildren(children)}
           </ScrollView>

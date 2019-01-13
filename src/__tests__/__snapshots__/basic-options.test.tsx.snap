@@ -15,6 +15,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -136,6 +137,7 @@ exports[`basic options should render with default settings 1`] = `
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -313,6 +315,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -546,6 +549,7 @@ exports[`basic options should support disabling accessibility 1`] = `
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -782,6 +786,7 @@ exports[`basic options should support disabling dots 1`] = `
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -914,6 +919,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -1042,6 +1048,7 @@ exports[`basic options should support loop option 1`] = `
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -1309,6 +1316,7 @@ exports[`basic options should support providing height and width 1`] = `
         "maxWidth": 444,
       },
       false,
+      undefined,
     ]
   }
 >

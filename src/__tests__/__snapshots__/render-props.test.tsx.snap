@@ -15,6 +15,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -211,6 +212,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -416,6 +418,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -612,6 +615,7 @@ exports[`render props control buttons should not show custom next and prev butto
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -733,6 +737,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -888,6 +893,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >
@@ -1027,6 +1033,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
       Object {
         "flex": 1,
       },
+      undefined,
     ]
   }
 >

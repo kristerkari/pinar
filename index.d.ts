@@ -62,6 +62,9 @@ interface CustomRenderProps {
 }
 
 interface CustomStyleProps {
+  style?: StyleProp<ViewStyle>;
+  containerStyle?: StyleProp<ViewStyle>;
+  contentContainerStyle?: StyleProp<ViewStyle>;
   controlsContainerStyle?: StyleProp<ViewStyle>;
   dotsContainerStyle?: StyleProp<ViewStyle>;
   dotStyle?: StyleProp<ViewStyle>;
