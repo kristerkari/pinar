@@ -331,11 +331,11 @@ export class Pinar extends React.PureComponent<Props, State> {
     this.internals.isAutoplayEnd = false;
   };
 
-  private scrollToPrev = (): void => {
+  public scrollToPrev = (): void => {
     this.scrollBy({ index: -1 });
   };
 
-  private scrollToNext = (): void => {
+  public scrollToNext = (): void => {
     this.scrollBy({ index: 1 });
   };
 
