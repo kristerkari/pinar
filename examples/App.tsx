@@ -19,7 +19,9 @@ import {
   CustomStyles,
   CustomWidth,
   DisabledControls,
-  Loop
+  Loop,
+  Methods,
+  MethodsWithLoop
 } from "./components";
 
 type Props = NavigationScreenProps;
@@ -107,6 +109,17 @@ class HomeScreen extends React.Component<Props, State> {
           testID="autoplay-without-loop"
           onPress={() => navigation.navigate("AutoplayWithoutLoop")}
           title="Autoplay without loop"
+        />
+        <Text style={styles.heading}>Methods</Text>
+        <Button
+          testID="methods"
+          onPress={() => navigation.navigate("Methods")}
+          title="Methods"
+        />
+        <Button
+          testID="methods-with-loop"
+          onPress={() => navigation.navigate("MethodsWithLoop")}
+          title="Methods with loop enabled"
         />
       </ScrollView>
     );
@@ -199,6 +212,18 @@ const AppNavigator = createStackNavigator({
     screen: Loop,
     navigationOptions: {
       title: "Looping pages"
+    }
+  },
+  Methods: {
+    screen: Methods,
+    navigationOptions: {
+      title: "Methods"
+    }
+  },
+  MethodsWithLoop: {
+    screen: MethodsWithLoop,
+    navigationOptions: {
+      title: "Methods with loop enabled"
     }
   }
 });

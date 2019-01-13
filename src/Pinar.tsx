@@ -319,6 +319,11 @@ export class Pinar extends React.PureComponent<Props, State> {
     const { horizontal, loop } = this.props;
     const diff = (loop ? 1 : 0) + index + activePageIndex;
     const min = 0;
+
+    if (!loop && (diff > total - 1 || diff < min)) {
+      return;
+    }
+
     const x = horizontal ? diff * width : min;
     const y = horizontal ? min : diff * height;
     this.scrollTo({ animated, x, y });

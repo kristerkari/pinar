@@ -12,3 +12,5 @@ export { CustomStyles } from "./CustomStyles";
 export { CustomWidth } from "./CustomWidth";
 export { DisabledControls } from "./DisabledControls";
 export { Loop } from "./Loop";
+export { Methods } from "./Methods";
+export { MethodsWithLoop } from "./MethodsWithLoop";
