@@ -91,7 +91,7 @@ export class Pinar extends React.PureComponent<Props, State> {
   }
 
   componentWillUnmount() {
-    clearTimeout(this.autoplayTimer);
+    this.stopAutoplay();
   }
 
   componentDidUpdate(prevProps: Props, prevState: State) {
@@ -342,6 +342,14 @@ export class Pinar extends React.PureComponent<Props, State> {
 
   public scrollToNext = (): void => {
     this.scrollBy({ index: 1 });
+  };
+
+  public startAutoplay = (): void => {
+    this.autoplay();
+  };
+
+  public stopAutoplay = (): void => {
+    clearTimeout(this.autoplayTimer);
   };
 
   private onLayout = (e: LayoutChangeEvent): void => {

@@ -56,6 +56,7 @@ export class Methods<Props, State> extends React.PureComponent {
             this.carousel = carousel;
           }}
           height={200}
+          autoplayInterval={1000}
           onIndexChanged={({ index, total }) => {
             if (Platform.OS === "ios") {
               const page = index + 1;
@@ -108,6 +109,16 @@ export class Methods<Props, State> extends React.PureComponent {
             onPress={() =>
               this.carousel && this.carousel.scrollBy({ index: -2 })
             }
+          />
+          <Button
+            testID="start-autoplay"
+            title="start autoplay"
+            onPress={() => this.carousel && this.carousel.startAutoplay()}
+          />
+          <Button
+            testID="stop-autoplay"
+            title="stop autoplay"
+            onPress={() => this.carousel && this.carousel.stopAutoplay()}
           />
         </View>
       </View>
