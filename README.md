@@ -1,4 +1,4 @@
-<h1 align="center" style="font-size: 1.12rem;"><img src="images/pinar.png" alt="Pinar" height="120"></h1>
+<h1 align="center" style="font-size: 1.12rem;"><img src="images/pinar.png" alt="Pinar" height="120" width=320"></h1>
 
 <p align="center" style="font-size: 1.12rem;">Customizable, lightweight React Native carousel component with accessibility support.</p>
 
