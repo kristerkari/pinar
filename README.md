@@ -84,18 +84,20 @@ export default () => (
 
 #### Basic carousel properties
 
-| Property               | Default  |   Type    | Description                                                         |
-| :--------------------- | :------: | :-------: | :------------------------------------------------------------------ |
-| horizontal             |   true   | `boolean` | Set to `false` for a vertical carousel.                             |
-| loop                   |  false   | `boolean` | Set to `true` to enable continuous loop mode.                       |
-| index                  |    0     | `number`  | Index number of initial slide.                                      |
-| showsControls          |   true   | `boolean` | Set to `false` to hide prev/next buttons.                           |
-| showsDots              |   true   | `boolean` | Set to `false` to hide pagination dots.                             |
-| autoplay               |  false   | `boolean` | Set to `true` enable autoplay mode.                                 |
-| autoplayInterval       |   3000   | `number`  | Delay between autoplay page changes (in milliseconds).              |
-| accessibility          |   true   | `boolean` | Set to `false` to disable accessibility features (not recommended). |
-| accessibilityLabelPrev | Previous | `string`  | Accessibility label for the prev button.                            |
-| accessibilityLabelNext |   Next   | `string`  | Accessibility label for the next button.                            |
+| Property               | Default  |   Type    | Description                                                               |
+| :--------------------- | :------: | :-------: | :------------------------------------------------------------------------ |
+| horizontal             |   true   | `boolean` | Set to `false` for a vertical carousel.                                   |
+| loop                   |  false   | `boolean` | Set to `true` to enable continuous loop mode.                             |
+| index                  |    0     | `number`  | Index number of initial slide.                                            |
+| showsControls          |   true   | `boolean` | Set to `false` to hide prev/next buttons.                                 |
+| showsDots              |   true   | `boolean` | Set to `false` to hide pagination dots.                                   |
+| autoplay               |  false   | `boolean` | Set to `true` enable autoplay mode.                                       |
+| autoplayInterval       |   3000   | `number`  | Delay between autoplay page changes (in milliseconds).                    |
+| width                  |    -     | `number`  | If not specified, the default fullscreen mode is enabled using `flex: 1`. |
+| height                 |    -     | `number`  | If not specified, the default fullscreen mode is enabled using `flex: 1`. |
+| accessibility          |   true   | `boolean` | Set to `false` to disable accessibility features (not recommended).       |
+| accessibilityLabelPrev | Previous | `string`  | Accessibility label for the prev button.                                  |
+| accessibilityLabelNext |   Next   | `string`  | Accessibility label for the next button.                                  |
 
 #### Callbacks
 
@@ -110,21 +112,19 @@ export default () => (
 
 Use these properties to customize how big the carousel is and how it is styled.
 
-| Property               | Default |          Type          | Description                                                               |
-| :--------------------- | :-----: | :--------------------: | :------------------------------------------------------------------------ |
-| width                  |    -    |        `number`        | If not specified, the default fullscreen mode is enabled using `flex: 1`. |
-| height                 |    -    |        `number`        | If not specified, the default fullscreen mode is enabled using `flex: 1`. |
-| style                  |  {...}  | `StyleProp<ViewStyle>` | See default style in the source code.                                     |
-| **ScrollView**         |         |                        |                                                                           |  |
-| containerStyle         |  {...}  | `StyleProp<ViewStyle>` | See default style in the source code.                                     |
-| contentContainerStyle  |  {...}  | `StyleProp<ViewStyle>` | See default container style in the source code.                           |
-| **Prev/Next buttons**  |         |                        |                                                                           |  |
-| controlsContainerStyle |  {...}  | `StyleProp<ViewStyle>` | Custom style for the prev/next buttons container.                         |
-| controlsTextStyle      |  {...}  | `StyleProp<TextStyle>` | Custom style for the prev/next buttons text.                              |
-| **Pagination dots**    |         |                        |                                                                           |
-| dotsContainerStyle     |  {...}  | `StyleProp<ViewStyle>` | Custom style for the pagination dots container.                           |
-| dotStyle               |  {...}  | `StyleProp<ViewStyle>` | Custom style for a single pagination dot.                                 |
-| activeDotStyle         |  {...}  | `StyleProp<ViewStyle>` | Custom style for the active pagination dot.                               |
+| Property               | Default |          Type          | Description                                       |
+| :--------------------- | :-----: | :--------------------: | :------------------------------------------------ |
+| style                  |  {...}  | `StyleProp<ViewStyle>` | See default style in the source code.             |
+| **ScrollView**         |         |                        |                                                   |  |
+| containerStyle         |  {...}  | `StyleProp<ViewStyle>` | See default style in the source code.             |
+| contentContainerStyle  |  {...}  | `StyleProp<ViewStyle>` | See default container style in the source code.   |
+| **Prev/Next buttons**  |         |                        |                                                   |  |
+| controlsContainerStyle |  {...}  | `StyleProp<ViewStyle>` | Custom style for the prev/next buttons container. |
+| controlsTextStyle      |  {...}  | `StyleProp<TextStyle>` | Custom style for the prev/next buttons text.      |
+| **Pagination dots**    |         |                        |                                                   |
+| dotsContainerStyle     |  {...}  | `StyleProp<ViewStyle>` | Custom style for the pagination dots container.   |
+| dotStyle               |  {...}  | `StyleProp<ViewStyle>` | Custom style for a single pagination dot.         |
+| activeDotStyle         |  {...}  | `StyleProp<ViewStyle>` | Custom style for the active pagination dot.       |
 
 #### Custom render properties
 
