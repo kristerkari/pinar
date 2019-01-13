@@ -458,7 +458,10 @@ export class Pinar extends React.PureComponent<Props, State> {
     const { renderControls } = this.props;
 
     if (typeof renderControls === "function") {
-      return renderControls();
+      return renderControls({
+        scrollToPrev: this.scrollToPrev,
+        scrollToNext: this.scrollToNext
+      });
     }
 
     const { height, width } = this.state;

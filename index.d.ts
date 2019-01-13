@@ -36,6 +36,8 @@ interface RenderPrevParams {
   scrollToPrev: () => void;
 }
 
+interface RenderControlParams extends RenderPrevParams, RenderNextParams {}
+
 interface OnIndexChangedParams {
   index: number;
   total: number;
@@ -50,7 +52,7 @@ interface CustomRenderProps {
   renderDots?: (params: RenderDotsParams) => JSX.Element;
   renderDot?: () => JSX.Element;
   renderActiveDot?: () => JSX.Element;
-  renderControls?: () => JSX.Element;
+  renderControls?: (params: RenderControlParams) => JSX.Element;
   renderNextButton?: (params: RenderNextParams) => JSX.Element;
   renderPrevButton?: (params: RenderPrevParams) => JSX.Element;
 }
