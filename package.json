@@ -12,14 +12,17 @@
     "url": "https://github.com/kristerkari/pinar/issues"
   },
   "keywords": [
+    "react",
     "react-component",
     "react-native",
     "ReactNative",
     "ios",
     "android",
     "carousel",
+    "carousel-component",
     "slider",
-    "swiper"
+    "swiper",
+    "scrollview"
   ],
   "scripts": {
     "postinstall": "rimraf node_modules/@types/node/",
