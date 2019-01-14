@@ -296,7 +296,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     return isCurrentIndex || isSmallerThanMin || isBiggerThanMax;
   };
 
-  public scrollTo = ({
+  private scrollTo = ({
     x,
     y,
     animated
