@@ -116,5 +116,7 @@ declare module "pinar" {
     public scrollTo(options: { x: number; y: number; animated: boolean }): void;
     public scrollToPrev(): void;
     public scrollToNext(): void;
+    public startAutoplay(): void;
+    public stopAutoplay(): void;
   }
 }
