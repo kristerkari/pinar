@@ -24,8 +24,8 @@ If you need more advanced things like animations, lazy loading of images, or par
   - [Properties of `<ScrollView />`](#properties-of-scrollview)
 - [Dependencies](#dependencies)
 - [Development](#development)
-- [License](#license)
 - [Special thanks](#special-thanks)
+- [License](#license)
 
 ### Install
 
@@ -214,12 +214,6 @@ No other dependencies than React Native.
 
 -
 
----
-
-### License
-
-[MIT](/LICENSE)
-
 ### Special thanks
 
 Special thanks for these libraries for providing inspiration for code and other things:
@@ -227,3 +221,9 @@ Special thanks for these libraries for providing inspiration for code and other 
 - [react-native-swiper](https://github.com/leecade/react-native-swiper) - Inspiration for the code and the library API.
 - [react-native-snap-carousel](https://github.com/archriss/react-native-snap-carousel) - Inspiration for the library API and naming.
 - [svgr](https://github.com/smooth-code/svgr) - Inspiration for the issue labels and issue templates.
+
+---
+
+### License
+
+[MIT](/LICENSE)
