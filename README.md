@@ -87,7 +87,7 @@ export default () => (
 
 **Result:**
 
-<img src="images/basic.gif" alt="Basic carousel example" width=320">
+![Basic carousel example](images/basic.gif)
 
 ### More examples
 
