@@ -17,6 +17,8 @@ If you need more advanced things like animations, lazy loading of images, or par
 - [More examples](#more-examples)
 - [Properties](#properties)
   - [Basic carousel properties](#basic-carousel-properties)
+  - [Callbacks](#callbacks)
+  - [Methods](#methods)
   - [Custom styling properties](#custom-styling-properties)
   - [Custom render properties](#custom-render-properties)
   - [Properties of `<ScrollView />`](#properties-of-scrollview)
@@ -114,6 +116,37 @@ Use these properties to be notified when the user scrolls the carousel or change
 | onLayout            |      (event) => void       | `function` | Called when layout changes for the main `<View>`.            |
 | onScroll            |      (event) => void       | `function` | Called when `<ScrollView>` is scrolled.                      |
 | onMomentumScrollEnd |      (event) => void       | `function` | Called when `<ScrollView>`'s momentum scroll finishes.       |
+
+#### Methods
+
+To use methods you need to get a reference to the carousel inside your React class component.
+
+```jsx
+<Carousel
+  ref={carousel => {
+    this.carousel = carousel;
+  }}
+/>
+```
+
+You can then call the method from outside the carousel:
+
+```jsx
+<Button
+  title="scroll to next page"
+  onPress={() => {
+    this.carousel.scrollToNext();
+  }}
+/>
+```
+
+| Method        |           Arguments           |    Type    | Description                                                                  |
+| :------------ | :---------------------------: | :--------: | :--------------------------------------------------------------------------- |
+| scrollToPrev  |          () => void           | `function` | Scroll to the previous page.                                                 |
+| scrollToNext  |          () => void           | `function` | Scroll to the next page.                                                     |
+| scrollBy      | ({ index, animated }) => void | `function` | Scroll by a number of pages. The number can be negative to scroll backwards. |
+| startAutoplay |          () => void           | `function` | Starts carousel autoplay.                                                    |
+| stopAutoplay  |          () => void           | `function` | Stops carousel autoplay.                                                     |
 
 #### Custom styling properties
 
