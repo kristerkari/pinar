@@ -140,13 +140,13 @@ You can then call the method from outside the carousel:
 />
 ```
 
-| Method        |           Arguments            |    Type    | Description                                                                  |
-| :------------ | :----------------------------: | :--------: | :--------------------------------------------------------------------------- |
-| scrollToPrev  |              None              | `function` | Scroll to the previous page.                                                 |
-| scrollToNext  |              None              | `function` | Scroll to the next page.                                                     |
-| scrollBy      | (options: { index, animated }) | `function` | Scroll by a number of pages. The number can be negative to scroll backwards. |
-| startAutoplay |              None              | `function` | Starts carousel autoplay.                                                    |
-| stopAutoplay  |              None              | `function` | Stops carousel autoplay.                                                     |
+| Method        |       Arguments       |    Type    | Description                                                                  |
+| :------------ | :-------------------: | :--------: | :--------------------------------------------------------------------------- |
+| scrollToPrev  |         None          | `function` | Scroll to the previous page.                                                 |
+| scrollToNext  |         None          | `function` | Scroll to the next page.                                                     |
+| scrollBy      | ({ index, animated }) | `function` | Scroll by a number of pages. The number can be negative to scroll backwards. |
+| startAutoplay |         None          | `function` | Starts carousel autoplay.                                                    |
+| stopAutoplay  |         None          | `function` | Stops carousel autoplay.                                                     |
 
 #### Custom styling properties
 
