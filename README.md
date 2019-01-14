@@ -14,12 +14,12 @@ If you need more advanced things like animations, lazy loading of images, or par
 
 - [Install](#install)
 - [Basic example](#basic-example)
+- [More examples](#more-examples)
 - [Properties](#properties)
   - [Basic carousel properties](#basic-carousel-properties)
   - [Custom styling properties](#custom-styling-properties)
   - [Custom render properties](#custom-render-properties)
   - [Properties of `<ScrollView />`](#properties-of-scrollview)
-- [More examples](#more-examples)
 - [Dependencies](#dependencies)
 - [Development](#development)
 
@@ -80,6 +80,10 @@ export default () => (
   </Carousel>
 );
 ```
+
+### More examples
+
+The [examples folder](/examples) has a React Native app that you can run on your machine to see the carousel being used with a lot of different options. If you don't want to run the app, you can have a look at the [components folder](/examples/components) for example conmponents.
 
 ### Properties
 
@@ -165,17 +169,13 @@ These properties are exposed from `<ScrollView />`. You can provide your own pro
 
 > for more info: http://facebook.github.io/react-native/docs/scrollview.html
 
-### More examples
+### Dependencies
 
--
+No other dependencies than React Native.
 
 ### Development
 
 -
-
-### Dependencies
-
-No other dependencies than React Native.
 
 ---
 
