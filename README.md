@@ -85,7 +85,9 @@ export default () => (
 
 ### More examples
 
-The [examples folder](/examples) has a React Native app that you can run on your machine to see the carousel being used with a lot of different options. If you don't want to run the app, you can have a look at the [components folder](/examples/components) for example components.
+The [examples folder](/examples) has a React Native app that you can run on your machine to see the carousel being used with a lot of different options.
+
+If you don't want to run the app, you can have a look at the [components folder](/examples/components) for example components.
 
 ### Properties
 
