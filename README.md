@@ -24,6 +24,7 @@ If you need more advanced things like animations, lazy loading of images, or par
   - [Properties of `<ScrollView />`](#properties-of-scrollview)
 - [Dependencies](#dependencies)
 - [Development](#development)
+- [License](#license)
 
 ### Install
 
@@ -216,4 +217,4 @@ No other dependencies than React Native.
 
 ### License
 
-MIT
+[MIT](/LICENSE)
