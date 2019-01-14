@@ -25,6 +25,7 @@ If you need more advanced things like animations, lazy loading of images, or par
 - [Dependencies](#dependencies)
 - [Development](#development)
 - [License](#license)
+- [Special thanks](#special-thanks)
 
 ### Install
 
@@ -218,3 +219,11 @@ No other dependencies than React Native.
 ### License
 
 [MIT](/LICENSE)
+
+### Special thanks
+
+Special thanks for these libraries for providing inspiration for code and other things:
+
+- [react-native-swiper](https://github.com/leecade/react-native-swiper) - Inspiration for the code and the library API.
+- [react-native-snap-carousel](https://github.com/archriss/react-native-snap-carousel) - Inspiration for the library API and naming.
+- [svgr](https://github.com/smooth-code/svgr) - Inspiration for the issue labels and issue templates.
