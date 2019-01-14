@@ -1,7 +1,7 @@
 ---
 name: "\U0001F4AC Question"
 about: If you have questions, please read full readme first.
-title: "[question] "
+title: "[question] Issue title"
 labels: Question ❓
 assignees: ''
 

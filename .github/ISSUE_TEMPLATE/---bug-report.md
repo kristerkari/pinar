@@ -1,7 +1,7 @@
 ---
 name: "\U0001F41B Bug report"
 about: Report a bug in the library
-title: "[bug] "
+title: "[bug] Issue title"
 labels: ''
 assignees: ''
 
