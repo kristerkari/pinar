@@ -85,6 +85,10 @@ export default () => (
 );
 ```
 
+**Result:**
+
+<img src="images/basic.gif" alt="Basic carousel example" width=320">
+
 ### More examples
 
 The [examples folder](/examples) has a React Native app that you can run on your machine to see the carousel being used with a lot of different options.
