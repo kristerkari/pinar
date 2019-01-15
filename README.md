@@ -218,7 +218,7 @@ No other dependencies than React Native.
 
 If you want help out with the development of this library, bug reports and fixes are very welcome. If you are thinking about a new feature, please open a feature request issue first to verify that implementing it makes sense.
 
-#### How develop locally
+#### How to develop locally
 
 First make sure that you have [Node.js](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [React Native](https://facebook.github.io/react-native/docs/getting-started.html) installed. It is also a good idea to have [Xcode](https://developer.apple.com/xcode/) and/or [Android Studio](https://developer.android.com/studio/) installed to be able to run the iOS simulators / Android emulators.
 
