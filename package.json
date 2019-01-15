@@ -39,6 +39,7 @@
     "dist",
     "src",
     "scripts/rm.js",
+    "!**/examples",
     "!**/__tests__",
     "!**/__mocks__",
     "index.d.ts",
