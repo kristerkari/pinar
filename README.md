@@ -216,7 +216,17 @@ No other dependencies than React Native.
 
 ### Development
 
--
+If you want help out with the development of this library, bug reports and fixes are very welcome. If you are thinking about a new feature, please open a feature request issue first to verify that implementing it makes sense.
+
+#### How develop locally
+
+First make sure that you have [Node.js](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [React Native](https://facebook.github.io/react-native/docs/getting-started.html) installed. It is also a good idea to have [Xcode](https://developer.apple.com/xcode/) and/or [Android Studio](https://developer.android.com/studio/) installed to be able to run the iOS simulators / Android emulators.
+
+If you choose to install emulators or simulators, you can use [the example app](/examples) to test your changes in a React Native app.
+
+When making changes to the code, please add a unit test or a functional test to verify that the code is working. The test runner that the project uses is [Jest](https://jestjs.io/), [Enzyme](https://airbnb.io/enzyme/) is used to test React Components, and [Detox](https://github.com/wix/Detox) is used to run functional tests against the project's example app. The command to run unit tests is `yarn test` and the command to run functional tests is `yarn functional`.
+
+Before you submit the code for a Pull Request, make sure that you run `yarn tsc` and `yarn lint` to verify that both the Typescript type checking and ESLint linting are not printing any errors.
 
 ### Special thanks
 
