@@ -25,9 +25,9 @@
     "scrollview"
   ],
   "scripts": {
-    "postinstall": "node ./scripts/rm.js node_modules/@types/node/",
+    "fix-types": "rimraf node_modules/@types/node/",
     "prepublish": "npm run build",
-    "prebuild": "node ./scripts/rm.js dist",
+    "prebuild": "npm run fix-types && rimraf dist",
     "build": "tsc --outDir dist",
     "release": "npmpub",
     "tsc": "tsc --noEmit",
@@ -38,7 +38,6 @@
   "files": [
     "dist",
     "src",
-    "scripts/rm.js",
     "!**/examples",
     "!**/__tests__",
     "!**/__mocks__",
@@ -70,6 +69,7 @@
     "react": "16.6.3",
     "react-dom": "16.6.3",
     "react-native": "^0.57.8",
+    "rimraf": "^2.6.3",
     "tslib": "^1.9.3",
     "typescript": "^3.2.2",
     "typescript-eslint-parser": "^21.0.2"
