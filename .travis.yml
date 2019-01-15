@@ -18,6 +18,8 @@ install:
   - cd ..
   - npm install
 
+  - gem install xcpretty
+
   - npm install -g react-native-cli
   - npm install -g detox-cli
 
@@ -25,5 +27,5 @@ script:
   - npm run tsc
   - npm test
   - npm run lint
-  - detox build --configuration ios.sim.release
+  - detox build --configuration ios.sim.release | xcpretty
   - detox test --configuration ios.sim.release --cleanup
