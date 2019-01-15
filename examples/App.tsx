@@ -81,6 +81,7 @@ class HomeScreen extends React.Component<Props, State> {
           title="Custom styling"
         />
         <Button
+          testID="custom-render"
           onPress={() => navigation.navigate("CustomRender")}
           title="Custom next/prev/dot elements"
         />
