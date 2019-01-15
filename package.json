@@ -25,9 +25,9 @@
     "scrollview"
   ],
   "scripts": {
-    "postinstall": "node ./scripts/rm.js node_modules/@types/node/",
+    "postinstall": "rimraf node_modules/@types/node/",
     "prepublish": "npm run build",
-    "prebuild": "node ./scripts/rm.js dist",
+    "prebuild": "rimraf dist",
     "build": "tsc --outDir dist",
     "release": "npmpub",
     "tsc": "tsc --noEmit",
@@ -38,7 +38,6 @@
   "files": [
     "dist",
     "src",
-    "scripts/rm.js",
     "!**/examples",
     "!**/__tests__",
     "!**/__mocks__",
