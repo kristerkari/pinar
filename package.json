@@ -25,7 +25,7 @@
     "scrollview"
   ],
   "scripts": {
-    "postinstall": "rimraf node_modules/@types/node/",
+    "postinstall": "./node_modules/.bin/rimraf node_modules/@types/node/",
     "prepublish": "npm run build",
     "prebuild": "rimraf dist",
     "build": "tsc --outDir dist",
