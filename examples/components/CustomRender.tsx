@@ -59,18 +59,28 @@ const styles = {
 export const CustomRender = () => (
   <Carousel
     renderNextButton={({ scrollToNext }) => (
-      <TouchableOpacity accessibilityRole="button" onPress={scrollToNext}>
+      <TouchableOpacity
+        accessibilityRole="button"
+        onPress={scrollToNext}
+        testID="custom-next"
+      >
         <Text style={styles.buttonText}>Next</Text>
       </TouchableOpacity>
     )}
     renderPrevButton={({ scrollToPrev }) => (
-      <TouchableOpacity accessibilityRole="button" onPress={scrollToPrev}>
+      <TouchableOpacity
+        accessibilityRole="button"
+        onPress={scrollToPrev}
+        testID="custom-prev"
+      >
         <Text style={styles.buttonText}>Prev</Text>
       </TouchableOpacity>
     )}
     renderDots={({ index, total }) => (
       <View style={styles.dotsContainer}>
-        <Text style={styles.dotsText}>{index + 1 + "/" + total}</Text>
+        <Text testID="custom-dots" style={styles.dotsText}>
+          {index + 1 + "/" + total}
+        </Text>
       </View>
     )}
     onIndexChanged={({ index, total }) => {
@@ -83,13 +93,19 @@ export const CustomRender = () => (
     }}
   >
     <View style={styles.slide1}>
-      <Text style={styles.text}>1</Text>
+      <Text style={styles.text} testID="slide-1">
+        1
+      </Text>
     </View>
     <View style={styles.slide2}>
-      <Text style={styles.text}>2</Text>
+      <Text style={styles.text} testID="slide-2">
+        2
+      </Text>
     </View>
     <View style={styles.slide3}>
-      <Text style={styles.text}>3</Text>
+      <Text style={styles.text} testID="slide-3">
+        3
+      </Text>
     </View>
   </Carousel>
 );
