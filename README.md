@@ -186,8 +186,8 @@ Use these properties to provide your own functions render custom elements instea
 | `renderActiveDot`     |           ({ index }) => void            | `function` | Use to render custom active dot.         |
 | **Prev/Next buttons** |                                          |            |                                          |
 | `renderControls`      | ({ scrollToPrev, scrollToNext }) => void | `function` | Use to render custom prev/next controls. |
-| `renderPrevButton`    |        ({ scrollToPrev }) => void        | `function` | Use to render custom prev button.        |
-| `renderNextButton`    |        ({ scrollToNext }) => void        | `function` | Use to render custom next button.        |
+| `renderPrev`          |        ({ scrollToPrev }) => void        | `function` | Use to render custom prev control.       |
+| `renderNext`          |        ({ scrollToNext }) => void        | `function` | Use to render custom next control.       |
 
 #### Properties of `<ScrollView />`
 

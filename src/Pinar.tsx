@@ -384,14 +384,14 @@ export class Pinar extends React.PureComponent<Props, State> {
     this.scrollTo({ x: offset.x, y: offset.y, animated: false });
   };
 
-  private renderNextButton = (): JSX.Element => {
-    const { renderNextButton, loop } = this.props;
+  private renderNext = (): JSX.Element => {
+    const { renderNext, loop } = this.props;
     const { activePageIndex, total } = this.state;
     const isShown = loop || activePageIndex < total - 1;
 
     if (isShown) {
-      if (typeof renderNextButton === "function") {
-        return renderNextButton({
+      if (typeof renderNext === "function") {
+        return renderNext({
           scrollToNext: this.scrollToNext
         });
       }
@@ -425,14 +425,14 @@ export class Pinar extends React.PureComponent<Props, State> {
     return <View />;
   };
 
-  private renderPrevButton = (): JSX.Element => {
-    const { renderPrevButton, loop } = this.props;
+  private renderPrev = (): JSX.Element => {
+    const { renderPrev, loop } = this.props;
     const { activePageIndex } = this.state;
     const isShown = loop || activePageIndex > 0;
 
     if (isShown) {
-      if (typeof renderPrevButton === "function") {
-        return renderPrevButton({
+      if (typeof renderPrev === "function") {
+        return renderPrev({
           scrollToPrev: this.scrollToPrev
         });
       }
@@ -495,8 +495,8 @@ export class Pinar extends React.PureComponent<Props, State> {
         pointerEvents="box-none"
         style={controlsContainerStyle || defaultControlsContainerStyle}
       >
-        {this.renderPrevButton()}
-        {this.renderNextButton()}
+        {this.renderPrev()}
+        {this.renderNext()}
       </View>
     );
   };
