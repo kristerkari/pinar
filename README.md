@@ -91,7 +91,7 @@ export default () => (
 
 ### More examples
 
-The [examples folder](/examples) has a React Native app that you can run on your machine to see the carousel being used with a lot of different options.
+The [`/examples` folder](/examples) has a React Native app that you can run on your machine to see the carousel being used with a lot of different options.
 
 If you don't want to run the app, you can have a look at the [components folder](/examples/components) for example components.
 
@@ -158,7 +158,7 @@ You can then call the method from outside the carousel:
 
 #### Custom styling properties
 
-Use these properties to customize how the carousel is styled.
+Use these properties to customize how the carousel is styled. Have a look at the [custom styles component](/examples/components/CustomStyles.tsx) for an example.
 
 | Property                 | Default |          Type          | Description                                       |
 | :----------------------- | :-----: | :--------------------: | :------------------------------------------------ |
