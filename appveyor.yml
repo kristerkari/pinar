@@ -22,5 +22,8 @@ test_script:
   - node --version
   - npm --version
   - npm run tsc
+  - cd examples
+  - npm run tsc
+  - cd ..
   - npm test
   - npm run lint

@@ -112,6 +112,26 @@ export interface State {
 
 declare module "pinar" {
   export default class Pinar extends PureComponent<Props, State> {
+    static defaultProps: {
+      horizontal: boolean;
+      pagingEnabled: boolean;
+      bounces: boolean;
+      showsHorizontalScrollIndicator: boolean;
+      showsVerticalScrollIndicator: boolean;
+      scrollsToTop: boolean;
+      removeClippedSubviews: boolean;
+      automaticallyAdjustContentInsets: boolean;
+      scrollEventThrottle: number;
+      scrollEnabled: boolean;
+      showsControls: boolean;
+      showsDots: boolean;
+      autoplay: boolean;
+      autoplayInterval: number;
+      accessibility: boolean;
+      accessibilityLabelPrev: string;
+      accessibilityLabelNext: string;
+      index: number;
+    };
     public scrollBy(options: ScrollByOptions): void;
     public scrollToPrev(): void;
     public scrollToNext(): void;

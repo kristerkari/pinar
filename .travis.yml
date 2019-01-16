@@ -25,6 +25,9 @@ install:
 
 script:
   - npm run tsc
+  - cd examples
+  - npm run tsc
+  - cd ..
   - npm test
   - npm run lint
   - detox build --configuration ios.sim.release | xcpretty

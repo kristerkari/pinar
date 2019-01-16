@@ -38,9 +38,8 @@ const styles = {
 };
 
 interface Props {}
-interface State {}
 
-export class MethodsWithLoop<Props, State> extends React.PureComponent {
+export class MethodsWithLoop extends React.PureComponent {
   carousel: Carousel | null;
 
   constructor(props: Props) {
