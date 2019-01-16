@@ -118,12 +118,12 @@ If you don't want to run the app, you can have a look at the [components folder]
 
 Use these properties to be notified when the user scrolls the carousel or changes the page.
 
-| Property              |         Parameters         |    Type    | Description                                                  |
-| :-------------------- | :------------------------: | :--------: | :----------------------------------------------------------- |
-| `onIndexChanged`      | ({ index, total }) => void | `function` | Called with the new page index when the user changes a page. |
-| `onLayout`            |      (event) => void       | `function` | Called when layout changes for the main `<View>`.            |
-| `onScroll`            |      (event) => void       | `function` | Called when `<ScrollView>` is scrolled.                      |
-| `onMomentumScrollEnd` |      (event) => void       | `function` | Called when `<ScrollView>`'s momentum scroll finishes.       |
+| Property              |         Parameters         |    Type    | Description                                                       |
+| :-------------------- | :------------------------: | :--------: | :---------------------------------------------------------------- |
+| `onIndexChanged`      | ({ index, total }) => void | `function` | Called with the new page index when the user changes a page.      |
+| `onLayout`            |      (event) => void       | `function` | Called when layout changes for the main `<View>` wrapper element. |
+| `onScroll`            |      (event) => void       | `function` | Called when `<ScrollView>` is scrolled.                           |
+| `onMomentumScrollEnd` |      (event) => void       | `function` | Called when `<ScrollView>`'s momentum scroll finishes.            |
 
 #### Methods
 
@@ -148,13 +148,13 @@ You can then call the method from outside the carousel:
 />
 ```
 
-| Method          |        Arguments        |    Type    | Description                                                                  |
-| :-------------- | :---------------------: | :--------: | :--------------------------------------------------------------------------- |
-| `scrollToPrev`  |          None           | `function` | Scroll to the previous page.                                                 |
-| `scrollToNext`  |          None           | `function` | Scroll to the next page.                                                     |
-| `scrollBy`      | `({ index, animated })` | `function` | Scroll by a number of pages. The number can be negative to scroll backwards. |
-| `startAutoplay` |          None           | `function` | Starts carousel autoplay.                                                    |
-| `stopAutoplay`  |          None           | `function` | Stops carousel autoplay.                                                     |
+| Method          |              Arguments               |    Type    | Description                                                                  |
+| :-------------- | :----------------------------------: | :--------: | :--------------------------------------------------------------------------- |
+| `scrollToPrev`  |                 None                 | `function` | Scroll to the previous page.                                                 |
+| `scrollToNext`  |                 None                 | `function` | Scroll to the next page.                                                     |
+| `scrollBy`      | `index: number`, `animated: boolean` | `function` | Scroll by a number of pages. The number can be negative to scroll backwards. |
+| `startAutoplay` |                 None                 | `function` | Starts carousel autoplay.                                                    |
+| `stopAutoplay`  |                 None                 | `function` | Stops carousel autoplay.                                                     |
 
 #### Custom styling properties
 
@@ -176,9 +176,9 @@ Use these properties to customize how the carousel is styled.
 
 #### Custom render properties
 
-Use these properties to provide your own functions render custom elements instead of the default ones.
+Use these properties to provide your own functions render custom elements instead of the default ones. Have a look at [the custom rendering component](/examples/components/CustomRender.tsx) for an example.
 
-| Property              |                Parameters                |    Type    | Description                              |
+| Property              |           Function parameters            |    Type    | Description                              |
 | :-------------------- | :--------------------------------------: | :--------: | :--------------------------------------- |
 | **Pagination dots**   |                                          |            |                                          |
 | `renderDots`          |   ({ index, total, context }) => void    | `function` | Use to render custom pagination dots.    |
