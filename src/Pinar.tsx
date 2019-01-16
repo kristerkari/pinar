@@ -41,8 +41,6 @@ const defaultCarouselProps = {
 const styles = StyleSheet.create(defaultStyles);
 
 export class Pinar extends React.PureComponent<Props, State> {
-  displayName: "Pinar";
-
   private scrollView: ScrollView | null;
 
   private autoplayTimer: number = 0;

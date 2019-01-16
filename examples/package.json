@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "tsc": "tsc --noEmit",
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
@@ -13,6 +14,7 @@
   },
   "devDependencies": {
     "@types/react-navigation": "^3.0.1",
-    "metro-react-native-babel-preset": "0.51.1"
+    "metro-react-native-babel-preset": "0.51.1",
+    "typescript": "^3.2.2"
   }
 }
