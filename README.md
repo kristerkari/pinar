@@ -168,7 +168,8 @@ Use these properties to customize how the carousel is styled.
 | `contentContainerStyle`  |  {...}  | `StyleProp<ViewStyle>` | See default container style in the source code.   |
 | **Prev/Next buttons**    |         |                        |                                                   |  |
 | `controlsContainerStyle` |  {...}  | `StyleProp<ViewStyle>` | Custom style for the prev/next buttons container. |
-| `controlsTextStyle`      |  {...}  | `StyleProp<TextStyle>` | Custom style for the prev/next buttons text.      |
+| `controlsButtonStyle`    |  {...}  | `StyleProp<ViewStyle>` | Custom style for the prev/next button.            |
+| `controlsTextStyle`      |  {...}  | `StyleProp<TextStyle>` | Custom style for the prev/next button text.       |
 | **Pagination dots**      |         |                        |                                                   |
 | `dotsContainerStyle`     |  {...}  | `StyleProp<ViewStyle>` | Custom style for the pagination dots container.   |
 | `dotStyle`               |  {...}  | `StyleProp<ViewStyle>` | Custom style for a single pagination dot.         |
