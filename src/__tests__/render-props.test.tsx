@@ -12,7 +12,7 @@ describe("render props", () => {
     it("should allow custom next and prev buttons (show next)", () => {
       const wrapper = shallow(
         <Carousel
-          renderNextButton={({ scrollToNext }) => (
+          renderNext={({ scrollToNext }) => (
             <TouchableOpacity
               accessibilityLabel="Custom next button"
               accessibilityRole="button"
@@ -21,7 +21,7 @@ describe("render props", () => {
               <Text>Next</Text>
             </TouchableOpacity>
           )}
-          renderPrevButton={({ scrollToPrev }) => (
+          renderPrev={({ scrollToPrev }) => (
             <TouchableOpacity
               accessibilityLabel="Custom prev button"
               accessibilityRole="button"
@@ -49,7 +49,7 @@ describe("render props", () => {
       const wrapper = shallow(
         <Carousel
           index={2}
-          renderNextButton={({ scrollToNext }) => (
+          renderNext={({ scrollToNext }) => (
             <TouchableOpacity
               accessibilityLabel="Custom next button"
               accessibilityRole="button"
@@ -58,7 +58,7 @@ describe("render props", () => {
               <Text>Next</Text>
             </TouchableOpacity>
           )}
-          renderPrevButton={({ scrollToPrev }) => (
+          renderPrev={({ scrollToPrev }) => (
             <TouchableOpacity
               accessibilityLabel="Custom prev button"
               accessibilityRole="button"
@@ -86,7 +86,7 @@ describe("render props", () => {
       const wrapper = shallow(
         <Carousel
           index={1}
-          renderNextButton={({ scrollToNext }) => (
+          renderNext={({ scrollToNext }) => (
             <TouchableOpacity
               accessibilityLabel="Custom next button"
               accessibilityRole="button"
@@ -95,7 +95,7 @@ describe("render props", () => {
               <Text>Next</Text>
             </TouchableOpacity>
           )}
-          renderPrevButton={({ scrollToPrev }) => (
+          renderPrev={({ scrollToPrev }) => (
             <TouchableOpacity
               accessibilityLabel="Custom prev button"
               accessibilityRole="button"
@@ -122,7 +122,7 @@ describe("render props", () => {
     it("should not show custom next and prev buttons when there is only one slide", () => {
       const wrapper = shallow(
         <Carousel
-          renderNextButton={({ scrollToNext }) => (
+          renderNext={({ scrollToNext }) => (
             <TouchableOpacity
               accessibilityLabel="Custom next button"
               accessibilityRole="button"
@@ -131,7 +131,7 @@ describe("render props", () => {
               <Text>Next</Text>
             </TouchableOpacity>
           )}
-          renderPrevButton={({ scrollToPrev }) => (
+          renderPrev={({ scrollToPrev }) => (
             <TouchableOpacity
               accessibilityLabel="Custom prev button"
               accessibilityRole="button"

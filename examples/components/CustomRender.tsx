@@ -58,7 +58,7 @@ const styles = {
 
 export const CustomRender = () => (
   <Carousel
-    renderNextButton={({ scrollToNext }) => (
+    renderNext={({ scrollToNext }) => (
       <TouchableOpacity
         accessibilityRole="button"
         onPress={scrollToNext}
@@ -67,7 +67,7 @@ export const CustomRender = () => (
         <Text style={styles.buttonText}>Next</Text>
       </TouchableOpacity>
     )}
-    renderPrevButton={({ scrollToPrev }) => (
+    renderPrev={({ scrollToPrev }) => (
       <TouchableOpacity
         accessibilityRole="button"
         onPress={scrollToPrev}

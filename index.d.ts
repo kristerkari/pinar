@@ -57,8 +57,8 @@ interface CustomRenderProps {
   renderDot?: (params: RenderDotParams) => JSX.Element;
   renderActiveDot?: (params: RenderDotParams) => JSX.Element;
   renderControls?: (params: RenderControlParams) => JSX.Element;
-  renderNextButton?: (params: RenderNextParams) => JSX.Element;
-  renderPrevButton?: (params: RenderPrevParams) => JSX.Element;
+  renderNext?: (params: RenderNextParams) => JSX.Element;
+  renderPrev?: (params: RenderPrevParams) => JSX.Element;
 }
 
 interface CustomStyleProps {
