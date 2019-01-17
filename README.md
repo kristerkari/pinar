@@ -227,7 +227,7 @@ If you choose to install emulators or simulators, you can use [the example app](
 
 When making changes to the code, please add a unit test or a functional test to verify that the code is working. The test runner that the project uses is [Jest](https://jestjs.io/), [Enzyme](https://airbnb.io/enzyme/) is used to test React Components, and [Detox](https://github.com/wix/Detox) is used to run functional tests against the project's example app. The command to run unit tests is `yarn test` and the command to run functional tests is `yarn functional`.
 
-Before you submit the code for a Pull Request, make sure that you run `yarn test`, `yarn tsc`, and `yarn lint` to verify that both the Typescript type checking and ESLint linting are not printing any errors.
+Before you submit the code for a Pull Request, make sure that you run `yarn test`, `yarn tsc`, and `yarn lint` to verify that unit tests pass and both the Typescript type checking and ESLint linting are not printing any errors.
 
 ### Special thanks
 
