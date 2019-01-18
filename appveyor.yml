@@ -11,6 +11,17 @@ version: "{build}"
 build: off
 deploy: off
 
+branches:
+  only:
+    - master
+
+cache:
+  - node_modules
+
+skip_commits:
+  files:
+    - "**/*.md"
+
 install:
   - ps: Install-Product node $env:nodejs_version
   - cd examples

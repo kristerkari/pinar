@@ -6,6 +6,15 @@ env:
   global:
     - NODE_VERSION=stable
 
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - $HOME/.npm
+    - node_modules
+
 install:
   - brew tap wix/brew
   - brew install applesimutils
