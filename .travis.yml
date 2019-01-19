@@ -18,21 +18,21 @@ install:
   - nvm install $NODE_VERSION
   - nvm use $NODE_VERSION
   - cd examples
-  - npm install
+  - yarn install
   - cd ..
-  - npm install
+  - yarn install
 
   - gem install xcpretty
 
-  - npm install -g react-native-cli
-  - npm install -g detox-cli
+  - yarn global add react-native-cli
+  - yarn global add detox-cli
 
 script:
-  - npm run tsc
+  - yarn tsc
   - cd examples
-  - npm run tsc
+  - yarn tsc
   - cd ..
-  - npm test
-  - npm run lint
+  - yarn test
+  - yarn lint
   - detox build --configuration ios.sim.release | xcpretty
   - detox test --configuration ios.sim.release --cleanup

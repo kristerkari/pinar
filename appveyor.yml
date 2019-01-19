@@ -25,16 +25,16 @@ skip_commits:
 install:
   - ps: Install-Product node $env:nodejs_version
   - cd examples
-  - npm install
+  - yarn install
   - cd ..
-  - npm install
+  - yarn install
 
 test_script:
   - node --version
   - npm --version
-  - npm run tsc
+  - yarn tsc
   - cd examples
-  - npm run tsc
+  - yarn tsc
   - cd ..
-  - npm test
-  - npm run lint
+  - yarn test
+  - yarn lint
