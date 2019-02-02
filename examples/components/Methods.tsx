@@ -37,17 +37,15 @@ const styles = {
   } as TextStyle
 };
 
-interface Props {}
-
 export class Methods extends React.PureComponent {
   carousel: Carousel | null;
 
-  constructor(props: Props) {
+  constructor(props: {}) {
     super(props);
     this.carousel = null;
   }
 
-  render() {
+  render(): JSX.Element {
     return (
       <View style={{ flex: 1, flexDirection: "column" }}>
         <Carousel
@@ -60,7 +58,7 @@ export class Methods extends React.PureComponent {
             if (Platform.OS === "ios") {
               const page = index + 1;
               AccessibilityInfo.announceForAccessibility(
-                "Changed to page " + page + "/" + total
+                `Changed to page ${page}/${total}`
               );
             }
           }}

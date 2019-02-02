@@ -36,13 +36,13 @@ const styles = {
   } as TextStyle
 };
 
-export const Basic = () => (
+export const Basic = (): JSX.Element => (
   <Carousel
     onIndexChanged={({ index, total }) => {
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(
-          "Changed to page " + page + "/" + total
+          `Changed to page ${page}/${total}`
         );
       }
     }}

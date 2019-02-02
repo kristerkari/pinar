@@ -31,7 +31,7 @@
     "build": "tsc --outDir dist",
     "release": "npmpub",
     "tsc": "tsc --noEmit",
-    "lint": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint . --fix --ext .ts,.tsx",
     "functional": "detox build --configuration ios.sim.debug && detox test --configuration ios.sim.debug",
     "test": "jest"
   },
@@ -52,6 +52,7 @@
     "@types/jest": "^23.3.13",
     "@types/react": "^16.7.22",
     "@types/react-native": "^0.57.32",
+    "@typescript-eslint/eslint-plugin": "^1.2.0",
     "@typescript-eslint/parser": "^1.2.0",
     "detox": "^10.0.5",
     "enzyme": "^3.8.0",

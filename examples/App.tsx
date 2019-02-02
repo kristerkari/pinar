@@ -37,7 +37,7 @@ const styles = {
 };
 
 class HomeScreen extends React.Component<Props, State> {
-  render() {
+  render(): JSX.Element {
     const { navigation } = this.props;
     return (
       <ScrollView

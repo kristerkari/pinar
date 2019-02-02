@@ -74,7 +74,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     this.scrollView = null;
   }
 
-  componentDidMount() {
+  componentDidMount(): void {
     const { activePageIndex } = this.state;
     const { index, autoplay } = this.props;
 
@@ -90,11 +90,11 @@ export class Pinar extends React.PureComponent<Props, State> {
     }
   }
 
-  componentWillUnmount() {
+  componentWillUnmount(): void {
     this.stopAutoplay();
   }
 
-  componentDidUpdate(prevProps: Props, prevState: State) {
+  componentDidUpdate(prevProps: Props, prevState: State): void {
     const { height, width, index, children } = this.props;
     const needsToUpdateWidth = prevProps.width !== width;
     const needsToUpdateHeight = prevProps.height !== height;
@@ -568,7 +568,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       return (
         <View
           accessible={accessibility}
-          key={i + key}
+          key={`${i}${key}`}
           style={{ height, width }}
         >
           {childrenArray[Number(key)]}

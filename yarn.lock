@@ -743,7 +743,16 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@typescript-eslint/parser@^1.2.0":
+"@typescript-eslint/eslint-plugin@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-1.2.0.tgz#a73021a0d5bd1116a88689186844ce4421d52ab0"
+  integrity sha512-em3q8Gg3euesNohOwaz+SqrQM2Jn1ZWELMM+vgKi4dEk5fC+eVoi05yfubgAi2qPE5ifG4F0SOXM1XTamB0Aig==
+  dependencies:
+    "@typescript-eslint/parser" "1.2.0"
+    requireindex "^1.2.0"
+    tsutils "^3.7.0"
+
+"@typescript-eslint/parser@1.2.0", "@typescript-eslint/parser@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-1.2.0.tgz#256de163b7cb0d79d0388266a5bfb5585bccb1ff"
   integrity sha512-IXXiXgs6ocKTmtbzJjGyUvRHZFLuk2mYXyk+ayEql1woh1+rYS/Uct8b4jGtfHG8ZRUBZ12zjzsrDKFYC2pbrQ==
@@ -6125,6 +6134,11 @@ require-main-filename@^1.0.1:
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
   integrity sha1-l/cXtp1IeE9fUmpsWqj/3aBVpNE=
 
+requireindex@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.2.0.tgz#3463cdb22ee151902635aa6c9535d4de9c2ef1ef"
+  integrity sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==
+
 resolve-cwd@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/resolve-cwd/-/resolve-cwd-2.0.0.tgz#00a9f7387556e27038eae232caa372a6a59b665a"
@@ -7009,10 +7023,17 @@ try-catch@^2.0.0:
   resolved "https://registry.yarnpkg.com/try-catch/-/try-catch-2.0.0.tgz#a491141d597f8b72b46757fe1c47059341a16aed"
   integrity sha512-RPXpVjsbtWgymwGq5F/OWDFsjEzdvzwHFaMjWWW6f/p6+uk/N7YSKJHQfIfGqITfj8qH4cBqCLMnhKZBaKk7Kg==
 
-tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
+
+tsutils@^3.7.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.8.0.tgz#7a3dbadc88e465596440622b65c04edc8e187ae5"
+  integrity sha512-XQdPhgcoTbCD8baXC38PQ0vpTZ8T3YrE+vR66YIj/xvDt1//8iAhafpIT/4DmvzzC1QFapEImERu48Pa01dIUA==
+  dependencies:
+    tslib "^1.8.1"
 
 tunnel-agent@^0.6.0:
   version "0.6.0"

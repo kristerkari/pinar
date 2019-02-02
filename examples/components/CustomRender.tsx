@@ -56,7 +56,7 @@ const styles = {
   } as TextStyle
 };
 
-export const CustomRender = () => (
+export const CustomRender = (): JSX.Element => (
   <Carousel
     renderNext={({ scrollToNext }) => (
       <TouchableOpacity
@@ -79,7 +79,7 @@ export const CustomRender = () => (
     renderDots={({ index, total }) => (
       <View style={styles.dotsContainer}>
         <Text testID="custom-dots" style={styles.dotsText}>
-          {index + 1 + "/" + total}
+          `${index + 1}/${total}`
         </Text>
       </View>
     )}
@@ -87,7 +87,7 @@ export const CustomRender = () => (
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(
-          "Changed to page " + page + "/" + total
+          `Changed to page ${page}/${total}`
         );
       }
     }}

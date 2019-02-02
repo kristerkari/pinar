@@ -36,7 +36,7 @@ const styles = {
   } as TextStyle
 };
 
-export const DisabledControls = () => (
+export const DisabledControls = (): JSX.Element => (
   <Carousel
     autoplay={true}
     loop={true}
@@ -44,7 +44,7 @@ export const DisabledControls = () => (
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(
-          "Changed to page " + page + "/" + total
+          `Changed to page ${page}/${total}`
         );
       }
     }}

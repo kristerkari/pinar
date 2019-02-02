@@ -36,7 +36,7 @@ const styles = {
   } as TextStyle
 };
 
-export const CustomStyles = () => (
+export const CustomStyles = (): JSX.Element => (
   <Carousel
     dotsContainerStyle={{
       position: "absolute",
@@ -93,7 +93,7 @@ export const CustomStyles = () => (
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(
-          "Changed to page " + page + "/" + total
+          `Changed to page ${page}/${total}`
         );
       }
     }}
