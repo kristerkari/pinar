@@ -193,9 +193,10 @@ describe("methods", () => {
 
     await element(by.id("start-autoplay")).tap();
 
-    await sleep(3000);
-
     // Page 2
+    await waitFor(element(by.id("slide-2")))
+      .toBeVisible()
+      .withTimeout(4000);
     await expect(element(by.id("slide-1"))).toBeNotVisible();
     await expect(element(by.id("slide-2"))).toBeVisible();
     await expect(element(by.id("slide-3"))).toBeNotVisible();
@@ -205,9 +206,10 @@ describe("methods", () => {
     await expect(element(by.id("PinarPrevButton"))).toBeVisible();
     await expect(element(by.id("PinarNextButton"))).toBeVisible();
 
-    await sleep(3000);
-
     // Page 3
+    await waitFor(element(by.id("slide-3")))
+      .toBeVisible()
+      .withTimeout(4000);
     await expect(element(by.id("slide-1"))).toBeNotVisible();
     await expect(element(by.id("slide-2"))).toBeNotVisible();
     await expect(element(by.id("slide-3"))).toBeVisible();
@@ -222,6 +224,7 @@ describe("methods", () => {
     await sleep(3000);
 
     // Page 3
+
     await expect(element(by.id("slide-1"))).toBeNotVisible();
     await expect(element(by.id("slide-2"))).toBeNotVisible();
     await expect(element(by.id("slide-3"))).toBeVisible();
