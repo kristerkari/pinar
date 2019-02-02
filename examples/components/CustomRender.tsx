@@ -79,7 +79,7 @@ export const CustomRender = (): JSX.Element => (
     renderDots={({ index, total }) => (
       <View style={styles.dotsContainer}>
         <Text testID="custom-dots" style={styles.dotsText}>
-          `${index + 1}/${total}`
+          {`${index + 1}/${total}`}
         </Text>
       </View>
     )}
