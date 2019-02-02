@@ -29,7 +29,7 @@ const styles = {
   } as TextStyle
 };
 
-export const CustomWidth = () => (
+export const CustomWidth = (): JSX.Element => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
     <Carousel autoplay={true} loop={true} width={200}>
       <View style={styles.slide1}>

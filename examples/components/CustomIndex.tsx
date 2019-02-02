@@ -36,14 +36,14 @@ const styles = {
   } as TextStyle
 };
 
-export const CustomIndex = () => (
+export const CustomIndex = (): JSX.Element => (
   <Carousel
     index={1}
     onIndexChanged={({ index, total }) => {
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(
-          "Changed to page " + page + "/" + total
+          `Changed to page ${page}/${total}`
         );
       }
     }}

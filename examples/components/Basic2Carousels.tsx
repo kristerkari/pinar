@@ -29,7 +29,7 @@ const styles = {
   } as TextStyle
 };
 
-export const Basic2Carousels = () => (
+export const Basic2Carousels = (): JSX.Element => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
     <Carousel>
       <View style={styles.slide1}>

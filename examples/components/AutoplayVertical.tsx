@@ -36,7 +36,7 @@ const styles = {
   } as TextStyle
 };
 
-export const AutoplayVertical = () => (
+export const AutoplayVertical = (): JSX.Element => (
   <Carousel
     autoplay={true}
     horizontal={false}
@@ -46,7 +46,7 @@ export const AutoplayVertical = () => (
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(
-          "Changed to page " + page + "/" + total
+          `Changed to page ${page}/${total}`
         );
       }
     }}

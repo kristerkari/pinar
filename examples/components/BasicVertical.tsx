@@ -36,7 +36,7 @@ const styles = {
   } as TextStyle
 };
 
-export const BasicVertical = () => (
+export const BasicVertical = (): JSX.Element => (
   <Carousel
     horizontal={false}
     showsControls={false}
@@ -44,7 +44,7 @@ export const BasicVertical = () => (
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(
-          "Changed to page " + page + "/" + total
+          `Changed to page ${page}/${total}`
         );
       }
     }}

@@ -36,7 +36,7 @@ const styles = {
   } as TextStyle
 };
 
-export const CustomSize = () => (
+export const CustomSize = (): JSX.Element => (
   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
     <Carousel
       height={300}
@@ -45,7 +45,7 @@ export const CustomSize = () => (
         if (Platform.OS === "ios") {
           const page = index + 1;
           AccessibilityInfo.announceForAccessibility(
-            "Changed to page " + page + "/" + total
+            `Changed to page ${page}/${total}`
           );
         }
       }}

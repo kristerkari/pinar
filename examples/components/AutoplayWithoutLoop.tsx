@@ -36,7 +36,7 @@ const styles = {
   } as TextStyle
 };
 
-export const AutoplayWithoutLoop = () => (
+export const AutoplayWithoutLoop = (): JSX.Element => (
   <Carousel
     autoplay={true}
     loop={false}
@@ -44,7 +44,7 @@ export const AutoplayWithoutLoop = () => (
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(
-          "Changed to page " + page + "/" + total
+          `Changed to page ${page}/${total}`
         );
       }
     }}
