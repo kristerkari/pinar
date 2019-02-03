@@ -21,18 +21,20 @@ describe("Autoplay feature", () => {
     await expect(element(by.id("PinarPrevButton"))).toBeNotVisible();
     await expect(element(by.id("PinarNextButton"))).toBeVisible();
 
-    await sleep(3200);
-
     // Page 2
+    await waitFor(element(by.id("slide-2")))
+      .toBeVisible()
+      .withTimeout(4000);
     await expect(element(by.id("slide-1"))).toBeNotVisible();
     await expect(element(by.id("slide-2"))).toBeVisible();
     await expect(element(by.id("slide-3"))).toBeNotVisible();
     await expect(element(by.id("PinarPrevButton"))).toBeVisible();
     await expect(element(by.id("PinarNextButton"))).toBeVisible();
 
-    await sleep(3200);
-
     // Page 3
+    await waitFor(element(by.id("slide-3")))
+      .toBeVisible()
+      .withTimeout(4000);
     await expect(element(by.id("slide-1"))).toBeNotVisible();
     await expect(element(by.id("slide-2"))).toBeNotVisible();
     await expect(element(by.id("slide-3"))).toBeVisible();
@@ -61,27 +63,30 @@ describe("Autoplay feature", () => {
     await expect(element(by.id("PinarPrevButton"))).toBeVisible();
     await expect(element(by.id("PinarNextButton"))).toBeVisible();
 
-    await sleep(3200);
-
     // Page 2
+    await waitFor(element(by.id("slide-2")))
+      .toBeVisible()
+      .withTimeout(4000);
     await expect(element(by.id("slide-1"))).toBeNotVisible();
     await expect(element(by.id("slide-2"))).toBeVisible();
     await expect(element(by.id("slide-3"))).toBeNotVisible();
     await expect(element(by.id("PinarPrevButton"))).toBeVisible();
     await expect(element(by.id("PinarNextButton"))).toBeVisible();
 
-    await sleep(3200);
-
     // Page 3
+    await waitFor(element(by.id("slide-3")))
+      .toBeVisible()
+      .withTimeout(4000);
     await expect(element(by.id("slide-1"))).toBeNotVisible();
     await expect(element(by.id("slide-2"))).toBeNotVisible();
     await expect(element(by.id("slide-3"))).toBeVisible();
     await expect(element(by.id("PinarPrevButton"))).toBeVisible();
     await expect(element(by.id("PinarNextButton"))).toBeVisible();
 
-    await sleep(3200);
-
     // Page 1
+    await waitFor(element(by.id("slide-1")))
+      .toBeVisible()
+      .withTimeout(4000);
     await expect(element(by.id("slide-1"))).toBeVisible();
     await expect(element(by.id("slide-2"))).toBeNotVisible();
     await expect(element(by.id("slide-3"))).toBeNotVisible();
