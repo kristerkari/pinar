@@ -45,6 +45,8 @@
     "@typescript-eslint/no-useless-constructor": "error",
     "@typescript-eslint/no-var-requires": "error",
     "@typescript-eslint/restrict-plus-operands": "error",
+    "@typescript-eslint/no-require-imports": "error",
+    "@typescript-eslint/no-for-in-array": "error",
     "eqeqeq": ["error", "smart"],
     "for-direction": "error",
     "no-prototype-builtins": "error",
