@@ -25,9 +25,8 @@
     "scrollview"
   ],
   "scripts": {
-    "fix-types": "rimraf node_modules/@types/node/",
     "prepublish": "npm run build",
-    "prebuild": "npm run fix-types && rimraf dist",
+    "prebuild": "rimraf dist",
     "build": "tsc --outDir dist",
     "release": "npmpub",
     "tsc": "tsc --noEmit",
@@ -50,8 +49,8 @@
   "devDependencies": {
     "@types/enzyme": "^3.1.17",
     "@types/jest": "^24.0.0",
-    "@types/react": "^16.7.22",
-    "@types/react-native": "^0.57.35",
+    "@types/react": "^16.8.7",
+    "@types/react-native": "^0.57.39",
     "@typescript-eslint/eslint-plugin": "^1.3.0",
     "@typescript-eslint/parser": "^1.3.0",
     "detox": "^10.0.7",
