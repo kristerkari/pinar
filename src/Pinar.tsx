@@ -212,6 +212,11 @@ export class Pinar extends React.PureComponent<Props, State> {
     const nextActivePageIndex = Math.floor(
       activePageIndex + Math.round(diff / step)
     );
+
+    if (nextActivePageIndex === activePageIndex) {
+      return;
+    }
+
     const isIndexSmallerThanFirstPageIndex = nextActivePageIndex <= -1;
     const isIndexBiggerThanLastPageIndex = nextActivePageIndex >= total;
     const needsToUpdateOffset =
