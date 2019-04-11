@@ -7,12 +7,12 @@ import Carousel from "../index";
 
 jest.mock("Dimensions");
 
-describe("render props", () => {
-  describe("control buttons", () => {
-    it("should allow custom next and prev buttons (show next)", () => {
+describe("render props", (): void => {
+  describe("control buttons", (): void => {
+    it("should allow custom next and prev buttons (show next)", (): void => {
       const wrapper = shallow(
         <Carousel
-          renderNext={({ scrollToNext }) => (
+          renderNext={({ scrollToNext }): JSX.Element => (
             <TouchableOpacity
               accessibilityLabel="Custom next button"
               accessibilityRole="button"
@@ -21,7 +21,7 @@ describe("render props", () => {
               <Text>Next</Text>
             </TouchableOpacity>
           )}
-          renderPrev={({ scrollToPrev }) => (
+          renderPrev={({ scrollToPrev }): JSX.Element => (
             <TouchableOpacity
               accessibilityLabel="Custom prev button"
               accessibilityRole="button"
@@ -45,11 +45,11 @@ describe("render props", () => {
       expect(wrapper).toMatchSnapshot();
     });
 
-    it("should allow custom next and prev buttons (show prev)", () => {
+    it("should allow custom next and prev buttons (show prev)", (): void => {
       const wrapper = shallow(
         <Carousel
           index={2}
-          renderNext={({ scrollToNext }) => (
+          renderNext={({ scrollToNext }): JSX.Element => (
             <TouchableOpacity
               accessibilityLabel="Custom next button"
               accessibilityRole="button"
@@ -58,7 +58,7 @@ describe("render props", () => {
               <Text>Next</Text>
             </TouchableOpacity>
           )}
-          renderPrev={({ scrollToPrev }) => (
+          renderPrev={({ scrollToPrev }): JSX.Element => (
             <TouchableOpacity
               accessibilityLabel="Custom prev button"
               accessibilityRole="button"
@@ -82,11 +82,11 @@ describe("render props", () => {
       expect(wrapper).toMatchSnapshot();
     });
 
-    it("should allow custom next and prev buttons (show prev and next)", () => {
+    it("should allow custom next and prev buttons (show prev and next)", (): void => {
       const wrapper = shallow(
         <Carousel
           index={1}
-          renderNext={({ scrollToNext }) => (
+          renderNext={({ scrollToNext }): JSX.Element => (
             <TouchableOpacity
               accessibilityLabel="Custom next button"
               accessibilityRole="button"
@@ -95,7 +95,7 @@ describe("render props", () => {
               <Text>Next</Text>
             </TouchableOpacity>
           )}
-          renderPrev={({ scrollToPrev }) => (
+          renderPrev={({ scrollToPrev }): JSX.Element => (
             <TouchableOpacity
               accessibilityLabel="Custom prev button"
               accessibilityRole="button"
@@ -119,10 +119,10 @@ describe("render props", () => {
       expect(wrapper).toMatchSnapshot();
     });
 
-    it("should not show custom next and prev buttons when there is only one slide", () => {
+    it("should not show custom next and prev buttons when there is only one slide", (): void => {
       const wrapper = shallow(
         <Carousel
-          renderNext={({ scrollToNext }) => (
+          renderNext={({ scrollToNext }): JSX.Element => (
             <TouchableOpacity
               accessibilityLabel="Custom next button"
               accessibilityRole="button"
@@ -131,7 +131,7 @@ describe("render props", () => {
               <Text>Next</Text>
             </TouchableOpacity>
           )}
-          renderPrev={({ scrollToPrev }) => (
+          renderPrev={({ scrollToPrev }): JSX.Element => (
             <TouchableOpacity
               accessibilityLabel="Custom prev button"
               accessibilityRole="button"
@@ -150,14 +150,16 @@ describe("render props", () => {
     });
   });
 
-  describe("custom dots", () => {
-    it("should allow custom active and regular dot", () => {
+  describe("custom dots", (): void => {
+    it("should allow custom active and regular dot", (): void => {
       const wrapper = shallow(
         <Carousel
-          renderActiveDot={() => (
+          renderActiveDot={(): JSX.Element => (
             <View accessibilityLabel="Custom active dot" />
           )}
-          renderDot={() => <View accessibilityLabel="Custom dot" />}
+          renderDot={(): JSX.Element => (
+            <View accessibilityLabel="Custom dot" />
+          )}
         >
           <View>
             <Text>1</Text>
@@ -170,10 +172,10 @@ describe("render props", () => {
       expect(wrapper).toMatchSnapshot();
     });
 
-    it("should allow showing page numbers instead of dots", () => {
+    it("should allow showing page numbers instead of dots", (): void => {
       const wrapper = shallow(
         <Carousel
-          renderDots={({ index, total, context }) => (
+          renderDots={({ index, total, context }): JSX.Element => (
             <View>
               <Text>
                 {index + 1}/{total}
@@ -192,11 +194,11 @@ describe("render props", () => {
       expect(wrapper).toMatchSnapshot();
     });
 
-    it("should allow showing page numbers instead of dots and initialIndex", () => {
+    it("should allow showing page numbers instead of dots and initialIndex", (): void => {
       const wrapper = shallow(
         <Carousel
           index={1}
-          renderDots={({ index, total, context }) => (
+          renderDots={({ index, total, context }): JSX.Element => (
             <View>
               <Text>
                 {index + 1}/{total}

@@ -58,7 +58,7 @@ const styles = {
 
 export const CustomRender = (): JSX.Element => (
   <Carousel
-    renderNext={({ scrollToNext }) => (
+    renderNext={({ scrollToNext }): JSX.Element => (
       <TouchableOpacity
         accessibilityRole="button"
         onPress={scrollToNext}
@@ -67,7 +67,7 @@ export const CustomRender = (): JSX.Element => (
         <Text style={styles.buttonText}>Next</Text>
       </TouchableOpacity>
     )}
-    renderPrev={({ scrollToPrev }) => (
+    renderPrev={({ scrollToPrev }): JSX.Element => (
       <TouchableOpacity
         accessibilityRole="button"
         onPress={scrollToPrev}
@@ -76,14 +76,14 @@ export const CustomRender = (): JSX.Element => (
         <Text style={styles.buttonText}>Prev</Text>
       </TouchableOpacity>
     )}
-    renderDots={({ index, total }) => (
+    renderDots={({ index, total }): JSX.Element => (
       <View style={styles.dotsContainer}>
         <Text testID="custom-dots" style={styles.dotsText}>
           {`${index + 1}/${total}`}
         </Text>
       </View>
     )}
-    onIndexChanged={({ index, total }) => {
+    onIndexChanged={({ index, total }): void => {
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(

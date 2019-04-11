@@ -15,6 +15,6 @@
   "devDependencies": {
     "@types/react-navigation": "^3.0.1",
     "metro-react-native-babel-preset": "0.51.1",
-    "typescript": "^3.2.2"
+    "typescript": "^3.4.3"
   }
 }
