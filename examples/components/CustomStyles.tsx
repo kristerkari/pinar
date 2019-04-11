@@ -89,7 +89,7 @@ export const CustomStyles = (): JSX.Element => (
       opacity: 0.5
     }}
     controlsTextStyle={{ fontSize: 50, color: "#eace15" }}
-    onIndexChanged={({ index, total }) => {
+    onIndexChanged={({ index, total }): void => {
       if (Platform.OS === "ios") {
         const page = index + 1;
         AccessibilityInfo.announceForAccessibility(

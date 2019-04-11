@@ -3,8 +3,8 @@ import React from "react";
 import { Text, View } from "react-native";
 import Carousel from "../index";
 
-describe("style props", () => {
-  it("should allow style prop", () => {
+describe("style props", (): void => {
+  it("should allow style prop", (): void => {
     const wrapper = shallow(
       <Carousel style={{ backgroundColor: "blue" }}>
         <View>
@@ -18,7 +18,7 @@ describe("style props", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should allow containerStyle prop (ScrollView)", () => {
+  it("should allow containerStyle prop (ScrollView)", (): void => {
     const wrapper = shallow(
       <Carousel containerStyle={{ backgroundColor: "blue" }}>
         <View>
@@ -32,7 +32,7 @@ describe("style props", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should allow contentContainerStyle prop (ScrollView)", () => {
+  it("should allow contentContainerStyle prop (ScrollView)", (): void => {
     const wrapper = shallow(
       <Carousel contentContainerStyle={{ backgroundColor: "blue" }}>
         <View>
@@ -46,7 +46,7 @@ describe("style props", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should allow custom controlsContainerStyle", () => {
+  it("should allow custom controlsContainerStyle", (): void => {
     const wrapper = shallow(
       <Carousel controlsContainerStyle={{ backgroundColor: "blue" }}>
         <View>
@@ -60,7 +60,7 @@ describe("style props", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should allow custom controlsButtonStyle", () => {
+  it("should allow custom controlsButtonStyle", (): void => {
     const wrapper = shallow(
       <Carousel controlsButtonStyle={{ backgroundColor: "blue" }} index={1}>
         <View>
@@ -77,7 +77,7 @@ describe("style props", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should allow custom controlsTextStyle", () => {
+  it("should allow custom controlsTextStyle", (): void => {
     const wrapper = shallow(
       <Carousel controlsTextStyle={{ color: "blue" }} index={1}>
         <View>
@@ -94,7 +94,7 @@ describe("style props", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should allow custom dotsContainerStyle", () => {
+  it("should allow custom dotsContainerStyle", (): void => {
     const wrapper = shallow(
       <Carousel dotsContainerStyle={{ backgroundColor: "blue" }}>
         <View>
@@ -108,7 +108,7 @@ describe("style props", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should allow custom dotStyle", () => {
+  it("should allow custom dotStyle", (): void => {
     const wrapper = shallow(
       <Carousel dotStyle={{ backgroundColor: "blue" }}>
         <View>
@@ -122,7 +122,7 @@ describe("style props", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should allow custom activeDotStyle", () => {
+  it("should allow custom activeDotStyle", (): void => {
     const wrapper = shallow(
       <Carousel activeDotStyle={{ backgroundColor: "blue" }}>
         <View>

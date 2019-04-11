@@ -117,7 +117,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     }
   }
 
-  private autoplay = () => {
+  private autoplay = (): void => {
     const { isAutoplayEnd, isScrolling } = this.internals;
 
     if (isScrolling || isAutoplayEnd) {
@@ -254,29 +254,35 @@ export class Pinar extends React.PureComponent<Props, State> {
             ...newState,
             offset: newOffset
           },
-          () => {
+          (): void => {
             this.scrollTo({
               x: newOffset.x,
               y: newOffset.y,
               animated: false
             });
-            this.setState({ offset }, () => {
-              this.scrollTo({
-                x: offset.x,
-                y: offset.y,
-                animated: false
-              });
-            });
+            this.setState(
+              { offset },
+              (): void => {
+                this.scrollTo({
+                  x: offset.x,
+                  y: offset.y,
+                  animated: false
+                });
+              }
+            );
           }
         );
       } else {
-        this.setState({ ...newState, offset }, () => {
-          this.scrollTo({
-            x: offset.x,
-            y: offset.y,
-            animated: false
-          });
-        });
+        this.setState(
+          { ...newState, offset },
+          (): void => {
+            this.scrollTo({
+              x: offset.x,
+              y: offset.y,
+              animated: false
+            });
+          }
+        );
       }
     } else {
       this.setState(newState);
@@ -531,22 +537,25 @@ export class Pinar extends React.PureComponent<Props, State> {
 
     return (
       <View style={dotsContainerStyle || defaultDotsContainerStyle}>
-        {React.Children.map(children, (_: React.ReactChild, i: number) => {
-          /* eslint-disable react/no-array-index-key */
-          const isActive = this.isActivePageIndex(i);
-          if (isActive && typeof renderActiveDot === "function") {
-            return renderActiveDot({ index: i });
+        {React.Children.map(
+          children,
+          (_: React.ReactChild, i: number): JSX.Element => {
+            /* eslint-disable react/no-array-index-key */
+            const isActive = this.isActivePageIndex(i);
+            if (isActive && typeof renderActiveDot === "function") {
+              return renderActiveDot({ index: i });
+            }
+            if (typeof renderDot === "function") {
+              return renderDot({ index: i });
+            }
+            const { dotStyle, activeDotStyle } = this.props;
+            const style = isActive
+              ? activeDotStyle || styles.dotActive
+              : dotStyle || styles.dot;
+            return <View key={i} style={style} />;
+            /* eslint-enable react/no-array-index-key */
           }
-          if (typeof renderDot === "function") {
-            return renderDot({ index: i });
-          }
-          const { dotStyle, activeDotStyle } = this.props;
-          const style = isActive
-            ? activeDotStyle || styles.dotActive
-            : dotStyle || styles.dot;
-          return <View key={i} style={style} />;
-          /* eslint-enable react/no-array-index-key */
-        })}
+        )}
       </View>
     );
   };
@@ -568,19 +577,21 @@ export class Pinar extends React.PureComponent<Props, State> {
       keys.push(String(firstPageIndex));
     }
 
-    return keys.map((key: string, i: number) => {
-      /* eslint-disable react-native-a11y/accessibility-label, react/no-array-index-key */
-      return (
-        <View
-          accessible={accessibility}
-          key={`${i}${key}`}
-          style={{ height, width }}
-        >
-          {childrenArray[Number(key)]}
-        </View>
-      );
-      /* eslint-enable react-native-a11y/accessibility-label, react/no-array-index-key */
-    });
+    return keys.map(
+      (key: string, i: number): JSX.Element => {
+        /* eslint-disable react-native-a11y/accessibility-label, react/no-array-index-key */
+        return (
+          <View
+            accessible={accessibility}
+            key={`${i}${key}`}
+            style={{ height, width }}
+          >
+            {childrenArray[Number(key)]}
+          </View>
+        );
+        /* eslint-enable react-native-a11y/accessibility-label, react/no-array-index-key */
+      }
+    );
   };
 
   render(): JSX.Element {

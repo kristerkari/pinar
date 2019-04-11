@@ -5,8 +5,8 @@ import Carousel from "../index";
 
 jest.mock("Dimensions");
 
-describe("basic options", () => {
-  it("should render with default settings", () => {
+describe("basic options", (): void => {
+  it("should render with default settings", (): void => {
     const wrapper = shallow(
       <Carousel>
         <View>
@@ -20,7 +20,7 @@ describe("basic options", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should not show prev/next buttons when there is only one slide", () => {
+  it("should not show prev/next buttons when there is only one slide", (): void => {
     const wrapper = shallow(
       <Carousel>
         <View>
@@ -31,7 +31,7 @@ describe("basic options", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should support disabling prev/next controls", () => {
+  it("should support disabling prev/next controls", (): void => {
     const wrapper = shallow(
       <Carousel showsControls={false}>
         <View>
@@ -45,7 +45,7 @@ describe("basic options", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should support custom a11y labels for prev/next controls", () => {
+  it("should support custom a11y labels for prev/next controls", (): void => {
     const wrapper = shallow(
       <Carousel
         accessibilityLabelNext="custom next label"
@@ -66,7 +66,7 @@ describe("basic options", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should support disabling dots", () => {
+  it("should support disabling dots", (): void => {
     const wrapper = shallow(
       <Carousel showsDots={false}>
         <View>
@@ -80,7 +80,7 @@ describe("basic options", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should support providing height and width", () => {
+  it("should support providing height and width", (): void => {
     const wrapper = shallow(
       <Carousel height={333} width={444}>
         <View>
@@ -94,7 +94,7 @@ describe("basic options", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should support loop option", () => {
+  it("should support loop option", (): void => {
     /*
     Looping is implemented by modifying the pages:
     - without loop: 1-2-3
@@ -120,7 +120,7 @@ describe("basic options", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should support disabling accessibility", () => {
+  it("should support disabling accessibility", (): void => {
     const wrapper = shallow(
       <Carousel accessibility={false} loop={true}>
         <View>

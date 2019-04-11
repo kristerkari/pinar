@@ -48,78 +48,110 @@ class HomeScreen extends React.Component<Props, State> {
         <Text style={styles.heading}>Basic examples</Text>
         <Button
           testID="basic"
-          onPress={() => navigation.navigate("Basic")}
+          onPress={(): void => {
+            navigation.navigate("Basic");
+          }}
           title="Basic"
         />
         <Button
-          onPress={() => navigation.navigate("BasicVertical")}
+          onPress={(): void => {
+            navigation.navigate("BasicVertical");
+          }}
           title="Vertical"
         />
         <Button
-          onPress={() => navigation.navigate("Basic2Carousels")}
+          onPress={(): void => {
+            navigation.navigate("Basic2Carousels");
+          }}
           title="2 carousels on the same page"
         />
         <Text style={styles.heading}>Customizing</Text>
         <Button
-          onPress={() => navigation.navigate("CustomIndex")}
+          onPress={(): void => {
+            navigation.navigate("CustomIndex");
+          }}
           title="Custom start page (page 2)"
         />
         <Button
-          onPress={() => navigation.navigate("CustomSize")}
+          onPress={(): void => {
+            navigation.navigate("CustomSize");
+          }}
           title="Custom height and width"
         />
         <Button
-          onPress={() => navigation.navigate("CustomHeight")}
+          onPress={(): void => {
+            navigation.navigate("CustomHeight");
+          }}
           title="Custom height / auto width"
         />
         <Button
-          onPress={() => navigation.navigate("CustomWidth")}
+          onPress={(): void => {
+            navigation.navigate("CustomWidth");
+          }}
           title="Custom width / auto height"
         />
         <Button
-          onPress={() => navigation.navigate("CustomStyles")}
+          onPress={(): void => {
+            navigation.navigate("CustomStyles");
+          }}
           title="Custom styling"
         />
         <Button
           testID="custom-render"
-          onPress={() => navigation.navigate("CustomRender")}
+          onPress={(): void => {
+            navigation.navigate("CustomRender");
+          }}
           title="Custom next/prev/dot elements"
         />
         <Text style={styles.heading}>Looping</Text>
         <Button
           testID="loop"
-          onPress={() => navigation.navigate("Loop")}
+          onPress={(): void => {
+            navigation.navigate("Loop");
+          }}
           title="Looping pages"
         />
         <Text style={styles.heading}>Autoplay</Text>
         <Button
           testID="autoplay"
-          onPress={() => navigation.navigate("Autoplay")}
+          onPress={(): void => {
+            navigation.navigate("Autoplay");
+          }}
           title="Autoplay with loop"
         />
         <Button
-          onPress={() => navigation.navigate("AutoplayVertical")}
+          onPress={(): void => {
+            navigation.navigate("AutoplayVertical");
+          }}
           title="Autoplay (vertical)"
         />
         <Button
           testID="disabled-controls"
-          onPress={() => navigation.navigate("DisabledControls")}
+          onPress={(): void => {
+            navigation.navigate("DisabledControls");
+          }}
           title="Autoplay with hidden prev/next buttons"
         />
         <Button
           testID="autoplay-without-loop"
-          onPress={() => navigation.navigate("AutoplayWithoutLoop")}
+          onPress={(): void => {
+            navigation.navigate("AutoplayWithoutLoop");
+          }}
           title="Autoplay without loop"
         />
         <Text style={styles.heading}>Methods</Text>
         <Button
           testID="methods"
-          onPress={() => navigation.navigate("Methods")}
+          onPress={(): void => {
+            navigation.navigate("Methods");
+          }}
           title="Methods"
         />
         <Button
           testID="methods-with-loop"
-          onPress={() => navigation.navigate("MethodsWithLoop")}
+          onPress={(): void => {
+            navigation.navigate("MethodsWithLoop");
+          }}
           title="Methods with loop enabled"
         />
       </ScrollView>

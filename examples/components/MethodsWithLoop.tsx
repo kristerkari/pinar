@@ -50,12 +50,12 @@ export class MethodsWithLoop extends React.PureComponent {
       <View style={{ flex: 1, flexDirection: "column" }}>
         <Carousel
           loop={true}
-          ref={carousel => {
+          ref={(carousel): void => {
             this.carousel = carousel;
           }}
           height={200}
           autoplayInterval={3000}
-          onIndexChanged={({ index, total }) => {
+          onIndexChanged={({ index, total }): void => {
             if (Platform.OS === "ios") {
               const page = index + 1;
               AccessibilityInfo.announceForAccessibility(
@@ -86,33 +86,41 @@ export class MethodsWithLoop extends React.PureComponent {
         <View style={{ paddingTop: 20 }}>
           <Button
             title="scroll to next page"
-            onPress={() => this.carousel && this.carousel.scrollToNext()}
+            onPress={(): void | null =>
+              this.carousel && this.carousel.scrollToNext()
+            }
           />
           <Button
             title="scroll to previous page"
-            onPress={() => this.carousel && this.carousel.scrollToPrev()}
+            onPress={(): void | null =>
+              this.carousel && this.carousel.scrollToPrev()
+            }
           />
           <Button
             title="scroll +2 pages"
-            onPress={() =>
+            onPress={(): void | null =>
               this.carousel && this.carousel.scrollBy({ index: 2 })
             }
           />
           <Button
             title="scroll -2 pages"
-            onPress={() =>
+            onPress={(): void | null =>
               this.carousel && this.carousel.scrollBy({ index: -2 })
             }
           />
           <Button
             testID="start-autoplay"
             title="start autoplay"
-            onPress={() => this.carousel && this.carousel.startAutoplay()}
+            onPress={(): void | null =>
+              this.carousel && this.carousel.startAutoplay()
+            }
           />
           <Button
             testID="stop-autoplay"
             title="stop autoplay"
-            onPress={() => this.carousel && this.carousel.stopAutoplay()}
+            onPress={(): void | null =>
+              this.carousel && this.carousel.stopAutoplay()
+            }
           />
         </View>
       </View>
