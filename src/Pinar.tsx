@@ -320,6 +320,30 @@ export class Pinar extends React.PureComponent<Props, State> {
     this.scrollView.scrollTo({ x, y, animated });
   };
 
+  public scrollToIndex = ({
+    index,
+    animated = true
+  }: ScrollByOptions): void => {
+    const { total } = this.state;
+    const { isScrolling } = this.internals;
+    if (this.scrollView === null || isScrolling || total < 2) {
+      return;
+    }
+    const { width, height } = this.state;
+    const { horizontal, loop } = this.props;
+    const diff = (loop ? 1 : 0) + index;
+    const x = horizontal ? diff * width : 0;
+    const y = horizontal ? 0 : diff * height;
+    this.scrollTo({ animated, x, y });
+    if (Platform.OS === "android") {
+      this.internals.onScrollEndCallbackTargetOffset = horizontal
+        ? Math.floor(x)
+        : Math.floor(y);
+    }
+    this.internals.isScrolling = true;
+    this.internals.isAutoplayEnd = false;
+  };
+
   public scrollBy = ({ index, animated = true }: ScrollByOptions): void => {
     const { total } = this.state;
     const { isScrolling } = this.internals;

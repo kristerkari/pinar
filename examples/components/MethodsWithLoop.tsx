@@ -85,15 +85,24 @@ export class MethodsWithLoop extends React.PureComponent {
         </Carousel>
         <View style={{ paddingTop: 20 }}>
           <Button
+            testID="scroll-to-next"
             title="scroll to next page"
             onPress={(): void | null =>
               this.carousel && this.carousel.scrollToNext()
             }
           />
           <Button
+            testID="scroll-to-prev"
             title="scroll to previous page"
             onPress={(): void | null =>
               this.carousel && this.carousel.scrollToPrev()
+            }
+          />
+          <Button
+            testID="scroll-to-page-4"
+            title="scroll to page 4"
+            onPress={(): void | null =>
+              this.carousel && this.carousel.scrollToIndex({ index: 3 })
             }
           />
           <Button
