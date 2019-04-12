@@ -231,8 +231,8 @@ describe("methods", () => {
 
   it("should be able use scroll by a page index (loop)", async () => {
     await element(by.id("scrollview")).scrollTo("bottom");
-    await expect(element(by.id("loop"))).toBeVisible();
-    await element(by.id("loop")).tap();
+    await expect(element(by.id("methods-with-loop"))).toBeVisible();
+    await element(by.id("methods-with-loop")).tap();
 
     // Page 1
     await expect(element(by.id("slide-1"))).toBeVisible();
