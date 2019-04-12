@@ -97,6 +97,13 @@ export class MethodsWithLoop extends React.PureComponent {
             }
           />
           <Button
+            testID="scroll-to-page-4"
+            title="scroll to page 4"
+            onPress={(): void | null =>
+              this.carousel && this.carousel.scrollToIndex({ index: 3 })
+            }
+          />
+          <Button
             title="scroll +2 pages"
             onPress={(): void | null =>
               this.carousel && this.carousel.scrollBy({ index: 2 })

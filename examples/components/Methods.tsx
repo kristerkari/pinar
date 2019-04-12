@@ -98,6 +98,13 @@ export class Methods extends React.PureComponent {
             }
           />
           <Button
+            testID="scroll-to-page-4"
+            title="scroll to page 4"
+            onPress={(): void | null =>
+              this.carousel && this.carousel.scrollToIndex({ index: 3 })
+            }
+          />
+          <Button
             testID="scroll-plus-two"
             title="scroll +2 pages"
             onPress={(): void | null =>

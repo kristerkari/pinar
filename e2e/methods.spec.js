@@ -176,6 +176,112 @@ describe("methods", () => {
     await expect(element(by.id("PinarNextButton"))).toBeVisible();
   });
 
+  it("should be able use scroll by a page index", async () => {
+    await element(by.id("scrollview")).scrollTo("bottom");
+    await expect(element(by.id("methods"))).toBeVisible();
+    await element(by.id("methods")).tap();
+
+    // Page 1
+    await expect(element(by.id("slide-1"))).toBeVisible();
+    await expect(element(by.id("slide-2"))).toBeNotVisible();
+    await expect(element(by.id("slide-3"))).toBeNotVisible();
+    await expect(element(by.id("slide-4"))).toBeNotVisible();
+    await expect(element(by.id("slide-5"))).toBeNotVisible();
+    await expect(element(by.id("slide-6"))).toBeNotVisible();
+    await expect(element(by.id("PinarPrevButton"))).toBeNotVisible();
+    await expect(element(by.id("PinarNextButton"))).toBeVisible();
+
+    await element(by.id("scroll-to-page-4")).tap();
+
+    // Page 4
+    await expect(element(by.id("slide-1"))).toBeNotVisible();
+    await expect(element(by.id("slide-2"))).toBeNotVisible();
+    await expect(element(by.id("slide-3"))).toBeNotVisible();
+    await expect(element(by.id("slide-4"))).toBeVisible();
+    await expect(element(by.id("slide-5"))).toBeNotVisible();
+    await expect(element(by.id("slide-6"))).toBeNotVisible();
+    await expect(element(by.id("PinarPrevButton"))).toBeVisible();
+    await expect(element(by.id("PinarNextButton"))).toBeVisible();
+
+    await element(by.id("scroll-to-prev")).tap();
+    await element(by.id("scroll-to-prev")).tap();
+
+    // Page 2
+    await expect(element(by.id("slide-1"))).toBeNotVisible();
+    await expect(element(by.id("slide-2"))).toBeVisible();
+    await expect(element(by.id("slide-3"))).toBeNotVisible();
+    await expect(element(by.id("slide-4"))).toBeNotVisible();
+    await expect(element(by.id("slide-5"))).toBeNotVisible();
+    await expect(element(by.id("slide-6"))).toBeNotVisible();
+    await expect(element(by.id("PinarPrevButton"))).toBeVisible();
+    await expect(element(by.id("PinarNextButton"))).toBeVisible();
+
+    await element(by.id("scroll-to-page-4")).tap();
+
+    // Page 4
+    await expect(element(by.id("slide-1"))).toBeNotVisible();
+    await expect(element(by.id("slide-2"))).toBeNotVisible();
+    await expect(element(by.id("slide-3"))).toBeNotVisible();
+    await expect(element(by.id("slide-4"))).toBeVisible();
+    await expect(element(by.id("slide-5"))).toBeNotVisible();
+    await expect(element(by.id("slide-6"))).toBeNotVisible();
+    await expect(element(by.id("PinarPrevButton"))).toBeVisible();
+    await expect(element(by.id("PinarNextButton"))).toBeVisible();
+  });
+
+  it("should be able use scroll by a page index (loop)", async () => {
+    await element(by.id("scrollview")).scrollTo("bottom");
+    await expect(element(by.id("loop"))).toBeVisible();
+    await element(by.id("loop")).tap();
+
+    // Page 1
+    await expect(element(by.id("slide-1"))).toBeVisible();
+    await expect(element(by.id("slide-2"))).toBeNotVisible();
+    await expect(element(by.id("slide-3"))).toBeNotVisible();
+    await expect(element(by.id("slide-4"))).toBeNotVisible();
+    await expect(element(by.id("slide-5"))).toBeNotVisible();
+    await expect(element(by.id("slide-6"))).toBeNotVisible();
+    await expect(element(by.id("PinarPrevButton"))).toBeNotVisible();
+    await expect(element(by.id("PinarNextButton"))).toBeVisible();
+
+    await element(by.id("scroll-to-page-4")).tap();
+
+    // Page 4
+    await expect(element(by.id("slide-1"))).toBeNotVisible();
+    await expect(element(by.id("slide-2"))).toBeNotVisible();
+    await expect(element(by.id("slide-3"))).toBeNotVisible();
+    await expect(element(by.id("slide-4"))).toBeVisible();
+    await expect(element(by.id("slide-5"))).toBeNotVisible();
+    await expect(element(by.id("slide-6"))).toBeNotVisible();
+    await expect(element(by.id("PinarPrevButton"))).toBeVisible();
+    await expect(element(by.id("PinarNextButton"))).toBeVisible();
+
+    await element(by.id("scroll-to-prev")).tap();
+    await element(by.id("scroll-to-prev")).tap();
+
+    // Page 2
+    await expect(element(by.id("slide-1"))).toBeNotVisible();
+    await expect(element(by.id("slide-2"))).toBeVisible();
+    await expect(element(by.id("slide-3"))).toBeNotVisible();
+    await expect(element(by.id("slide-4"))).toBeNotVisible();
+    await expect(element(by.id("slide-5"))).toBeNotVisible();
+    await expect(element(by.id("slide-6"))).toBeNotVisible();
+    await expect(element(by.id("PinarPrevButton"))).toBeVisible();
+    await expect(element(by.id("PinarNextButton"))).toBeVisible();
+
+    await element(by.id("scroll-to-page-4")).tap();
+
+    // Page 4
+    await expect(element(by.id("slide-1"))).toBeNotVisible();
+    await expect(element(by.id("slide-2"))).toBeNotVisible();
+    await expect(element(by.id("slide-3"))).toBeNotVisible();
+    await expect(element(by.id("slide-4"))).toBeVisible();
+    await expect(element(by.id("slide-5"))).toBeNotVisible();
+    await expect(element(by.id("slide-6"))).toBeNotVisible();
+    await expect(element(by.id("PinarPrevButton"))).toBeVisible();
+    await expect(element(by.id("PinarNextButton"))).toBeVisible();
+  });
+
   it("should be able to start and stop autoplay", async () => {
     await element(by.id("scrollview")).scrollTo("bottom");
     await expect(element(by.id("methods"))).toBeVisible();

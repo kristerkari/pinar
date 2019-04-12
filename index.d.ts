@@ -133,6 +133,7 @@ declare module "pinar" {
       index: number;
     };
     public scrollBy(options: ScrollByOptions): void;
+    public scrollToIndex(options: ScrollByOptions): void;
     public scrollToPrev(): void;
     public scrollToNext(): void;
     public startAutoplay(): void;
