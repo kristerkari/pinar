@@ -241,7 +241,7 @@ describe("methods", () => {
     await expect(element(by.id("slide-4"))).toBeNotVisible();
     await expect(element(by.id("slide-5"))).toBeNotVisible();
     await expect(element(by.id("slide-6"))).toBeNotVisible();
-    await expect(element(by.id("PinarPrevButton"))).toBeNotVisible();
+    await expect(element(by.id("PinarPrevButton"))).toBeVisible();
     await expect(element(by.id("PinarNextButton"))).toBeVisible();
 
     await element(by.id("scroll-to-page-4")).tap();
