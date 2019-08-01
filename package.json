@@ -54,7 +54,7 @@
     "@types/react-native": "^0.57.43",
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "@typescript-eslint/parser": "^1.6.0",
-    "detox": "^12.1.4",
+    "detox": "^13.3.2",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "enzyme-to-json": "^3.3.5",
