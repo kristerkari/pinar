@@ -136,7 +136,7 @@
         "build": "xcodebuild -workspace examples/ios/examples.xcworkspace -scheme examples -configuration Release -sdk iphonesimulator -derivedDataPath examples/ios/build",
         "type": "ios.simulator",
         "device": {
-          "type": "iPhone 11 Pro"
+          "type": "iPhone 8"
         }
       }
     },
