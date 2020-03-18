@@ -23,7 +23,9 @@ install:
   - nvm use $NODE_VERSION
   - cd examples
   - yarn install
-  - cd ..
+  - cd ios
+  - pod install
+  - cd ../..
   - yarn install
 
   - gem install xcpretty
