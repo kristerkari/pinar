@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts b/node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts
+index bebfdaa..3b8733b 100644
+--- a/node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts
++++ b/node_modules/react-native-gesture-handler/react-native-gesture-handler.d.ts
+@@ -454,7 +454,7 @@ declare module 'react-native-gesture-handler' {
+     NativeViewGestureHandlerProperties & FlatListProperties<ItemT>
+   > {}
+ 
+-  export const GestureHandlerRootView: ReactComponentType<ViewProps>;
++  export const GestureHandlerRootView: React.ComponentType<ViewProps>;
+ 
+   export function gestureHandlerRootHOC<P = {}>(
+     Component: React.ComponentType<P>,

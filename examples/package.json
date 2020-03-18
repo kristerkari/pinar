@@ -4,17 +4,33 @@
   "private": true,
   "scripts": {
     "tsc": "tsc --noEmit",
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "postinstall": "patch-package"
   },
   "dependencies": {
-    "react": "16.6.3",
-    "react-native": "0.57.8",
-    "react-native-gesture-handler": "^1.0.12",
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "react-native-gesture-handler": "^1.6.0",
+    "react-native-screens": "^2.3.0",
     "react-navigation": "^3.0.9"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/runtime": "^7.8.7",
     "@types/react-navigation": "^3.0.1",
-    "metro-react-native-babel-preset": "0.51.1",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "patch-package": "^6.2.1",
+    "react-test-renderer": "16.9.0",
     "typescript": "^3.4.3"
+  },
+  "jest": {
+    "preset": "react-native"
   }
 }
