@@ -27,7 +27,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -48,8 +48,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -66,8 +66,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
         key="11"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -84,8 +84,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
         key="22"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -97,7 +97,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -175,8 +175,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -224,7 +224,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -245,8 +245,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -263,8 +263,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
         key="11"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -281,8 +281,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
         key="22"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -294,7 +294,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -372,8 +372,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -430,7 +430,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -451,8 +451,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -469,8 +469,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
         key="11"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -487,8 +487,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
         key="22"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -500,7 +500,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -578,8 +578,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -627,7 +627,7 @@ exports[`render props control buttons should not show custom next and prev butto
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -648,8 +648,8 @@ exports[`render props control buttons should not show custom next and prev butto
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -661,7 +661,7 @@ exports[`render props control buttons should not show custom next and prev butto
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -709,8 +709,8 @@ exports[`render props control buttons should not show custom next and prev butto
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -749,7 +749,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -770,8 +770,8 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -788,8 +788,8 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
         key="11"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -801,7 +801,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -842,8 +842,8 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -905,7 +905,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -926,8 +926,8 @@ exports[`render props custom dots should allow showing page numbers instead of d
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -944,8 +944,8 @@ exports[`render props custom dots should allow showing page numbers instead of d
         key="11"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -957,7 +957,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View>
       <Text>
         1
@@ -982,8 +982,8 @@ exports[`render props custom dots should allow showing page numbers instead of d
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -1045,7 +1045,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1066,8 +1066,8 @@ exports[`render props custom dots should allow showing page numbers instead of d
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -1084,8 +1084,8 @@ exports[`render props custom dots should allow showing page numbers instead of d
         key="11"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -1097,7 +1097,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View>
       <Text>
         2
@@ -1122,8 +1122,8 @@ exports[`render props custom dots should allow showing page numbers instead of d
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }

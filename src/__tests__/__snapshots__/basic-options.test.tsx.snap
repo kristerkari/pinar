@@ -27,7 +27,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -48,8 +48,8 @@ exports[`basic options should not show prev/next buttons when there is only one 
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -61,7 +61,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -109,8 +109,8 @@ exports[`basic options should not show prev/next buttons when there is only one 
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -149,7 +149,7 @@ exports[`basic options should render with default settings 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -170,8 +170,8 @@ exports[`basic options should render with default settings 1`] = `
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -188,8 +188,8 @@ exports[`basic options should render with default settings 1`] = `
         key="11"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -201,7 +201,7 @@ exports[`basic options should render with default settings 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -264,8 +264,8 @@ exports[`basic options should render with default settings 1`] = `
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -327,7 +327,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -348,8 +348,8 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -366,8 +366,8 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         key="11"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -384,8 +384,8 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         key="22"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -397,7 +397,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -475,8 +475,8 @@ exports[`basic options should support custom a11y labels for prev/next controls 
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -561,7 +561,7 @@ exports[`basic options should support disabling accessibility 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -582,8 +582,8 @@ exports[`basic options should support disabling accessibility 1`] = `
         key="01"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -600,8 +600,8 @@ exports[`basic options should support disabling accessibility 1`] = `
         key="10"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -618,8 +618,8 @@ exports[`basic options should support disabling accessibility 1`] = `
         key="21"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -636,8 +636,8 @@ exports[`basic options should support disabling accessibility 1`] = `
         key="30"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -649,7 +649,7 @@ exports[`basic options should support disabling accessibility 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -712,8 +712,8 @@ exports[`basic options should support disabling accessibility 1`] = `
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -798,7 +798,7 @@ exports[`basic options should support disabling dots 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -819,8 +819,8 @@ exports[`basic options should support disabling dots 1`] = `
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -837,8 +837,8 @@ exports[`basic options should support disabling dots 1`] = `
         key="11"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -850,7 +850,7 @@ exports[`basic options should support disabling dots 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       pointerEvents="box-none"
       style={
@@ -868,8 +868,8 @@ exports[`basic options should support disabling dots 1`] = `
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -931,7 +931,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -952,8 +952,8 @@ exports[`basic options should support disabling prev/next controls 1`] = `
         key="00"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -970,8 +970,8 @@ exports[`basic options should support disabling prev/next controls 1`] = `
         key="11"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -983,7 +983,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -1060,7 +1060,7 @@ exports[`basic options should support loop option 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1081,8 +1081,8 @@ exports[`basic options should support loop option 1`] = `
         key="02"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -1099,8 +1099,8 @@ exports[`basic options should support loop option 1`] = `
         key="10"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -1117,8 +1117,8 @@ exports[`basic options should support loop option 1`] = `
         key="21"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -1135,8 +1135,8 @@ exports[`basic options should support loop option 1`] = `
         key="32"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -1153,8 +1153,8 @@ exports[`basic options should support loop option 1`] = `
         key="40"
         style={
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           }
         }
       >
@@ -1166,7 +1166,7 @@ exports[`basic options should support loop option 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -1244,8 +1244,8 @@ exports[`basic options should support loop option 1`] = `
             "top": 0,
           },
           Object {
-            "height": 800,
-            "width": 480,
+            "height": 1334,
+            "width": 750,
           },
         ]
       }
@@ -1328,7 +1328,7 @@ exports[`basic options should support providing height and width 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1380,7 +1380,7 @@ exports[`basic options should support providing height and width 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {

@@ -27,7 +27,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -84,7 +84,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -210,7 +210,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       contentContainerStyle={
@@ -267,7 +267,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -393,7 +393,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -445,7 +445,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -564,7 +564,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -634,7 +634,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -808,7 +808,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -860,7 +860,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -971,7 +971,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1041,7 +1041,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -1201,7 +1201,7 @@ exports[`style props should allow custom dotStyle 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1253,7 +1253,7 @@ exports[`style props should allow custom dotStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -1372,7 +1372,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1424,7 +1424,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
@@ -1545,7 +1545,7 @@ exports[`style props should allow style prop 1`] = `
       }
     }
   >
-    <ScrollView
+    <ScrollViewMock
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1597,7 +1597,7 @@ exports[`style props should allow style prop 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollView>
+    </ScrollViewMock>
     <View
       style={
         Object {
