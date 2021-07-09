@@ -9,7 +9,7 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View
+  View,
 } from "react-native";
 import { Props, ScrollByOptions, State } from "../index";
 import { defaultStyles } from "./styles";
@@ -24,7 +24,7 @@ const defaultScrollViewProps = {
   removeClippedSubviews: true,
   automaticallyAdjustContentInsets: false,
   scrollEventThrottle: 16,
-  scrollEnabled: true
+  scrollEnabled: true,
 };
 
 const defaultCarouselProps = {
@@ -35,7 +35,7 @@ const defaultCarouselProps = {
   accessibility: true,
   accessibilityLabelPrev: "Previous",
   accessibilityLabelNext: "Next",
-  index: 0
+  index: 0,
 };
 
 const styles = StyleSheet.create(defaultStyles);
@@ -68,7 +68,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       isAutoplayEnd: false,
       isScrolling: false,
       offset,
-      onScrollEndCallbackTargetOffset: 0
+      onScrollEndCallbackTargetOffset: 0,
     };
     this.state = { activePageIndex, height, width, total, offset };
     this.scrollView = null;
@@ -111,7 +111,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       this.setState({
         ...this.getCarouselDimensions(),
         total,
-        activePageIndex: index
+        activePageIndex: index,
       });
       /* eslint-enable react/no-did-update-set-state */
     }
@@ -145,7 +145,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     const dimensions = Dimensions.get("window");
     return {
       height: height !== undefined ? height : dimensions.height,
-      width: width !== undefined ? width : dimensions.width
+      width: width !== undefined ? width : dimensions.width,
     };
   };
 
@@ -252,37 +252,31 @@ export class Pinar extends React.PureComponent<Props, State> {
         this.setState(
           {
             ...newState,
-            offset: newOffset
+            offset: newOffset,
           },
           (): void => {
             this.scrollTo({
               x: newOffset.x,
               y: newOffset.y,
-              animated: false
+              animated: false,
             });
-            this.setState(
-              { offset },
-              (): void => {
-                this.scrollTo({
-                  x: offset.x,
-                  y: offset.y,
-                  animated: false
-                });
-              }
-            );
+            this.setState({ offset }, (): void => {
+              this.scrollTo({
+                x: offset.x,
+                y: offset.y,
+                animated: false,
+              });
+            });
           }
         );
       } else {
-        this.setState(
-          { ...newState, offset },
-          (): void => {
-            this.scrollTo({
-              x: offset.x,
-              y: offset.y,
-              animated: false
-            });
-          }
-        );
+        this.setState({ ...newState, offset }, (): void => {
+          this.scrollTo({
+            x: offset.x,
+            y: offset.y,
+            animated: false,
+          });
+        });
       }
     } else {
       this.setState(newState);
@@ -308,7 +302,7 @@ export class Pinar extends React.PureComponent<Props, State> {
   private scrollTo = ({
     x,
     y,
-    animated
+    animated,
   }: {
     x: number;
     y: number;
@@ -322,7 +316,7 @@ export class Pinar extends React.PureComponent<Props, State> {
 
   public scrollToIndex = ({
     index,
-    animated = true
+    animated = true,
   }: ScrollByOptions): void => {
     const { total } = this.state;
     const { isScrolling } = this.internals;
@@ -427,14 +421,14 @@ export class Pinar extends React.PureComponent<Props, State> {
     if (isShown) {
       if (typeof renderNext === "function") {
         return renderNext({
-          scrollToNext: this.scrollToNext
+          scrollToNext: this.scrollToNext,
         });
       }
       const {
         accessibility,
         accessibilityLabelNext,
         controlsButtonStyle,
-        controlsTextStyle
+        controlsTextStyle,
       } = this.props;
       return (
         <TouchableOpacity
@@ -466,14 +460,14 @@ export class Pinar extends React.PureComponent<Props, State> {
     if (isShown) {
       if (typeof renderPrev === "function") {
         return renderPrev({
-          scrollToPrev: this.scrollToPrev
+          scrollToPrev: this.scrollToPrev,
         });
       }
       const {
         accessibility,
         accessibilityLabelPrev,
         controlsButtonStyle,
-        controlsTextStyle
+        controlsTextStyle,
       } = this.props;
       return (
         <TouchableOpacity
@@ -510,7 +504,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     if (typeof renderControls === "function") {
       return renderControls({
         scrollToPrev: this.scrollToPrev,
-        scrollToNext: this.scrollToNext
+        scrollToNext: this.scrollToNext,
       });
     }
 
@@ -519,7 +513,7 @@ export class Pinar extends React.PureComponent<Props, State> {
 
     const defaultControlsContainerStyle = [
       styles.controlsContainer,
-      { height, width }
+      { height, width },
     ];
     return (
       <View
@@ -540,7 +534,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       return renderDots({
         index: activePageIndex,
         total,
-        context: this
+        context: this,
       });
     }
 
@@ -549,7 +543,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       dotsContainerStyle,
       horizontal,
       renderActiveDot,
-      renderDot
+      renderDot,
     } = this.props;
     const defaultDotsContainerStyle = horizontal
       ? styles.dotsContainerHorizontal
@@ -597,21 +591,19 @@ export class Pinar extends React.PureComponent<Props, State> {
       keys.push(String(firstPageIndex));
     }
 
-    return keys.map(
-      (key: string, i: number): JSX.Element => {
-        /* eslint-disable react-native-a11y/accessibility-label, react/no-array-index-key */
-        return (
-          <View
-            accessible={accessibility}
-            key={`${i}${key}`}
-            style={{ height, width }}
-          >
-            {childrenArray[Number(key)]}
-          </View>
-        );
-        /* eslint-enable react-native-a11y/accessibility-label, react/no-array-index-key */
-      }
-    );
+    return keys.map((key: string, i: number): JSX.Element => {
+      /* eslint-disable react-native-a11y/accessibility-label, react/no-array-index-key */
+      return (
+        <View
+          accessible={accessibility}
+          key={`${i}${key}`}
+          style={{ height, width }}
+        >
+          {childrenArray[Number(key)]}
+        </View>
+      );
+      /* eslint-enable react-native-a11y/accessibility-label, react/no-array-index-key */
+    });
   };
 
   render(): JSX.Element {
@@ -633,7 +625,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       height,
       style,
       containerStyle,
-      contentContainerStyle
+      contentContainerStyle,
     } = this.props;
 
     const hasHeightAndWidthProps = width !== undefined && height !== undefined;
@@ -645,7 +637,7 @@ export class Pinar extends React.PureComponent<Props, State> {
           styles.wrapper,
           { maxHeight: height, maxWidth: width },
           !hasHeightAndWidthProps && { flex: 1 },
-          style
+          style,
         ]}
       >
         <View style={{ height, width }}>

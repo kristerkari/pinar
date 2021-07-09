@@ -27,7 +27,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -84,7 +84,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -154,13 +154,10 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -177,7 +174,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -210,7 +207,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       contentContainerStyle={
@@ -267,7 +264,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -337,13 +334,10 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -360,7 +354,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -393,7 +387,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -445,7 +439,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -508,13 +502,10 @@ exports[`style props should allow custom activeDotStyle 1`] = `
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -531,7 +522,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -564,7 +555,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -634,7 +625,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -718,13 +709,10 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
         ]
       }
     >
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Previous"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         style={
           Object {
@@ -746,14 +734,11 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
         >
           ‹
         </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      </ForwardRef>
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         style={
           Object {
@@ -775,7 +760,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -808,7 +793,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -860,7 +845,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -915,13 +900,10 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -938,7 +920,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -971,7 +953,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1041,7 +1023,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -1125,13 +1107,10 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
         ]
       }
     >
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Previous"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarPrevButton"
       >
@@ -1146,14 +1125,11 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
         >
           ‹
         </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      </ForwardRef>
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -1168,7 +1144,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -1201,7 +1177,7 @@ exports[`style props should allow custom dotStyle 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1253,7 +1229,7 @@ exports[`style props should allow custom dotStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -1316,13 +1292,10 @@ exports[`style props should allow custom dotStyle 1`] = `
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -1339,7 +1312,7 @@ exports[`style props should allow custom dotStyle 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -1372,7 +1345,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1424,7 +1397,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -1487,13 +1460,10 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -1510,7 +1480,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -1545,7 +1515,7 @@ exports[`style props should allow style prop 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1597,7 +1567,7 @@ exports[`style props should allow style prop 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -1667,13 +1637,10 @@ exports[`style props should allow style prop 1`] = `
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -1690,7 +1657,7 @@ exports[`style props should allow style prop 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>

@@ -27,7 +27,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -97,7 +97,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -182,16 +182,15 @@ exports[`render props control buttons should allow custom next and prev buttons 
       }
     >
       <View />
-      <TouchableOpacity
+      <ForwardRef
         accessibilityLabel="Custom next button"
         accessibilityRole="button"
-        activeOpacity={0.2}
         onPress={[Function]}
       >
         <Text>
           Next
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -224,7 +223,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -294,7 +293,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -378,26 +377,24 @@ exports[`render props control buttons should allow custom next and prev buttons 
         ]
       }
     >
-      <TouchableOpacity
+      <ForwardRef
         accessibilityLabel="Custom prev button"
         accessibilityRole="button"
-        activeOpacity={0.2}
         onPress={[Function]}
       >
         <Text>
           Prev
         </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
+      </ForwardRef>
+      <ForwardRef
         accessibilityLabel="Custom next button"
         accessibilityRole="button"
-        activeOpacity={0.2}
         onPress={[Function]}
       >
         <Text>
           Next
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -430,7 +427,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -500,7 +497,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -584,16 +581,15 @@ exports[`render props control buttons should allow custom next and prev buttons 
         ]
       }
     >
-      <TouchableOpacity
+      <ForwardRef
         accessibilityLabel="Custom prev button"
         accessibilityRole="button"
-        activeOpacity={0.2}
         onPress={[Function]}
       >
         <Text>
           Prev
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
       <View />
     </View>
   </View>
@@ -627,7 +623,7 @@ exports[`render props control buttons should not show custom next and prev butto
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -661,7 +657,7 @@ exports[`render props control buttons should not show custom next and prev butto
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -749,7 +745,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -801,7 +797,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -849,13 +845,10 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -872,7 +865,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -905,7 +898,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -957,7 +950,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View>
       <Text>
         1
@@ -989,13 +982,10 @@ exports[`render props custom dots should allow showing page numbers instead of d
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -1012,7 +1002,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -1045,7 +1035,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1097,7 +1087,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View>
       <Text>
         2
@@ -1128,13 +1118,10 @@ exports[`render props custom dots should allow showing page numbers instead of d
         ]
       }
     >
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Previous"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarPrevButton"
       >
@@ -1151,7 +1138,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
         >
           ‹
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
       <View />
     </View>
   </View>

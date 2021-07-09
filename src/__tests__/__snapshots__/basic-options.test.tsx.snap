@@ -27,7 +27,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -61,7 +61,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -149,7 +149,7 @@ exports[`basic options should render with default settings 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -201,7 +201,7 @@ exports[`basic options should render with default settings 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -271,13 +271,10 @@ exports[`basic options should render with default settings 1`] = `
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -294,7 +291,7 @@ exports[`basic options should render with default settings 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -327,7 +324,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -397,7 +394,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -481,13 +478,10 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         ]
       }
     >
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="custom prev label"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarPrevButton"
       >
@@ -504,14 +498,11 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         >
           ‹
         </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      </ForwardRef>
+      <ForwardRef
         accessibilityLabel="custom next label"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -528,7 +519,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -561,7 +552,7 @@ exports[`basic options should support disabling accessibility 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -649,7 +640,7 @@ exports[`basic options should support disabling accessibility 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -718,13 +709,10 @@ exports[`basic options should support disabling accessibility 1`] = `
         ]
       }
     >
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Previous"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={false}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarPrevButton"
       >
@@ -741,14 +729,11 @@ exports[`basic options should support disabling accessibility 1`] = `
         >
           ‹
         </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      </ForwardRef>
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={false}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -765,7 +750,7 @@ exports[`basic options should support disabling accessibility 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -798,7 +783,7 @@ exports[`basic options should support disabling dots 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -850,7 +835,7 @@ exports[`basic options should support disabling dots 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       pointerEvents="box-none"
       style={
@@ -875,13 +860,10 @@ exports[`basic options should support disabling dots 1`] = `
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -898,7 +880,7 @@ exports[`basic options should support disabling dots 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -931,7 +913,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -983,7 +965,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -1060,7 +1042,7 @@ exports[`basic options should support loop option 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1166,7 +1148,7 @@ exports[`basic options should support loop option 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -1250,13 +1232,10 @@ exports[`basic options should support loop option 1`] = `
         ]
       }
     >
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Previous"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarPrevButton"
       >
@@ -1273,14 +1252,11 @@ exports[`basic options should support loop option 1`] = `
         >
           ‹
         </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      </ForwardRef>
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -1297,7 +1273,7 @@ exports[`basic options should support loop option 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
@@ -1328,7 +1304,7 @@ exports[`basic options should support providing height and width 1`] = `
       }
     }
   >
-    <ScrollViewMock
+    <ScrollView
       automaticallyAdjustContentInsets={false}
       bounces={false}
       horizontal={true}
@@ -1380,7 +1356,7 @@ exports[`basic options should support providing height and width 1`] = `
           </Text>
         </View>
       </View>
-    </ScrollViewMock>
+    </ScrollView>
     <View
       style={
         Object {
@@ -1450,13 +1426,10 @@ exports[`basic options should support providing height and width 1`] = `
       }
     >
       <View />
-      <TouchableOpacity
-        accessibilityComponentType="button"
+      <ForwardRef
         accessibilityLabel="Next"
         accessibilityRole="button"
-        accessibilityTraits="button"
         accessible={true}
-        activeOpacity={0.2}
         onPress={[Function]}
         testID="PinarNextButton"
       >
@@ -1473,7 +1446,7 @@ exports[`basic options should support providing height and width 1`] = `
         >
           ›
         </Text>
-      </TouchableOpacity>
+      </ForwardRef>
     </View>
   </View>
 </View>
