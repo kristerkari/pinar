@@ -17,6 +17,7 @@ import {
   CustomRender,
   CustomSize,
   CustomStyles,
+  CustomMergeStyles,
   CustomWidth,
   DisabledControls,
   Loop,
@@ -96,6 +97,12 @@ class HomeScreen extends React.Component<Props, State> {
             navigation.navigate("CustomStyles");
           }}
           title="Custom styling"
+        />
+        <Button
+          onPress={(): void => {
+            navigation.navigate("CustomMergeStyles");
+          }}
+          title="Custom styling merging with defaults"
         />
         <Button
           testID="custom-render"
@@ -235,6 +242,12 @@ const AppNavigator = createStackNavigator({
     screen: CustomStyles,
     navigationOptions: {
       title: "Custom styling",
+    },
+  },
+  CustomMergeStyles: {
+    screen: CustomMergeStyles,
+    navigationOptions: {
+      title: "Custom styling merging with defaults",
     },
   },
   CustomWidth: {

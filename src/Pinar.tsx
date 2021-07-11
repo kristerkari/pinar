@@ -36,6 +36,7 @@ const defaultCarouselProps = {
   accessibilityLabelPrev: "Previous",
   accessibilityLabelNext: "Next",
   index: 0,
+  mergeStyles: false,
 };
 
 const styles = StyleSheet.create(defaultStyles);
@@ -429,6 +430,7 @@ export class Pinar extends React.PureComponent<Props, State> {
         accessibilityLabelNext,
         controlsButtonStyle,
         controlsTextStyle,
+        mergeStyles,
       } = this.props;
       return (
         <TouchableOpacity
@@ -442,7 +444,11 @@ export class Pinar extends React.PureComponent<Props, State> {
           <Text
             accessibilityLabel={accessibilityLabelNext}
             accessible={accessibility}
-            style={controlsTextStyle || styles.buttonText}
+            style={
+              mergeStyles
+                ? [styles.buttonText, controlsTextStyle]
+                : controlsTextStyle || styles.buttonText
+            }
           >
             ›
           </Text>
@@ -468,6 +474,7 @@ export class Pinar extends React.PureComponent<Props, State> {
         accessibilityLabelPrev,
         controlsButtonStyle,
         controlsTextStyle,
+        mergeStyles,
       } = this.props;
       return (
         <TouchableOpacity
@@ -481,7 +488,11 @@ export class Pinar extends React.PureComponent<Props, State> {
           <Text
             accessibilityLabel={accessibilityLabelPrev}
             accessible={accessibility}
-            style={controlsTextStyle || styles.buttonText}
+            style={
+              mergeStyles
+                ? [styles.buttonText, controlsTextStyle]
+                : controlsTextStyle || styles.buttonText
+            }
           >
             ‹
           </Text>
@@ -509,7 +520,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     }
 
     const { height, width } = this.state;
-    const { controlsContainerStyle } = this.props;
+    const { controlsContainerStyle, mergeStyles } = this.props;
 
     const defaultControlsContainerStyle = [
       styles.controlsContainer,
@@ -518,7 +529,11 @@ export class Pinar extends React.PureComponent<Props, State> {
     return (
       <View
         pointerEvents="box-none"
-        style={controlsContainerStyle || defaultControlsContainerStyle}
+        style={
+          mergeStyles
+            ? [defaultControlsContainerStyle, controlsContainerStyle]
+            : controlsContainerStyle || defaultControlsContainerStyle
+        }
       >
         {this.renderPrev()}
         {this.renderNext()}
@@ -544,13 +559,20 @@ export class Pinar extends React.PureComponent<Props, State> {
       horizontal,
       renderActiveDot,
       renderDot,
+      mergeStyles,
     } = this.props;
     const defaultDotsContainerStyle = horizontal
       ? styles.dotsContainerHorizontal
       : styles.dotsContainerVertical;
 
     return (
-      <View style={dotsContainerStyle || defaultDotsContainerStyle}>
+      <View
+        style={
+          mergeStyles
+            ? [defaultDotsContainerStyle, dotsContainerStyle]
+            : dotsContainerStyle || defaultDotsContainerStyle
+        }
+      >
         {React.Children.map(
           children,
           (_: JSX.Element, i: number): JSX.Element => {
@@ -566,7 +588,10 @@ export class Pinar extends React.PureComponent<Props, State> {
             const style = isActive
               ? activeDotStyle || styles.dotActive
               : dotStyle || styles.dot;
-            return <View key={i} style={style} />;
+            const mergeStyle = isActive
+              ? [styles.dotActive, activeDotStyle]
+              : [styles.dot, dotStyle];
+            return <View key={i} style={mergeStyles ? mergeStyle : style} />;
             /* eslint-enable react/no-array-index-key */
           }
         )}

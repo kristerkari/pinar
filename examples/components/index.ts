@@ -9,6 +9,7 @@ export { CustomIndex } from "./CustomIndex";
 export { CustomRender } from "./CustomRender";
 export { CustomSize } from "./CustomSize";
 export { CustomStyles } from "./CustomStyles";
+export { CustomMergeStyles } from "./CustomMergeStyles";
 export { CustomWidth } from "./CustomWidth";
 export { DisabledControls } from "./DisabledControls";
 export { Loop } from "./Loop";

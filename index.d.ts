@@ -97,6 +97,7 @@ export interface Props
   accessibilityLabelPrev: string;
   accessibilityLabelNext: string;
   children: JSX.Element | JSX.Element[];
+  mergeStyles: boolean;
 }
 
 export interface State {
@@ -109,6 +110,8 @@ export interface State {
     y: number;
   };
 }
+
+export { defaultStyles } from "./src/styles"
 
 declare module "pinar" {
   export default class Pinar extends PureComponent<Props, State> {
@@ -131,6 +134,7 @@ declare module "pinar" {
       accessibilityLabelPrev: string;
       accessibilityLabelNext: string;
       index: number;
+      mergeStyles: boolean;
     };
     public scrollBy(options: ScrollByOptions): void;
     public scrollToIndex(options: ScrollByOptions): void;

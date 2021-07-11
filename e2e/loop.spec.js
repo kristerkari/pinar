@@ -5,6 +5,7 @@ describe("loop", () => {
     await device.reloadReactNative();
   });
   it("should be able to go to Page 1 -> Page 2 -> Page 3 -> Page 1", async () => {
+    await element(by.id("scrollview")).scrollTo("bottom");
     await expect(element(by.id("loop"))).toBeVisible();
     await element(by.id("loop")).tap();
 
@@ -44,6 +45,7 @@ describe("loop", () => {
   });
 
   it("should be able to go to Page 1 -> Page 3 -> Page 2 -> Page 1", async () => {
+    await element(by.id("scrollview")).scrollTo("bottom");
     await expect(element(by.id("loop"))).toBeVisible();
     await element(by.id("loop")).tap();
 
@@ -83,6 +85,7 @@ describe("loop", () => {
   });
 
   it("should be able to go to Page 1 -> Page 3 -> Page 1", async () => {
+    await element(by.id("scrollview")).scrollTo("bottom");
     await expect(element(by.id("loop"))).toBeVisible();
     await element(by.id("loop")).tap();
 
