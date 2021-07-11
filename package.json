@@ -68,7 +68,6 @@
     "jest-circus": "^27.0.6",
     "lint-staged": "^11.0.0",
     "npmpub": "^4.1.0",
-    "patch-package": "^6.4.7",
     "prettier": "^2.3.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -145,5 +144,8 @@
     "testRunner": "jest",
     "runnerConfig": "e2e/config.json",
     "skipLegacyWorkersInjection": true
+  },
+  "dependencies": {
+    "patch-package": "^6.4.7"
   }
 }
