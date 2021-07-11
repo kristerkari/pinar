@@ -1,3 +1,8 @@
+# 0.12.0
+
+- Added: `mergeStyles` prop (false by default) to allow default styles to be merged with custom styles without a breaking change.
+- Added: allow importing of `defaultStyles` from the library. The default styles can be used to manually merge default styles with custom ones.
+
 # 0.11.0
 
 - Added: `scrollToIndex` method.
