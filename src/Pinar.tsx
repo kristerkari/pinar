@@ -553,7 +553,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       <View style={dotsContainerStyle || defaultDotsContainerStyle}>
         {React.Children.map(
           children,
-          (_: React.ReactChild, i: number): JSX.Element => {
+          (_: JSX.Element, i: number): JSX.Element => {
             /* eslint-disable react/no-array-index-key */
             const isActive = this.isActivePageIndex(i);
             if (isActive && typeof renderActiveDot === "function") {
