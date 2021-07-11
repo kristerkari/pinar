@@ -1,4 +1,9 @@
 {
-  "setupTestFrameworkScriptFile": "./init.js",
-  "testEnvironment": "node"
+  "setupFilesAfterEnv": ["./setup.js"],
+  "testRunner": "jest-circus/runner",
+  "testEnvironment": "./environment",
+  "testTimeout": 120000,
+  "reporters": ["detox/runners/jest/streamlineReporter"],
+  "maxWorkers": 1,
+  "verbose": true
 }

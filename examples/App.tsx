@@ -1,10 +1,10 @@
 import React from "react";
 import { Button, ScrollView, Text, TextStyle } from "react-native";
+import { createAppContainer } from "react-navigation";
 import {
-  createAppContainer,
   createStackNavigator,
-  NavigationScreenProps
-} from "react-navigation";
+  NavigationStackScreenProps,
+} from "react-navigation-stack";
 import {
   Autoplay,
   AutoplayVertical,
@@ -21,10 +21,10 @@ import {
   DisabledControls,
   Loop,
   Methods,
-  MethodsWithLoop
+  MethodsWithLoop,
 } from "./components";
 
-type Props = NavigationScreenProps;
+type Props = NavigationStackScreenProps;
 type State = {};
 
 const styles = {
@@ -32,8 +32,8 @@ const styles = {
     fontSize: 24,
     fontWeight: "700",
     paddingTop: 12,
-    paddingBottom: 12
-  } as TextStyle
+    paddingBottom: 12,
+  } as TextStyle,
 };
 
 class HomeScreen extends React.Component<Props, State> {
@@ -161,104 +161,104 @@ class HomeScreen extends React.Component<Props, State> {
 
 const AppNavigator = createStackNavigator({
   Home: {
-    screen: HomeScreen
+    screen: HomeScreen,
   },
   Autoplay: {
     screen: Autoplay,
     navigationOptions: {
-      title: "Autoplay with loop"
-    }
+      title: "Autoplay with loop",
+    },
   },
   AutoplayVertical: {
     screen: AutoplayVertical,
     navigationOptions: {
-      title: "Autoplay (vertical)"
-    }
+      title: "Autoplay (vertical)",
+    },
   },
   AutoplayWithoutLoop: {
     screen: AutoplayWithoutLoop,
     navigationOptions: {
-      title: "Autoplay without loop"
-    }
+      title: "Autoplay without loop",
+    },
   },
   Basic: {
     screen: Basic,
     navigationOptions: {
-      title: "Basic"
-    }
+      title: "Basic",
+    },
   },
   Basic2Carousels: {
     screen: Basic2Carousels,
     navigationOptions: {
-      title: "2 carousels on the same page"
-    }
+      title: "2 carousels on the same page",
+    },
   },
   BasicVertical: {
     screen: BasicVertical,
     navigationOptions: {
-      title: "Vertical"
-    }
+      title: "Vertical",
+    },
   },
   CustomHeight: {
     screen: CustomHeight,
     navigationOptions: {
-      title: "Custom height with default width"
-    }
+      title: "Custom height with default width",
+    },
   },
   CustomIndex: {
     screen: CustomIndex,
     navigationOptions: {
-      title: "Custom start page (page 2)"
-    }
+      title: "Custom start page (page 2)",
+    },
   },
   CustomRender: {
     screen: CustomRender,
     navigationOptions: {
-      title: "Custom next/prev/dot elements"
-    }
+      title: "Custom next/prev/dot elements",
+    },
   },
   CustomSize: {
     screen: CustomSize,
     navigationOptions: {
-      title: "Custom height and width"
-    }
+      title: "Custom height and width",
+    },
   },
   CustomStyles: {
     screen: CustomStyles,
     navigationOptions: {
-      title: "Custom styling"
-    }
+      title: "Custom styling",
+    },
   },
   CustomWidth: {
     screen: CustomWidth,
     navigationOptions: {
-      title: "Custom width with default height"
-    }
+      title: "Custom width with default height",
+    },
   },
   DisabledControls: {
     screen: DisabledControls,
     navigationOptions: {
-      title: "Autoplay with hidden prev/next buttons"
-    }
+      title: "Autoplay with hidden prev/next buttons",
+    },
   },
   Loop: {
     screen: Loop,
     navigationOptions: {
-      title: "Looping pages"
-    }
+      title: "Looping pages",
+    },
   },
   Methods: {
     screen: Methods,
     navigationOptions: {
-      title: "Methods"
-    }
+      title: "Methods",
+    },
   },
   MethodsWithLoop: {
     screen: MethodsWithLoop,
     navigationOptions: {
-      title: "Methods with loop enabled"
-    }
-  }
+      title: "Methods with loop enabled",
+    },
+  },
 });
 
 export default createAppContainer(AppNavigator);
