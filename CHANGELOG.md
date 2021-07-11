@@ -1,3 +1,7 @@
+# 0.12.1
+
+- Fixed: install error from a missing `patch-package` dependency.
+
 # 0.12.0
 
 - Added: `mergeStyles` prop (false by default) to allow default styles to be merged with custom styles without a breaking change.

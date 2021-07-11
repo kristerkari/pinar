@@ -1,6 +1,6 @@
 {
   "name": "pinar",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "Customizable, lightweight React Native carousel component with accessibility support",
   "main": "dist/src/index.js",
   "homepage": "https://github.com/kristerkari/pinar#readme",
