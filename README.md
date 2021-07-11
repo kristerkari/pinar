@@ -24,6 +24,7 @@ If you need more advanced things like animations, lazy loading of images, or par
   - [Properties of `<ScrollView />`](#properties-of-scrollview)
 - [Dependencies](#dependencies)
 - [Development](#development)
+- [Automated tests](#automated-tests)
 - [Special thanks](#special-thanks)
 - [License](#license)
 
@@ -225,6 +226,8 @@ If you want help out with the development of this library, bug reports and fixes
 First make sure that you have [Node.js](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [React Native](https://facebook.github.io/react-native/docs/getting-started.html) installed. It is also a good idea to have [Xcode](https://developer.apple.com/xcode/) and/or [Android Studio](https://developer.android.com/studio/) installed to be able to run the iOS simulators / Android emulators.
 
 If you choose to install emulators or simulators, you can use [the example app](/examples) to test your changes in a React Native app.
+
+#### Automated tests
 
 When making changes to the code, please add a unit test or a functional test to verify that the code is working. The test runner that the project uses is [Jest](https://jestjs.io/), [Enzyme](https://airbnb.io/enzyme/) is used to test React Components, and [Detox](https://github.com/wix/Detox) is used to run functional tests against the project's example app. The command to run unit tests is `yarn test` and the command to run functional tests is `yarn functional`.
 
