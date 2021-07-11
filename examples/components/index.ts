@@ -14,3 +14,4 @@ export { DisabledControls } from "./DisabledControls";
 export { Loop } from "./Loop";
 export { Methods } from "./Methods";
 export { MethodsWithLoop } from "./MethodsWithLoop";
+export { TouchableImages } from "./TouchableImages"

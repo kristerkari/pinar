@@ -22,6 +22,7 @@ import {
   Loop,
   Methods,
   MethodsWithLoop,
+  TouchableImages,
 } from "./components";
 
 type Props = NavigationStackScreenProps;
@@ -102,6 +103,13 @@ class HomeScreen extends React.Component<Props, State> {
             navigation.navigate("CustomRender");
           }}
           title="Custom next/prev/dot elements"
+        />
+        <Button
+          testID="touchable-images"
+          onPress={(): void => {
+            navigation.navigate("TouchableImages");
+          }}
+          title="Touchable images"
         />
         <Text style={styles.heading}>Looping</Text>
         <Button
@@ -257,6 +265,12 @@ const AppNavigator = createStackNavigator({
     screen: MethodsWithLoop,
     navigationOptions: {
       title: "Methods with loop enabled",
+    },
+  },
+  TouchableImages: {
+    screen: TouchableImages,
+    navigationOptions: {
+      title: "Touchable images",
     },
   },
 });
