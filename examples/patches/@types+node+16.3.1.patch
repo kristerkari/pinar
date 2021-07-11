@@ -1,0 +1,98 @@
+diff --git a/node_modules/@types/node/globals.d.ts b/node_modules/@types/node/globals.d.ts
+index ac96e46..979d605 100755
+--- a/node_modules/@types/node/globals.d.ts
++++ b/node_modules/@types/node/globals.d.ts
+@@ -54,41 +54,6 @@ declare var exports: any;
+  */
+ declare var gc: undefined | (() => void);
+ 
+-//#region borrowed
+-// from https://github.com/microsoft/TypeScript/blob/38da7c600c83e7b31193a62495239a0fe478cb67/lib/lib.webworker.d.ts#L633 until moved to separate lib
+-/** A controller object that allows you to abort one or more DOM requests as and when desired. */
+-interface AbortController {
+-    /**
+-     * Returns the AbortSignal object associated with this object.
+-     */
+-
+-    readonly signal: AbortSignal;
+-    /**
+-     * Invoking this method will set this object's AbortSignal's aborted flag and signal to any observers that the associated activity is to be aborted.
+-     */
+-    abort(): void;
+-}
+-
+-/** A signal object that allows you to communicate with a DOM request (such as a Fetch) and abort it if required via an AbortController object. */
+-interface AbortSignal {
+-    /**
+-     * Returns true if this AbortSignal's AbortController has signaled to abort, and false otherwise.
+-     */
+-    readonly aborted: boolean;
+-}
+-
+-declare var AbortController: {
+-    prototype: AbortController;
+-    new(): AbortController;
+-};
+-
+-declare var AbortSignal: {
+-    prototype: AbortSignal;
+-    new(): AbortSignal;
+-    // TODO: Add abort() static
+-};
+-//#endregion borrowed
+-
+ /*----------------------------------------------*
+ *                                               *
+ *               GLOBAL INTERFACES               *
+diff --git a/node_modules/@types/node/timers.d.ts b/node_modules/@types/node/timers.d.ts
+index ca01257..550c8ad 100755
+--- a/node_modules/@types/node/timers.d.ts
++++ b/node_modules/@types/node/timers.d.ts
+@@ -11,13 +11,6 @@ declare module 'timers' {
+         ref?: boolean | undefined;
+     }
+ 
+-    let setTimeout: typeof global.setTimeout;
+-    let clearTimeout: typeof global.clearTimeout;
+-    let setInterval: typeof global.setInterval;
+-    let clearInterval: typeof global.clearInterval;
+-    let setImmediate: typeof global.setImmediate;
+-    let clearImmediate: typeof global.clearImmediate;
+-
+     global {
+         namespace NodeJS {
+             // compatibility with older typings
+@@ -39,33 +32,6 @@ declare module 'timers' {
+             }
+         }
+ 
+-        function setTimeout<TArgs extends any[]>(callback: (...args: TArgs) => void, ms?: number, ...args: TArgs): NodeJS.Timeout;
+-        // util.promisify no rest args compability
+-        // tslint:disable-next-line void-return
+-        function setTimeout(callback: (args: void) => void): NodeJS.Timeout;
+-        namespace setTimeout {
+-            const __promisify__: typeof setTimeoutPromise;
+-        }
+-        function clearTimeout(timeoutId: NodeJS.Timeout): void;
+-
+-        function setInterval<TArgs extends any[]>(callback: (...args: TArgs) => void, ms?: number, ...args: TArgs): NodeJS.Timer;
+-        // util.promisify no rest args compability
+-        // tslint:disable-next-line void-return
+-        function setInterval(callback: (args: void) => void, ms?: number): NodeJS.Timer;
+-        namespace setInterval {
+-            const __promisify__: typeof setIntervalPromise;
+-        }
+-        function clearInterval(intervalId: NodeJS.Timeout): void;
+-
+-        function setImmediate<TArgs extends any[]>(callback: (...args: TArgs) => void, ...args: TArgs): NodeJS.Immediate;
+-        // util.promisify no rest args compability
+-        // tslint:disable-next-line void-return
+-        function setImmediate(callback: (args: void) => void): NodeJS.Immediate;
+-        namespace setImmediate {
+-            const __promisify__: typeof setImmediatePromise;
+-        }
+-        function clearImmediate(immediateId: NodeJS.Immediate): void;
+-
+         function queueMicrotask(callback: () => void): void;
+     }
+ }
