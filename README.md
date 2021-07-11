@@ -114,6 +114,7 @@ If you don't want to run the app, you can have a look at the [components folder]
 | `accessibility`          |   true   | `boolean` | Set to `false` to disable accessibility features (not recommended).       |
 | `accessibilityLabelPrev` | Previous | `string`  | Accessibility label for the prev button.                                  |
 | `accessibilityLabelNext` |   Next   | `string`  | Accessibility label for the next button.                                  |
+| `mergeStyles`            |   false  | `boolean` | Set to `true` to merge your custom styles with the default styles.        |
 
 #### Callbacks
 
@@ -160,7 +161,11 @@ You can then call the method from outside the carousel:
 
 #### Custom styling properties
 
-Use these properties to customize how the carousel is styled. Have a look at the [custom styles component](/examples/components/CustomStyles.tsx) for an example.
+Use these properties to customize how the carousel is styled.
+
+Set the `mergeStyles` property to `true` if you want to merge your custom styles with the default ones instead of having define all the needed styles. You can also `import { defaulStyles } from "pinar"` to get access to the default styles and use them as defaults.
+
+Have a look at the ["custom styles" component](/examples/components/CustomStyles.tsx) and ["custom styles with merge" component](/examples/components/CustomMergeStyles.tsx) for an example.
 
 | Property                 | Default |          Type          | Description                                       |
 | :----------------------- | :-----: | :--------------------: | :------------------------------------------------ |

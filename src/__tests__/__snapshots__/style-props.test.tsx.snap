@@ -1,5 +1,2208 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`merging styles with defaultStyles should merge custom activeDotStyle with defaults 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="00"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="11"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "bottom": 25,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Object {
+            "backgroundColor": "blue",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 1334,
+            "width": 750,
+          },
+        ]
+      }
+    >
+      <View />
+      <ForwardRef
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarNextButton"
+      >
+        <Text
+          accessibilityLabel="Next"
+          accessible={true}
+          style={
+            Object {
+              "color": "#333",
+              "fontSize": 50,
+              "padding": 20,
+            }
+          }
+        >
+          ›
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`merging styles with defaultStyles should merge custom controlsContainerStyle with defaults 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="00"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="11"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "bottom": 25,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Object {
+            "backgroundColor": "#333",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "blue",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "left": 0,
+          "paddingHorizontal": 10,
+          "paddingVertical": 10,
+          "position": "absolute",
+          "top": 0,
+        }
+      }
+    >
+      <View />
+      <ForwardRef
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarNextButton"
+      >
+        <Text
+          accessibilityLabel="Next"
+          accessible={true}
+          style={
+            Object {
+              "color": "#333",
+              "fontSize": 50,
+              "padding": 20,
+            }
+          }
+        >
+          ›
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`merging styles with defaultStyles should merge custom controlsTextStyle with defaults 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="00"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="11"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="22"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".2"
+        >
+          <Text>
+            3
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "bottom": 25,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Object {
+            "backgroundColor": "#333",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="2/.2"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 1334,
+            "width": 750,
+          },
+        ]
+      }
+    >
+      <ForwardRef
+        accessibilityLabel="Previous"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarPrevButton"
+      >
+        <Text
+          accessibilityLabel="Previous"
+          accessible={true}
+          style={
+            Object {
+              "color": "blue",
+              "fontSize": 50,
+              "padding": 20,
+            }
+          }
+        >
+          ‹
+        </Text>
+      </ForwardRef>
+      <ForwardRef
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarNextButton"
+      >
+        <Text
+          accessibilityLabel="Next"
+          accessible={true}
+          style={
+            Object {
+              "color": "blue",
+              "fontSize": 50,
+              "padding": 20,
+            }
+          }
+        >
+          ›
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`merging styles with defaultStyles should merge custom dotStyle with defaults 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="00"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="11"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "bottom": 25,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Object {
+            "backgroundColor": "#333",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Object {
+            "backgroundColor": "blue",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 1334,
+            "width": 750,
+          },
+        ]
+      }
+    >
+      <View />
+      <ForwardRef
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarNextButton"
+      >
+        <Text
+          accessibilityLabel="Next"
+          accessible={true}
+          style={
+            Object {
+              "color": "#333",
+              "fontSize": 50,
+              "padding": 20,
+            }
+          }
+        >
+          ›
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`merging styles with defaultStyles should merge custom dotsContainerStyle with defaults 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="00"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="11"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "blue",
+          "bottom": 25,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Object {
+            "backgroundColor": "#333",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "borderRadius": 4,
+            "height": 8,
+            "marginBottom": 3,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "marginTop": 3,
+            "width": 8,
+          }
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "left": 0,
+            "paddingHorizontal": 10,
+            "paddingVertical": 10,
+            "position": "absolute",
+            "top": 0,
+          },
+          Object {
+            "height": 1334,
+            "width": 750,
+          },
+        ]
+      }
+    >
+      <View />
+      <ForwardRef
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarNextButton"
+      >
+        <Text
+          accessibilityLabel="Next"
+          accessible={true}
+          style={
+            Object {
+              "color": "#333",
+              "fontSize": 50,
+              "padding": 20,
+            }
+          }
+        >
+          ›
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`merging styles with mergeStyles prop should merge custom activeDotStyle with defaults 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="00"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="11"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "bottom": 25,
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#333",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            Object {
+              "backgroundColor": "blue",
+            },
+          ]
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0,0,0,.2)",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "left": 0,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
+              "position": "absolute",
+              "top": 0,
+            },
+            Object {
+              "height": 1334,
+              "width": 750,
+            },
+          ],
+          undefined,
+        ]
+      }
+    >
+      <View />
+      <ForwardRef
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarNextButton"
+      >
+        <Text
+          accessibilityLabel="Next"
+          accessible={true}
+          style={
+            Array [
+              Object {
+                "color": "#333",
+                "fontSize": 50,
+                "padding": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          ›
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`merging styles with mergeStyles prop should merge custom controlsButtonStyle with defaults 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="00"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="11"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="22"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".2"
+        >
+          <Text>
+            3
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "bottom": 25,
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0,0,0,.2)",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#333",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        key="2/.2"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0,0,0,.2)",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "left": 0,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
+              "position": "absolute",
+              "top": 0,
+            },
+            Object {
+              "height": 1334,
+              "width": 750,
+            },
+          ],
+          undefined,
+        ]
+      }
+    >
+      <ForwardRef
+        accessibilityLabel="Previous"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        style={
+          Object {
+            "backgroundColor": "blue",
+          }
+        }
+        testID="PinarPrevButton"
+      >
+        <Text
+          accessibilityLabel="Previous"
+          accessible={true}
+          style={
+            Array [
+              Object {
+                "color": "#333",
+                "fontSize": 50,
+                "padding": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          ‹
+        </Text>
+      </ForwardRef>
+      <ForwardRef
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        style={
+          Object {
+            "backgroundColor": "blue",
+          }
+        }
+        testID="PinarNextButton"
+      >
+        <Text
+          accessibilityLabel="Next"
+          accessible={true}
+          style={
+            Array [
+              Object {
+                "color": "#333",
+                "fontSize": 50,
+                "padding": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          ›
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`merging styles with mergeStyles prop should merge custom controlsContainerStyle with defaults 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="00"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="11"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "bottom": 25,
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#333",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0,0,0,.2)",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "left": 0,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
+              "position": "absolute",
+              "top": 0,
+            },
+            Object {
+              "height": 1334,
+              "width": 750,
+            },
+          ],
+          Object {
+            "backgroundColor": "blue",
+          },
+        ]
+      }
+    >
+      <View />
+      <ForwardRef
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarNextButton"
+      >
+        <Text
+          accessibilityLabel="Next"
+          accessible={true}
+          style={
+            Array [
+              Object {
+                "color": "#333",
+                "fontSize": 50,
+                "padding": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          ›
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`merging styles with mergeStyles prop should merge custom controlsTextStyle with defaults 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="00"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="11"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="22"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".2"
+        >
+          <Text>
+            3
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "bottom": 25,
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0,0,0,.2)",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#333",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        key="2/.2"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0,0,0,.2)",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "left": 0,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
+              "position": "absolute",
+              "top": 0,
+            },
+            Object {
+              "height": 1334,
+              "width": 750,
+            },
+          ],
+          undefined,
+        ]
+      }
+    >
+      <ForwardRef
+        accessibilityLabel="Previous"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarPrevButton"
+      >
+        <Text
+          accessibilityLabel="Previous"
+          accessible={true}
+          style={
+            Array [
+              Object {
+                "color": "#333",
+                "fontSize": 50,
+                "padding": 20,
+              },
+              Object {
+                "color": "blue",
+              },
+            ]
+          }
+        >
+          ‹
+        </Text>
+      </ForwardRef>
+      <ForwardRef
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarNextButton"
+      >
+        <Text
+          accessibilityLabel="Next"
+          accessible={true}
+          style={
+            Array [
+              Object {
+                "color": "#333",
+                "fontSize": 50,
+                "padding": 20,
+              },
+              Object {
+                "color": "blue",
+              },
+            ]
+          }
+        >
+          ›
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`merging styles with mergeStyles prop should merge custom dotStyle with defaults 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="00"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="11"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "bottom": 25,
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#333",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0,0,0,.2)",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            Object {
+              "backgroundColor": "blue",
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "left": 0,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
+              "position": "absolute",
+              "top": 0,
+            },
+            Object {
+              "height": 1334,
+              "width": 750,
+            },
+          ],
+          undefined,
+        ]
+      }
+    >
+      <View />
+      <ForwardRef
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarNextButton"
+      >
+        <Text
+          accessibilityLabel="Next"
+          accessible={true}
+          style={
+            Array [
+              Object {
+                "color": "#333",
+                "fontSize": 50,
+                "padding": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          ›
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`merging styles with mergeStyles prop should merge custom dotsContainerStyle with defaults 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "position": "relative",
+      },
+      Object {
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+      },
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <ScrollView
+      automaticallyAdjustContentInsets={false}
+      bounces={false}
+      horizontal={true}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      removeClippedSubviews={true}
+      scrollEnabled={true}
+      scrollEventThrottle={16}
+      scrollsToTop={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+    >
+      <View
+        accessible={true}
+        key="00"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".0"
+        >
+          <Text>
+            1
+          </Text>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        key="11"
+        style={
+          Object {
+            "height": 1334,
+            "width": 750,
+          }
+        }
+      >
+        <View
+          key=".1"
+        >
+          <Text>
+            2
+          </Text>
+        </View>
+      </View>
+    </ScrollView>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "bottom": 25,
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+          },
+          Object {
+            "backgroundColor": "blue",
+          },
+        ]
+      }
+    >
+      <View
+        key="0/.0"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#333",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+      <View
+        key="1/.1"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "rgba(0,0,0,.2)",
+              "borderRadius": 4,
+              "height": 8,
+              "marginBottom": 3,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "marginTop": 3,
+              "width": 8,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Array [
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "left": 0,
+              "paddingHorizontal": 10,
+              "paddingVertical": 10,
+              "position": "absolute",
+              "top": 0,
+            },
+            Object {
+              "height": 1334,
+              "width": 750,
+            },
+          ],
+          undefined,
+        ]
+      }
+    >
+      <View />
+      <ForwardRef
+        accessibilityLabel="Next"
+        accessibilityRole="button"
+        accessible={true}
+        onPress={[Function]}
+        testID="PinarNextButton"
+      >
+        <Text
+          accessibilityLabel="Next"
+          accessible={true}
+          style={
+            Array [
+              Object {
+                "color": "#333",
+                "fontSize": 50,
+                "padding": 20,
+              },
+              undefined,
+            ]
+          }
+        >
+          ›
+        </Text>
+      </ForwardRef>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
 <View
   onLayout={[Function]}

@@ -5,88 +5,73 @@ import {
   Text,
   TextStyle,
   View,
-  ViewStyle
+  ViewStyle,
 } from "react-native";
-import Carousel, { defaultStyles } from "../../src/index";
+import Carousel from "../../src/index";
 
 const styles = {
   slide1: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#a3c9a8"
+    backgroundColor: "#a3c9a8",
   } as ViewStyle,
   slide2: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#84b59f"
+    backgroundColor: "#84b59f",
   } as ViewStyle,
   slide3: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#69a297"
+    backgroundColor: "#69a297",
   } as ViewStyle,
   text: {
     color: "#1f2d3d",
     opacity: 0.7,
     fontSize: 48,
-    fontWeight: "bold"
-  } as TextStyle
+    fontWeight: "bold",
+  } as TextStyle,
 };
 
-export const CustomStyles = (): JSX.Element => (
+export const CustomMergeStyles = (): JSX.Element => (
   <Carousel
+    mergeStyles={true}
     dotsContainerStyle={{
       position: "absolute",
       top: 25,
       left: 0,
       right: 0,
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "center",
-      alignItems: "center"
+      alignItems: "flex-start",
     }}
     activeDotStyle={{
       backgroundColor: "#eace15",
-      width: 8,
-      height: 8,
-      marginLeft: 3,
-      marginRight: 3,
-      marginTop: 3,
-      marginBottom: 3
     }}
     dotStyle={{
       backgroundColor: "rgba(0,0,0,.2)",
-      width: 8,
-      height: 8,
-      marginLeft: 3,
-      marginRight: 3,
-      marginTop: 3,
-      marginBottom: 3
     }}
     controlsContainerStyle={{
-      ...defaultStyles.controlsContainer,
       position: "absolute",
       top: 30,
       left: 0,
       right: 0,
-      paddingHorizontal: 10,
-      paddingVertical: 10,
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "flex-start",
     }}
     controlsButtonStyle={{
-      display: "flex",
+      backgroundColor: "black",
+      borderRadius: 60,
+      opacity: 0.5,
+      width: 80,
+      height: 80,
       flexDirection: "row",
       justifyContent: "center",
       alignItems: "center",
-      width: 80,
-      height: 80,
-      backgroundColor: "black",
-      borderRadius: 60,
-      opacity: 0.5
     }}
-    controlsTextStyle={{ fontSize: 50, color: "#eace15" }}
+    controlsTextStyle={{ fontSize: 50, color: "#eace15", padding: 0 }}
     onIndexChanged={({ index, total }): void => {
       if (Platform.OS === "ios") {
         const page = index + 1;
