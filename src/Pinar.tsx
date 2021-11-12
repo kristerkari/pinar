@@ -617,7 +617,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     }
 
     return keys.map((key: string, i: number): JSX.Element => {
-      /* eslint-disable react-native-a11y/accessibility-label, react/no-array-index-key */
+      /* eslint-disable react/no-array-index-key */
       return (
         <View
           accessible={accessibility}
@@ -627,7 +627,7 @@ export class Pinar extends React.PureComponent<Props, State> {
           {childrenArray[Number(key)]}
         </View>
       );
-      /* eslint-enable react-native-a11y/accessibility-label, react/no-array-index-key */
+      /* eslint-enable react/no-array-index-key */
     });
   };
 
