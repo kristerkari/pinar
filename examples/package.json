@@ -14,7 +14,7 @@
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
     "react": "16.13.1",
-    "react-native": "0.63.4",
+    "react-native": "0.64.1",
     "react-native-gesture-handler": "1.9.0",
     "react-native-safe-area-context": "^3.2.0",
     "react-native-screens": "^2.3.0",
