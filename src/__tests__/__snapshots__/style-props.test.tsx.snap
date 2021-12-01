@@ -149,7 +149,7 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -169,7 +169,7 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -318,7 +318,7 @@ exports[`merging styles with defaultStyles should merge custom controlsContainer
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -338,7 +338,7 @@ exports[`merging styles with defaultStyles should merge custom controlsContainer
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -525,7 +525,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
         ]
       }
     >
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Previous"
         accessibilityRole="button"
         accessible={true}
@@ -545,8 +545,8 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
         >
           ‹
         </Text>
-      </ForwardRef>
-      <ForwardRef
+      </TouchableOpacity>
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -566,7 +566,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -721,7 +721,7 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -741,7 +741,7 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -897,7 +897,7 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -917,7 +917,7 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -1086,7 +1086,7 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -1109,7 +1109,7 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -1311,7 +1311,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
         ]
       }
     >
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Previous"
         accessibilityRole="button"
         accessible={true}
@@ -1339,8 +1339,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
         >
           ‹
         </Text>
-      </ForwardRef>
-      <ForwardRef
+      </TouchableOpacity>
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -1368,7 +1368,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -1537,7 +1537,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -1560,7 +1560,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -1762,7 +1762,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
         ]
       }
     >
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Previous"
         accessibilityRole="button"
         accessible={true}
@@ -1787,8 +1787,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
         >
           ‹
         </Text>
-      </ForwardRef>
-      <ForwardRef
+      </TouchableOpacity>
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -1813,7 +1813,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -1982,7 +1982,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -2005,7 +2005,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -2174,7 +2174,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -2197,7 +2197,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -2357,7 +2357,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -2377,7 +2377,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -2537,7 +2537,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -2557,7 +2557,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -2705,7 +2705,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -2725,7 +2725,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -2912,7 +2912,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
         ]
       }
     >
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Previous"
         accessibilityRole="button"
         accessible={true}
@@ -2937,8 +2937,8 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
         >
           ‹
         </Text>
-      </ForwardRef>
-      <ForwardRef
+      </TouchableOpacity>
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -2963,7 +2963,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -3103,7 +3103,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -3123,7 +3123,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -3310,7 +3310,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
         ]
       }
     >
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Previous"
         accessibilityRole="button"
         accessible={true}
@@ -3328,8 +3328,8 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
         >
           ‹
         </Text>
-      </ForwardRef>
-      <ForwardRef
+      </TouchableOpacity>
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -3347,7 +3347,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -3495,7 +3495,7 @@ exports[`style props should allow custom dotStyle 1`] = `
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -3515,7 +3515,7 @@ exports[`style props should allow custom dotStyle 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -3663,7 +3663,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -3683,7 +3683,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -3840,7 +3840,7 @@ exports[`style props should allow style prop 1`] = `
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -3860,7 +3860,7 @@ exports[`style props should allow style prop 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
