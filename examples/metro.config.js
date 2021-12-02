@@ -6,19 +6,19 @@
  */
 
 const path = require("path");
-const blacklist = require("metro-config/src/defaults/blacklist");
+const exclusionList = require('metro-config/src/defaults/exclusionList');
 
 module.exports = {
   transformer: {
     getTransformOptions: async () => ({
       transform: {
         experimentalImportSupport: false,
-        inlineRequires: false
+        inlineRequires: true,
       }
     })
   },
   resolver: {
-    blacklistRE: blacklist([/\/pinar\/node_modules\/react-native\/.*/]),
+    blacklistRE: exclusionList([/\/pinar\/node_modules\/react-native\/.*/]),
     extraNodeModules: {
       react: path.resolve(__dirname, "node_modules/react"),
       "react-native": path.resolve(__dirname, "node_modules/react-native")

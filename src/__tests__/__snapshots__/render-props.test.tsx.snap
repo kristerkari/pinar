@@ -182,7 +182,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Custom next button"
         accessibilityRole="button"
         onPress={[Function]}
@@ -190,7 +190,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         <Text>
           Next
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -377,7 +377,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         ]
       }
     >
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Custom prev button"
         accessibilityRole="button"
         onPress={[Function]}
@@ -385,8 +385,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
         <Text>
           Prev
         </Text>
-      </ForwardRef>
-      <ForwardRef
+      </TouchableOpacity>
+      <TouchableOpacity
         accessibilityLabel="Custom next button"
         accessibilityRole="button"
         onPress={[Function]}
@@ -394,7 +394,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         <Text>
           Next
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -581,7 +581,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         ]
       }
     >
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Custom prev button"
         accessibilityRole="button"
         onPress={[Function]}
@@ -589,7 +589,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         <Text>
           Prev
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
       <View />
     </View>
   </View>
@@ -845,7 +845,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -865,7 +865,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -982,7 +982,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -1002,7 +1002,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -1118,7 +1118,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
         ]
       }
     >
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Previous"
         accessibilityRole="button"
         accessible={true}
@@ -1138,7 +1138,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
         >
           ‹
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
       <View />
     </View>
   </View>

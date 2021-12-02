@@ -271,7 +271,7 @@ exports[`basic options should render with default settings 1`] = `
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -291,7 +291,7 @@ exports[`basic options should render with default settings 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -478,7 +478,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         ]
       }
     >
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="custom prev label"
         accessibilityRole="button"
         accessible={true}
@@ -498,8 +498,8 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         >
           ‹
         </Text>
-      </ForwardRef>
-      <ForwardRef
+      </TouchableOpacity>
+      <TouchableOpacity
         accessibilityLabel="custom next label"
         accessibilityRole="button"
         accessible={true}
@@ -519,7 +519,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -709,7 +709,7 @@ exports[`basic options should support disabling accessibility 1`] = `
         ]
       }
     >
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Previous"
         accessibilityRole="button"
         accessible={false}
@@ -729,8 +729,8 @@ exports[`basic options should support disabling accessibility 1`] = `
         >
           ‹
         </Text>
-      </ForwardRef>
-      <ForwardRef
+      </TouchableOpacity>
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={false}
@@ -750,7 +750,7 @@ exports[`basic options should support disabling accessibility 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -860,7 +860,7 @@ exports[`basic options should support disabling dots 1`] = `
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -880,7 +880,7 @@ exports[`basic options should support disabling dots 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -1232,7 +1232,7 @@ exports[`basic options should support loop option 1`] = `
         ]
       }
     >
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Previous"
         accessibilityRole="button"
         accessible={true}
@@ -1252,8 +1252,8 @@ exports[`basic options should support loop option 1`] = `
         >
           ‹
         </Text>
-      </ForwardRef>
-      <ForwardRef
+      </TouchableOpacity>
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -1273,7 +1273,7 @@ exports[`basic options should support loop option 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
@@ -1426,7 +1426,7 @@ exports[`basic options should support providing height and width 1`] = `
       }
     >
       <View />
-      <ForwardRef
+      <TouchableOpacity
         accessibilityLabel="Next"
         accessibilityRole="button"
         accessible={true}
@@ -1446,7 +1446,7 @@ exports[`basic options should support providing height and width 1`] = `
         >
           ›
         </Text>
-      </ForwardRef>
+      </TouchableOpacity>
     </View>
   </View>
 </View>
