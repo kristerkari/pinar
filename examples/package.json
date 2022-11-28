@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
-    "@babel/runtime": "^7.18.9",
+    "@babel/runtime": "^7.20.5",
     "babel-jest": "^28.1.3",
     "eslint": "8.24.0",
     "jest": "^28.1.3",
