@@ -1,10 +1,7 @@
 import React from "react";
 import { Button, ScrollView, Text, TextStyle } from "react-native";
-import { createAppContainer } from "react-navigation";
-import {
-  createStackNavigator,
-  NavigationStackScreenProps,
-} from "react-navigation-stack";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator, NativeStackScreenProps } from '@react-navigation/native-stack';
 import {
   Autoplay,
   AutoplayVertical,
@@ -26,7 +23,7 @@ import {
   TouchableImages,
 } from "./components";
 
-type Props = NavigationStackScreenProps;
+type Props = NativeStackScreenProps<any, any, any>;
 type State = {};
 
 const styles = {
@@ -174,118 +171,34 @@ class HomeScreen extends React.Component<Props, State> {
   }
 }
 
-const AppNavigator = createStackNavigator({
-  Home: {
-    screen: HomeScreen,
-  },
-  Autoplay: {
-    screen: Autoplay,
-    navigationOptions: {
-      title: "Autoplay with loop",
-    },
-  },
-  AutoplayVertical: {
-    screen: AutoplayVertical,
-    navigationOptions: {
-      title: "Autoplay (vertical)",
-    },
-  },
-  AutoplayWithoutLoop: {
-    screen: AutoplayWithoutLoop,
-    navigationOptions: {
-      title: "Autoplay without loop",
-    },
-  },
-  Basic: {
-    screen: Basic,
-    navigationOptions: {
-      title: "Basic",
-    },
-  },
-  Basic2Carousels: {
-    screen: Basic2Carousels,
-    navigationOptions: {
-      title: "2 carousels on the same page",
-    },
-  },
-  BasicVertical: {
-    screen: BasicVertical,
-    navigationOptions: {
-      title: "Vertical",
-    },
-  },
-  CustomHeight: {
-    screen: CustomHeight,
-    navigationOptions: {
-      title: "Custom height with default width",
-    },
-  },
-  CustomIndex: {
-    screen: CustomIndex,
-    navigationOptions: {
-      title: "Custom start page (page 2)",
-    },
-  },
-  CustomRender: {
-    screen: CustomRender,
-    navigationOptions: {
-      title: "Custom next/prev/dot elements",
-    },
-  },
-  CustomSize: {
-    screen: CustomSize,
-    navigationOptions: {
-      title: "Custom height and width",
-    },
-  },
-  CustomStyles: {
-    screen: CustomStyles,
-    navigationOptions: {
-      title: "Custom styling",
-    },
-  },
-  CustomMergeStyles: {
-    screen: CustomMergeStyles,
-    navigationOptions: {
-      title: "Custom styling merging with defaults",
-    },
-  },
-  CustomWidth: {
-    screen: CustomWidth,
-    navigationOptions: {
-      title: "Custom width with default height",
-    },
-  },
-  DisabledControls: {
-    screen: DisabledControls,
-    navigationOptions: {
-      title: "Autoplay with hidden prev/next buttons",
-    },
-  },
-  Loop: {
-    screen: Loop,
-    navigationOptions: {
-      title: "Looping pages",
-    },
-  },
-  Methods: {
-    screen: Methods,
-    navigationOptions: {
-      title: "Methods",
-    },
-  },
-  MethodsWithLoop: {
-    screen: MethodsWithLoop,
-    navigationOptions: {
-      title: "Methods with loop enabled",
-    },
-  },
-  TouchableImages: {
-    screen: TouchableImages,
-    navigationOptions: {
-      title: "Touchable images",
-    },
-  },
-});
+const Stack = createNativeStackNavigator();
 
-export default createAppContainer(AppNavigator);
+function App(): JSX.Element {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Autoplay" component={Autoplay} options={{ title: "Autoplay with loop" }} />
+        <Stack.Screen name="AutoplayVertical" component={AutoplayVertical} options={{ title: "Autoplay (vertical)" }} />
+        <Stack.Screen name="AutoplayWithoutLoop" component={AutoplayWithoutLoop} options={{ title: "Autoplay without loop" }} />
+        <Stack.Screen name="Basic" component={Basic} options={{ title: "Basic" }} />
+        <Stack.Screen name="Basic2Carousels" component={Basic2Carousels} options={{ title: "2 carousels on the same page" }} />
+        <Stack.Screen name="BasicVertical" component={BasicVertical} options={{ title: "Vertical" }} />
+        <Stack.Screen name="CustomHeight" component={CustomHeight} options={{ title: "Custom height with default width" }} />
+        <Stack.Screen name="CustomIndex" component={CustomIndex} options={{ title: "Custom start page (page 2)" }} />
+        <Stack.Screen name="CustomRender" component={CustomRender} options={{ title: "Custom next/prev/dot elements" }} />
+        <Stack.Screen name="CustomSize" component={CustomSize} options={{ title: "Custom height and width" }} />
+        <Stack.Screen name="CustomStyles" component={CustomStyles} options={{ title: "Custom styling" }} />
+        <Stack.Screen name="CustomMergeStyles" component={CustomMergeStyles} options={{ title: "Custom styling merging with defaults" }} />
+        <Stack.Screen name="CustomWidth" component={CustomWidth} options={{ title: "Custom width with default height" }} />
+        <Stack.Screen name="DisabledControls" component={DisabledControls} options={{ title: "Autoplay with hidden prev/next buttons" }} />
+        <Stack.Screen name="Loop" component={Loop} options={{ title: "Looping pages" }} />
+        <Stack.Screen name="Methods" component={Methods} options={{ title: "Methods" }} />
+        <Stack.Screen name="MethodsWithLoop" component={MethodsWithLoop} options={{ title: "Methods with loop enabled" }} />
+        <Stack.Screen name="TouchableImages" component={TouchableImages} options={{ title: "Touchable images" }} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;
