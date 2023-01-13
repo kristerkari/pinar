@@ -4,15 +4,15 @@ exports[`render props control buttons should allow custom next and prev buttons 
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -21,7 +21,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -47,7 +47,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -65,7 +65,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -83,7 +83,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         accessible={true}
         key="22"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -100,7 +100,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -115,7 +115,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -130,7 +130,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -145,7 +145,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       <View
         key="2/.2"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -161,8 +161,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -174,7 +174,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -200,15 +200,15 @@ exports[`render props control buttons should allow custom next and prev buttons 
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -217,7 +217,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -243,7 +243,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -261,7 +261,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -279,7 +279,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         accessible={true}
         key="22"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -296,7 +296,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -311,7 +311,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -326,7 +326,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -341,7 +341,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       <View
         key="2/.2"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -357,8 +357,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -370,7 +370,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -404,15 +404,15 @@ exports[`render props control buttons should allow custom next and prev buttons 
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -421,7 +421,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -447,7 +447,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -465,7 +465,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -483,7 +483,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
         accessible={true}
         key="22"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -500,7 +500,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -515,7 +515,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -530,7 +530,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -545,7 +545,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
       <View
         key="2/.2"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -561,8 +561,8 @@ exports[`render props control buttons should allow custom next and prev buttons 
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -574,7 +574,7 @@ exports[`render props control buttons should allow custom next and prev buttons 
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -600,15 +600,15 @@ exports[`render props control buttons should not show custom next and prev butto
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -617,7 +617,7 @@ exports[`render props control buttons should not show custom next and prev butto
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -643,7 +643,7 @@ exports[`render props control buttons should not show custom next and prev butto
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -660,7 +660,7 @@ exports[`render props control buttons should not show custom next and prev butto
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -675,7 +675,7 @@ exports[`render props control buttons should not show custom next and prev butto
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -691,8 +691,8 @@ exports[`render props control buttons should not show custom next and prev butto
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -704,7 +704,7 @@ exports[`render props control buttons should not show custom next and prev butto
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -722,15 +722,15 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -739,7 +739,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -765,7 +765,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -783,7 +783,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -800,7 +800,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -824,8 +824,8 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -837,7 +837,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -856,7 +856,7 @@ exports[`render props custom dots should allow custom active and regular dot 1`]
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -875,15 +875,15 @@ exports[`render props custom dots should allow showing page numbers instead of d
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -892,7 +892,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -918,7 +918,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -936,7 +936,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -961,8 +961,8 @@ exports[`render props custom dots should allow showing page numbers instead of d
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -974,7 +974,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -993,7 +993,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -1012,15 +1012,15 @@ exports[`render props custom dots should allow showing page numbers instead of d
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -1029,7 +1029,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -1055,7 +1055,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1073,7 +1073,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1098,8 +1098,8 @@ exports[`render props custom dots should allow showing page numbers instead of d
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -1111,7 +1111,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -1129,7 +1129,7 @@ exports[`render props custom dots should allow showing page numbers instead of d
           accessibilityLabel="Previous"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,

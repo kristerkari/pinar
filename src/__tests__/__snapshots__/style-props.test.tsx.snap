@@ -4,15 +4,15 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -21,7 +21,7 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -47,7 +47,7 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -65,7 +65,7 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -82,7 +82,7 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -97,7 +97,7 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "blue",
             "borderRadius": 4,
             "height": 8,
@@ -112,7 +112,7 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -128,8 +128,8 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -141,7 +141,7 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -160,7 +160,7 @@ exports[`merging styles with defaultStyles should merge custom activeDotStyle wi
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -179,15 +179,15 @@ exports[`merging styles with defaultStyles should merge custom controlsContainer
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -196,7 +196,7 @@ exports[`merging styles with defaultStyles should merge custom controlsContainer
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -222,7 +222,7 @@ exports[`merging styles with defaultStyles should merge custom controlsContainer
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -240,7 +240,7 @@ exports[`merging styles with defaultStyles should merge custom controlsContainer
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -257,7 +257,7 @@ exports[`merging styles with defaultStyles should merge custom controlsContainer
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -272,7 +272,7 @@ exports[`merging styles with defaultStyles should merge custom controlsContainer
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -287,7 +287,7 @@ exports[`merging styles with defaultStyles should merge custom controlsContainer
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -303,7 +303,7 @@ exports[`merging styles with defaultStyles should merge custom controlsContainer
     <View
       pointerEvents="box-none"
       style={
-        Object {
+        {
           "alignItems": "center",
           "backgroundColor": "blue",
           "flex": 1,
@@ -329,7 +329,7 @@ exports[`merging styles with defaultStyles should merge custom controlsContainer
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -348,15 +348,15 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -365,7 +365,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -391,7 +391,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -409,7 +409,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -427,7 +427,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
         accessible={true}
         key="22"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -444,7 +444,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -459,7 +459,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -474,7 +474,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -489,7 +489,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
       <View
         key="2/.2"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -505,8 +505,8 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -518,7 +518,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -536,7 +536,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
           accessibilityLabel="Previous"
           accessible={true}
           style={
-            Object {
+            {
               "color": "blue",
               "fontSize": 50,
               "padding": 20,
@@ -557,7 +557,7 @@ exports[`merging styles with defaultStyles should merge custom controlsTextStyle
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "blue",
               "fontSize": 50,
               "padding": 20,
@@ -576,15 +576,15 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -593,7 +593,7 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -619,7 +619,7 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -637,7 +637,7 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -654,7 +654,7 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -669,7 +669,7 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -684,7 +684,7 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "blue",
             "borderRadius": 4,
             "height": 8,
@@ -700,8 +700,8 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -713,7 +713,7 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -732,7 +732,7 @@ exports[`merging styles with defaultStyles should merge custom dotStyle with def
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -751,15 +751,15 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -768,7 +768,7 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -794,7 +794,7 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -812,7 +812,7 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -829,7 +829,7 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "backgroundColor": "blue",
           "bottom": 25,
@@ -845,7 +845,7 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -860,7 +860,7 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -876,8 +876,8 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -889,7 +889,7 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -908,7 +908,7 @@ exports[`merging styles with defaultStyles should merge custom dotsContainerStyl
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -927,15 +927,15 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -944,7 +944,7 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -970,7 +970,7 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -988,7 +988,7 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1005,8 +1005,8 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
     </ScrollView>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "bottom": 25,
             "display": "flex",
@@ -1023,8 +1023,8 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
       <View
         key="0/.0"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "#333",
               "borderRadius": 4,
               "height": 8,
@@ -1034,7 +1034,7 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
               "marginTop": 3,
               "width": 8,
             },
-            Object {
+            {
               "backgroundColor": "blue",
             },
           ]
@@ -1043,8 +1043,8 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
       <View
         key="1/.1"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "rgba(0,0,0,.2)",
               "borderRadius": 4,
               "height": 8,
@@ -1062,9 +1062,9 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Array [
-            Object {
+        [
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "transparent",
               "flex": 1,
@@ -1076,7 +1076,7 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
               "position": "absolute",
               "top": 0,
             },
-            Object {
+            {
               "height": 1334,
               "width": 750,
             },
@@ -1097,8 +1097,8 @@ exports[`merging styles with mergeStyles prop should merge custom activeDotStyle
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#333",
                 "fontSize": 50,
                 "padding": 20,
@@ -1119,15 +1119,15 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -1136,7 +1136,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -1162,7 +1162,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1180,7 +1180,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1198,7 +1198,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
         accessible={true}
         key="22"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1215,8 +1215,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
     </ScrollView>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "bottom": 25,
             "display": "flex",
@@ -1233,8 +1233,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
       <View
         key="0/.0"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "rgba(0,0,0,.2)",
               "borderRadius": 4,
               "height": 8,
@@ -1251,8 +1251,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
       <View
         key="1/.1"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "#333",
               "borderRadius": 4,
               "height": 8,
@@ -1269,8 +1269,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
       <View
         key="2/.2"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "rgba(0,0,0,.2)",
               "borderRadius": 4,
               "height": 8,
@@ -1288,9 +1288,9 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Array [
-            Object {
+        [
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "transparent",
               "flex": 1,
@@ -1302,7 +1302,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
               "position": "absolute",
               "top": 0,
             },
-            Object {
+            {
               "height": 1334,
               "width": 750,
             },
@@ -1317,7 +1317,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
         accessible={true}
         onPress={[Function]}
         style={
-          Object {
+          {
             "backgroundColor": "blue",
           }
         }
@@ -1327,8 +1327,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
           accessibilityLabel="Previous"
           accessible={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#333",
                 "fontSize": 50,
                 "padding": 20,
@@ -1346,7 +1346,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
         accessible={true}
         onPress={[Function]}
         style={
-          Object {
+          {
             "backgroundColor": "blue",
           }
         }
@@ -1356,8 +1356,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsButton
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#333",
                 "fontSize": 50,
                 "padding": 20,
@@ -1378,15 +1378,15 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -1395,7 +1395,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -1421,7 +1421,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1439,7 +1439,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1456,8 +1456,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
     </ScrollView>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "bottom": 25,
             "display": "flex",
@@ -1474,8 +1474,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
       <View
         key="0/.0"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "#333",
               "borderRadius": 4,
               "height": 8,
@@ -1492,8 +1492,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
       <View
         key="1/.1"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "rgba(0,0,0,.2)",
               "borderRadius": 4,
               "height": 8,
@@ -1511,9 +1511,9 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Array [
-            Object {
+        [
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "transparent",
               "flex": 1,
@@ -1525,12 +1525,12 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
               "position": "absolute",
               "top": 0,
             },
-            Object {
+            {
               "height": 1334,
               "width": 750,
             },
           ],
-          Object {
+          {
             "backgroundColor": "blue",
           },
         ]
@@ -1548,8 +1548,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsContai
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#333",
                 "fontSize": 50,
                 "padding": 20,
@@ -1570,15 +1570,15 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -1587,7 +1587,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -1613,7 +1613,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1631,7 +1631,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1649,7 +1649,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
         accessible={true}
         key="22"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1666,8 +1666,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
     </ScrollView>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "bottom": 25,
             "display": "flex",
@@ -1684,8 +1684,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
       <View
         key="0/.0"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "rgba(0,0,0,.2)",
               "borderRadius": 4,
               "height": 8,
@@ -1702,8 +1702,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
       <View
         key="1/.1"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "#333",
               "borderRadius": 4,
               "height": 8,
@@ -1720,8 +1720,8 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
       <View
         key="2/.2"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "rgba(0,0,0,.2)",
               "borderRadius": 4,
               "height": 8,
@@ -1739,9 +1739,9 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Array [
-            Object {
+        [
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "transparent",
               "flex": 1,
@@ -1753,7 +1753,7 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
               "position": "absolute",
               "top": 0,
             },
-            Object {
+            {
               "height": 1334,
               "width": 750,
             },
@@ -1773,13 +1773,13 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
           accessibilityLabel="Previous"
           accessible={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#333",
                 "fontSize": 50,
                 "padding": 20,
               },
-              Object {
+              {
                 "color": "blue",
               },
             ]
@@ -1799,13 +1799,13 @@ exports[`merging styles with mergeStyles prop should merge custom controlsTextSt
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#333",
                 "fontSize": 50,
                 "padding": 20,
               },
-              Object {
+              {
                 "color": "blue",
               },
             ]
@@ -1823,15 +1823,15 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -1840,7 +1840,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -1866,7 +1866,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1884,7 +1884,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1901,8 +1901,8 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
     </ScrollView>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "bottom": 25,
             "display": "flex",
@@ -1919,8 +1919,8 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
       <View
         key="0/.0"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "#333",
               "borderRadius": 4,
               "height": 8,
@@ -1937,8 +1937,8 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
       <View
         key="1/.1"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "rgba(0,0,0,.2)",
               "borderRadius": 4,
               "height": 8,
@@ -1948,7 +1948,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
               "marginTop": 3,
               "width": 8,
             },
-            Object {
+            {
               "backgroundColor": "blue",
             },
           ]
@@ -1958,9 +1958,9 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Array [
-            Object {
+        [
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "transparent",
               "flex": 1,
@@ -1972,7 +1972,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
               "position": "absolute",
               "top": 0,
             },
-            Object {
+            {
               "height": 1334,
               "width": 750,
             },
@@ -1993,8 +1993,8 @@ exports[`merging styles with mergeStyles prop should merge custom dotStyle with 
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#333",
                 "fontSize": 50,
                 "padding": 20,
@@ -2015,15 +2015,15 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -2032,7 +2032,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -2058,7 +2058,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -2076,7 +2076,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -2093,8 +2093,8 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
     </ScrollView>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "bottom": 25,
             "display": "flex",
@@ -2104,7 +2104,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
             "position": "absolute",
             "right": 0,
           },
-          Object {
+          {
             "backgroundColor": "blue",
           },
         ]
@@ -2113,8 +2113,8 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
       <View
         key="0/.0"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "#333",
               "borderRadius": 4,
               "height": 8,
@@ -2131,8 +2131,8 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
       <View
         key="1/.1"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "rgba(0,0,0,.2)",
               "borderRadius": 4,
               "height": 8,
@@ -2150,9 +2150,9 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Array [
-            Object {
+        [
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "transparent",
               "flex": 1,
@@ -2164,7 +2164,7 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
               "position": "absolute",
               "top": 0,
             },
-            Object {
+            {
               "height": 1334,
               "width": 750,
             },
@@ -2185,8 +2185,8 @@ exports[`merging styles with mergeStyles prop should merge custom dotsContainerS
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#333",
                 "fontSize": 50,
                 "padding": 20,
@@ -2207,15 +2207,15 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -2224,7 +2224,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -2246,7 +2246,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
       showsHorizontalScrollIndicator={false}
       showsVerticalScrollIndicator={false}
       style={
-        Object {
+        {
           "backgroundColor": "blue",
         }
       }
@@ -2255,7 +2255,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -2273,7 +2273,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -2290,7 +2290,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -2305,7 +2305,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -2320,7 +2320,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -2336,8 +2336,8 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -2349,7 +2349,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -2368,7 +2368,7 @@ exports[`style props should allow containerStyle prop (ScrollView) 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -2387,15 +2387,15 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -2404,7 +2404,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -2414,7 +2414,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
       automaticallyAdjustContentInsets={false}
       bounces={false}
       contentContainerStyle={
-        Object {
+        {
           "backgroundColor": "blue",
         }
       }
@@ -2435,7 +2435,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -2453,7 +2453,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -2470,7 +2470,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -2485,7 +2485,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -2500,7 +2500,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -2516,8 +2516,8 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -2529,7 +2529,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -2548,7 +2548,7 @@ exports[`style props should allow contentContainerStyle prop (ScrollView) 1`] = 
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -2567,15 +2567,15 @@ exports[`style props should allow custom activeDotStyle 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -2584,7 +2584,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -2610,7 +2610,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -2628,7 +2628,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -2645,7 +2645,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -2660,7 +2660,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "blue",
           }
         }
@@ -2668,7 +2668,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -2684,8 +2684,8 @@ exports[`style props should allow custom activeDotStyle 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -2697,7 +2697,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -2716,7 +2716,7 @@ exports[`style props should allow custom activeDotStyle 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -2735,15 +2735,15 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -2752,7 +2752,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -2778,7 +2778,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -2796,7 +2796,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -2814,7 +2814,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
         accessible={true}
         key="22"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -2831,7 +2831,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -2846,7 +2846,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -2861,7 +2861,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -2876,7 +2876,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
       <View
         key="2/.2"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -2892,8 +2892,8 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -2905,7 +2905,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -2918,7 +2918,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
         accessible={true}
         onPress={[Function]}
         style={
-          Object {
+          {
             "backgroundColor": "blue",
           }
         }
@@ -2928,7 +2928,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
           accessibilityLabel="Previous"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -2944,7 +2944,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
         accessible={true}
         onPress={[Function]}
         style={
-          Object {
+          {
             "backgroundColor": "blue",
           }
         }
@@ -2954,7 +2954,7 @@ exports[`style props should allow custom controlsButtonStyle 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -2973,15 +2973,15 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -2990,7 +2990,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -3016,7 +3016,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -3034,7 +3034,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -3051,7 +3051,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -3066,7 +3066,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -3081,7 +3081,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -3097,7 +3097,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Object {
+        {
           "backgroundColor": "blue",
         }
       }
@@ -3114,7 +3114,7 @@ exports[`style props should allow custom controlsContainerStyle 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -3133,15 +3133,15 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -3150,7 +3150,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -3176,7 +3176,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -3194,7 +3194,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -3212,7 +3212,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
         accessible={true}
         key="22"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -3229,7 +3229,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -3244,7 +3244,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -3259,7 +3259,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -3274,7 +3274,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
       <View
         key="2/.2"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -3290,8 +3290,8 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -3303,7 +3303,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -3321,7 +3321,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
           accessibilityLabel="Previous"
           accessible={true}
           style={
-            Object {
+            {
               "color": "blue",
             }
           }
@@ -3340,7 +3340,7 @@ exports[`style props should allow custom controlsTextStyle 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "blue",
             }
           }
@@ -3357,15 +3357,15 @@ exports[`style props should allow custom dotStyle 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -3374,7 +3374,7 @@ exports[`style props should allow custom dotStyle 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -3400,7 +3400,7 @@ exports[`style props should allow custom dotStyle 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -3418,7 +3418,7 @@ exports[`style props should allow custom dotStyle 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -3435,7 +3435,7 @@ exports[`style props should allow custom dotStyle 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -3450,7 +3450,7 @@ exports[`style props should allow custom dotStyle 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -3465,7 +3465,7 @@ exports[`style props should allow custom dotStyle 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "blue",
           }
         }
@@ -3474,8 +3474,8 @@ exports[`style props should allow custom dotStyle 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -3487,7 +3487,7 @@ exports[`style props should allow custom dotStyle 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -3506,7 +3506,7 @@ exports[`style props should allow custom dotStyle 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -3525,15 +3525,15 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -3542,7 +3542,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -3568,7 +3568,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -3586,7 +3586,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -3603,7 +3603,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "backgroundColor": "blue",
         }
       }
@@ -3611,7 +3611,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -3626,7 +3626,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -3642,8 +3642,8 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -3655,7 +3655,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -3674,7 +3674,7 @@ exports[`style props should allow custom dotsContainerStyle 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -3693,18 +3693,18 @@ exports[`style props should allow style prop 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
-      Object {
+      {
         "backgroundColor": "blue",
       },
     ]
@@ -3712,7 +3712,7 @@ exports[`style props should allow style prop 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -3738,7 +3738,7 @@ exports[`style props should allow style prop 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -3756,7 +3756,7 @@ exports[`style props should allow style prop 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -3773,7 +3773,7 @@ exports[`style props should allow style prop 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -3788,7 +3788,7 @@ exports[`style props should allow style prop 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -3803,7 +3803,7 @@ exports[`style props should allow style prop 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -3819,8 +3819,8 @@ exports[`style props should allow style prop 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -3832,7 +3832,7 @@ exports[`style props should allow style prop 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -3851,7 +3851,7 @@ exports[`style props should allow style prop 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,

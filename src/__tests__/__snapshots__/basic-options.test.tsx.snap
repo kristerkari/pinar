@@ -4,15 +4,15 @@ exports[`basic options should not show prev/next buttons when there is only one 
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -21,7 +21,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -47,7 +47,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -64,7 +64,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -79,7 +79,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -95,8 +95,8 @@ exports[`basic options should not show prev/next buttons when there is only one 
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -108,7 +108,7 @@ exports[`basic options should not show prev/next buttons when there is only one 
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -126,15 +126,15 @@ exports[`basic options should render with default settings 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -143,7 +143,7 @@ exports[`basic options should render with default settings 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -169,7 +169,7 @@ exports[`basic options should render with default settings 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -187,7 +187,7 @@ exports[`basic options should render with default settings 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -204,7 +204,7 @@ exports[`basic options should render with default settings 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -219,7 +219,7 @@ exports[`basic options should render with default settings 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -234,7 +234,7 @@ exports[`basic options should render with default settings 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -250,8 +250,8 @@ exports[`basic options should render with default settings 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -263,7 +263,7 @@ exports[`basic options should render with default settings 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -282,7 +282,7 @@ exports[`basic options should render with default settings 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -301,15 +301,15 @@ exports[`basic options should support custom a11y labels for prev/next controls 
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -318,7 +318,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -344,7 +344,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -362,7 +362,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -380,7 +380,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
         accessible={true}
         key="22"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -397,7 +397,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -412,7 +412,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -427,7 +427,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -442,7 +442,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
       <View
         key="2/.2"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -458,8 +458,8 @@ exports[`basic options should support custom a11y labels for prev/next controls 
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -471,7 +471,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -489,7 +489,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
           accessibilityLabel="custom prev label"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -510,7 +510,7 @@ exports[`basic options should support custom a11y labels for prev/next controls 
           accessibilityLabel="custom next label"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -529,15 +529,15 @@ exports[`basic options should support disabling accessibility 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -546,7 +546,7 @@ exports[`basic options should support disabling accessibility 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -572,7 +572,7 @@ exports[`basic options should support disabling accessibility 1`] = `
         accessible={false}
         key="01"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -590,7 +590,7 @@ exports[`basic options should support disabling accessibility 1`] = `
         accessible={false}
         key="10"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -608,7 +608,7 @@ exports[`basic options should support disabling accessibility 1`] = `
         accessible={false}
         key="21"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -626,7 +626,7 @@ exports[`basic options should support disabling accessibility 1`] = `
         accessible={false}
         key="30"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -643,7 +643,7 @@ exports[`basic options should support disabling accessibility 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -658,7 +658,7 @@ exports[`basic options should support disabling accessibility 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -673,7 +673,7 @@ exports[`basic options should support disabling accessibility 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -689,8 +689,8 @@ exports[`basic options should support disabling accessibility 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -702,7 +702,7 @@ exports[`basic options should support disabling accessibility 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -720,7 +720,7 @@ exports[`basic options should support disabling accessibility 1`] = `
           accessibilityLabel="Previous"
           accessible={false}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -741,7 +741,7 @@ exports[`basic options should support disabling accessibility 1`] = `
           accessibilityLabel="Next"
           accessible={false}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -760,15 +760,15 @@ exports[`basic options should support disabling dots 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -777,7 +777,7 @@ exports[`basic options should support disabling dots 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -803,7 +803,7 @@ exports[`basic options should support disabling dots 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -821,7 +821,7 @@ exports[`basic options should support disabling dots 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -839,8 +839,8 @@ exports[`basic options should support disabling dots 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -852,7 +852,7 @@ exports[`basic options should support disabling dots 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -871,7 +871,7 @@ exports[`basic options should support disabling dots 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -890,15 +890,15 @@ exports[`basic options should support disabling prev/next controls 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -907,7 +907,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -933,7 +933,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -951,7 +951,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -968,7 +968,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -983,7 +983,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -998,7 +998,7 @@ exports[`basic options should support disabling prev/next controls 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -1019,15 +1019,15 @@ exports[`basic options should support loop option 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": undefined,
         "maxWidth": undefined,
       },
-      Object {
+      {
         "flex": 1,
       },
       undefined,
@@ -1036,7 +1036,7 @@ exports[`basic options should support loop option 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": undefined,
         "width": undefined,
       }
@@ -1062,7 +1062,7 @@ exports[`basic options should support loop option 1`] = `
         accessible={true}
         key="02"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1080,7 +1080,7 @@ exports[`basic options should support loop option 1`] = `
         accessible={true}
         key="10"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1098,7 +1098,7 @@ exports[`basic options should support loop option 1`] = `
         accessible={true}
         key="21"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1116,7 +1116,7 @@ exports[`basic options should support loop option 1`] = `
         accessible={true}
         key="32"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1134,7 +1134,7 @@ exports[`basic options should support loop option 1`] = `
         accessible={true}
         key="40"
         style={
-          Object {
+          {
             "height": 1334,
             "width": 750,
           }
@@ -1151,7 +1151,7 @@ exports[`basic options should support loop option 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -1166,7 +1166,7 @@ exports[`basic options should support loop option 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -1181,7 +1181,7 @@ exports[`basic options should support loop option 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -1196,7 +1196,7 @@ exports[`basic options should support loop option 1`] = `
       <View
         key="2/.2"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -1212,8 +1212,8 @@ exports[`basic options should support loop option 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -1225,7 +1225,7 @@ exports[`basic options should support loop option 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 1334,
             "width": 750,
           },
@@ -1243,7 +1243,7 @@ exports[`basic options should support loop option 1`] = `
           accessibilityLabel="Previous"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -1264,7 +1264,7 @@ exports[`basic options should support loop option 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
@@ -1283,11 +1283,11 @@ exports[`basic options should support providing height and width 1`] = `
 <View
   onLayout={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
       },
-      Object {
+      {
         "maxHeight": 333,
         "maxWidth": 444,
       },
@@ -1298,7 +1298,7 @@ exports[`basic options should support providing height and width 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "height": 333,
         "width": 444,
       }
@@ -1324,7 +1324,7 @@ exports[`basic options should support providing height and width 1`] = `
         accessible={true}
         key="00"
         style={
-          Object {
+          {
             "height": 333,
             "width": 444,
           }
@@ -1342,7 +1342,7 @@ exports[`basic options should support providing height and width 1`] = `
         accessible={true}
         key="11"
         style={
-          Object {
+          {
             "height": 333,
             "width": 444,
           }
@@ -1359,7 +1359,7 @@ exports[`basic options should support providing height and width 1`] = `
     </ScrollView>
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "bottom": 25,
           "display": "flex",
@@ -1374,7 +1374,7 @@ exports[`basic options should support providing height and width 1`] = `
       <View
         key="0/.0"
         style={
-          Object {
+          {
             "backgroundColor": "#333",
             "borderRadius": 4,
             "height": 8,
@@ -1389,7 +1389,7 @@ exports[`basic options should support providing height and width 1`] = `
       <View
         key="1/.1"
         style={
-          Object {
+          {
             "backgroundColor": "rgba(0,0,0,.2)",
             "borderRadius": 4,
             "height": 8,
@@ -1405,8 +1405,8 @@ exports[`basic options should support providing height and width 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "flex": 1,
@@ -1418,7 +1418,7 @@ exports[`basic options should support providing height and width 1`] = `
             "position": "absolute",
             "top": 0,
           },
-          Object {
+          {
             "height": 333,
             "width": 444,
           },
@@ -1437,7 +1437,7 @@ exports[`basic options should support providing height and width 1`] = `
           accessibilityLabel="Next"
           accessible={true}
           style={
-            Object {
+            {
               "color": "#333",
               "fontSize": 50,
               "padding": 20,
