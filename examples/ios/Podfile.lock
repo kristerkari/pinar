@@ -278,10 +278,11 @@ PODS:
     - React-perflogger (= 0.66.3)
   - RNCMaskedView (0.1.11):
     - React
-  - RNGestureHandler (1.9.0):
+  - RNGestureHandler (2.5.0):
     - React-Core
-  - RNScreens (2.3.0):
-    - React
+  - RNScreens (3.18.2):
+    - React-Core
+    - React-RCTImage
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -429,10 +430,10 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: bbbdb3d8fcf327c6e2249ee71b6ef1764b7dc266
   ReactCommon: 9bac022ab71596f2b0fde1268272543184c63971
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
-  RNGestureHandler: 9b7e605a741412e20e13c512738a31bd1611759b
-  RNScreens: 03bf608b92ac0acf323f47d8f5b63a8f829340c8
+  RNGestureHandler: bad495418bcbd3ab47017a38d93d290ebd406f50
+  RNScreens: 34cc502acf1b916c582c60003dc3089fa01dc66d
   Yoga: 32a18c0e845e185f4a2a66ec76e1fd1f958f22fa
 
 PODFILE CHECKSUM: 23194b2ede3257e57b04847b8f2996b0f8b9e7c9
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
