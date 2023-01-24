@@ -8,7 +8,7 @@
 
 Pinar is a lightweight and customizable React Native carousel component that works well when creating simple image sliders or app onboarding flows.
 
-If you need more advanced things like animations, lazy loading of images, or parallax, then please consider using a library like [react-native-snap-carousel](https://github.com/archriss/react-native-snap-carousel).
+If you need more advanced things like animations, lazy loading of images, or parallax, then please consider using a library like [`react-native-reanimated-carousel`](https://github.com/dohooo/react-native-reanimated-carousel).
 
 ## Table of contents
 
