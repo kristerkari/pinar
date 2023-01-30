@@ -27,7 +27,7 @@
     "@babel/runtime": "^7.20.13",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^29.2.1",
-    "@types/react": "^18.0.24",
+    "@types/react": "^18.0.27",
     "@types/react-test-renderer": "^18.0.0",
     "eslint": "8.32.0",
     "jest": "^29.2.1",
