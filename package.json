@@ -74,7 +74,7 @@
     "prettier": "^2.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.71.0",
+    "react-native": "0.71.4",
     "rimraf": "^3.0.2",
     "tslib": "^2.4.0",
     "typescript": "4.7.4"
