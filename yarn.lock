@@ -3121,9 +3121,9 @@ detect-newline@^3.0.0:
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
 
 detox@^20.1.1:
-  version "20.1.2"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-20.1.2.tgz#a66c709080b53a80f3b6ba1671f5c0dbf5ae6dc7"
-  integrity sha512-SGxLyuzE8TjIc4Lg49YKD0buj3JLaX+KtprSeFvn7ZTdWd4fH6o5Szd4KM21uBSpnYEEgXTgiCypPQst6dt5mQ==
+  version "20.5.0"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-20.5.0.tgz#70f1aa7ed4a2b652b5787a806e680fafaab2fcb3"
+  integrity sha512-iFDqU5UZ5f1usgRowyiauO83ffMqvN7qFdF5+TVJelfcHTIVHRbZwI/D4MjtAnpuowljfwBhN0tYhTSEOMjCmg==
   dependencies:
     ajv "^8.6.3"
     bunyan "^1.8.12"
@@ -3131,6 +3131,7 @@ detox@^20.1.1:
     caf "^15.0.1"
     chalk "^2.4.2"
     child-process-promise "^2.2.0"
+    execa "^5.1.1"
     find-up "^4.1.0"
     fs-extra "^4.0.2"
     funpermaproxy "^1.1.0"
@@ -3707,7 +3708,7 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-execa@^5.0.0:
+execa@^5.0.0, execa@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/execa/-/execa-5.1.1.tgz#f80ad9cbf4298f7bd1d4c9555c21e93741c411dd"
   integrity sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==
