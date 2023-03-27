@@ -52,7 +52,7 @@
     "@babel/runtime": "^7.12.5",
     "@types/enzyme": "^3.9.1",
     "@types/jest": "^29.2.1",
-    "@types/node": "^16.3.1",
+    "@types/node": "^18.15.10",
     "@types/react": "^18.0.26",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
