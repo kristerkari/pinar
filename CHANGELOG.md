@@ -1,6 +1,6 @@
 # 0.12.2
 
-- Fixed: `scrollTo` and `scrollBy` when `animated: false` is used.
+- Fixed: `scrollToIndex` and `scrollBy` when `animated: false` is used.
 
 # 0.12.1
 
