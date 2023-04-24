@@ -191,7 +191,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       }
     }
 
-    if (!this.internals.isAnimatedScroll) {
+    if (Platform.OS === "ios" && !this.internals.isAnimatedScroll) {
       this.internals.isAnimatedScroll = true;
       this.onMomentumScrollEnd(e);
     }
