@@ -98,10 +98,24 @@ export class Methods extends React.PureComponent {
             }
           />
           <Button
+            testID="scroll-to-animated-false"
+            title="scroll to 2, animated: false"
+            onPress={(): void | null =>
+              this.carousel && this.carousel.scrollToIndex({ index: 1, animated: false })
+            }
+          />
+          <Button
             testID="scroll-to-page-4"
             title="scroll to page 4"
             onPress={(): void | null =>
               this.carousel && this.carousel.scrollToIndex({ index: 3 })
+            }
+          />
+          <Button
+            testID="scroll-by-animated-false"
+            title="scroll +1, animated: false"
+            onPress={(): void | null =>
+              this.carousel && this.carousel.scrollBy({ index: 1, animated: false })
             }
           />
           <Button

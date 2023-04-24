@@ -50,6 +50,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     autoplay: boolean;
     isAutoplayEnd: boolean;
     isScrolling: boolean;
+    isAnimatedScroll: boolean;
     offset: { x: number; y: number };
     onScrollEndCallbackTargetOffset: number;
   };
@@ -68,6 +69,7 @@ export class Pinar extends React.PureComponent<Props, State> {
       autoplay: false,
       isAutoplayEnd: false,
       isScrolling: false,
+      isAnimatedScroll: true,
       offset,
       onScrollEndCallbackTargetOffset: 0,
     };
@@ -187,6 +189,11 @@ export class Pinar extends React.PureComponent<Props, State> {
       if (offset === this.internals.onScrollEndCallbackTargetOffset) {
         this.onMomentumScrollEnd(e);
       }
+    }
+
+    if (!this.internals.isAnimatedScroll) {
+      this.internals.isAnimatedScroll = true;
+      this.onMomentumScrollEnd(e);
     }
   };
 
@@ -337,6 +344,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     }
     this.internals.isScrolling = true;
     this.internals.isAutoplayEnd = false;
+    this.internals.isAnimatedScroll = animated;
   };
 
   public scrollBy = ({ index, animated = true }: ScrollByOptions): void => {
@@ -364,6 +372,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     }
     this.internals.isScrolling = true;
     this.internals.isAutoplayEnd = false;
+    this.internals.isAnimatedScroll = animated;
   };
 
   public scrollToPrev = (): void => {
