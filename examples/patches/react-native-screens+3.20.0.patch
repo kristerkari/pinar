@@ -1,8 +1,8 @@
 diff --git a/node_modules/react-native-screens/lib/typescript/types.d.ts b/node_modules/react-native-screens/lib/typescript/types.d.ts
-index 35369eb..e2e5100 100644
+index bcfb012..0c1be14 100644
 --- a/node_modules/react-native-screens/lib/typescript/types.d.ts
 +++ b/node_modules/react-native-screens/lib/typescript/types.d.ts
-@@ -18,8 +18,8 @@ export declare type GestureResponseDistanceType = {
+@@ -19,8 +19,8 @@ export type GestureResponseDistanceType = {
      bottom?: number;
  };
  export interface ScreenProps extends ViewProps {
