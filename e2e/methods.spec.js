@@ -191,6 +191,30 @@ describe("methods", () => {
     await expect(element(by.id("PinarPrevButton"))).toBeNotVisible();
     await expect(element(by.id("PinarNextButton"))).toBeVisible();
 
+    await element(by.id("scroll-to-animated-false")).tap();
+
+    // Page 2
+    await expect(element(by.id("slide-1"))).toBeNotVisible();
+    await expect(element(by.id("slide-2"))).toBeVisible();
+    await expect(element(by.id("slide-3"))).toBeNotVisible();
+    await expect(element(by.id("slide-4"))).toBeNotVisible();
+    await expect(element(by.id("slide-5"))).toBeNotVisible();
+    await expect(element(by.id("slide-6"))).toBeNotVisible();
+    await expect(element(by.id("PinarPrevButton"))).toBeVisible();
+    await expect(element(by.id("PinarNextButton"))).toBeVisible();
+
+    await element(by.id("scroll-by-animated-false")).tap();
+
+    // Page 3
+    await expect(element(by.id("slide-1"))).toBeNotVisible();
+    await expect(element(by.id("slide-2"))).toBeNotVisible();
+    await expect(element(by.id("slide-3"))).toBeVisible();
+    await expect(element(by.id("slide-4"))).toBeNotVisible();
+    await expect(element(by.id("slide-5"))).toBeNotVisible();
+    await expect(element(by.id("slide-6"))).toBeNotVisible();
+    await expect(element(by.id("PinarPrevButton"))).toBeVisible();
+    await expect(element(by.id("PinarNextButton"))).toBeVisible();
+
     await element(by.id("scroll-to-page-4")).tap();
 
     // Page 4
