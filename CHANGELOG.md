@@ -1,3 +1,7 @@
+# 0.12.2
+
+- Fixed: `scrollTo` and `scrollBy` when `animated: false` is used.
+
 # 0.12.1
 
 - Fixed: install error from a missing `patch-package` dependency.
