@@ -29,7 +29,7 @@
     "@types/jest": "^29.5.0",
     "@types/react": "^18.0.38",
     "@types/react-test-renderer": "^18.0.0",
-    "eslint": "8.36.0",
+    "eslint": "8.39.0",
     "jest": "^29.5.0",
     "metro-react-native-babel-preset": "0.74.1",
     "patch-package": "^6.4.7",
