@@ -1041,7 +1041,7 @@
   dependencies:
     "@jest/types" "^29.3.1"
 
-"@jest/environment@^29.3.1", "@jest/environment@^29.4.3":
+"@jest/environment@^29.4.3":
   version "29.4.3"
   resolved "https://registry.yarnpkg.com/@jest/environment/-/environment-29.4.3.tgz#9fe2f3169c3b33815dc4bd3960a064a83eba6548"
   integrity sha512-dq5S6408IxIa+lr54zeqce+QgI+CJT4nmmA+1yzFgtcsGK8c/EyiUb9XQOgz3BMKrRDfKseeOaxj2eO8LlD3lA==
@@ -1097,18 +1097,6 @@
   dependencies:
     expect "^29.5.0"
     jest-snapshot "^29.5.0"
-
-"@jest/fake-timers@^29.3.1":
-  version "29.3.1"
-  resolved "https://registry.yarnpkg.com/@jest/fake-timers/-/fake-timers-29.3.1.tgz#b140625095b60a44de820876d4c14da1aa963f67"
-  integrity sha512-iHTL/XpnDlFki9Tq0Q1GGuVeQ8BHZGIYsvCO5eN/O/oJaRzofG9Xndd9HuSDBI/0ZS79pg0iwn07OMTQ7ngF2A==
-  dependencies:
-    "@jest/types" "^29.3.1"
-    "@sinonjs/fake-timers" "^9.1.2"
-    "@types/node" "*"
-    jest-message-util "^29.3.1"
-    jest-mock "^29.3.1"
-    jest-util "^29.3.1"
 
 "@jest/fake-timers@^29.4.3":
   version "29.4.3"
@@ -1684,13 +1672,6 @@
   dependencies:
     execa "^0.2.2"
 
-"@sinonjs/commons@^1.7.0":
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.6.tgz#80c516a4dc264c2a69115e7578d62581ff455ed9"
-  integrity sha512-Ky+XkAkqPZSm3NLBeUng77EBQl3cmeJhITaGHdYH8kjVB+aun3S4XBRti2zt17mtt0mIUDiNxYeoJm6drVvBJQ==
-  dependencies:
-    type-detect "4.0.8"
-
 "@sinonjs/commons@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-2.0.0.tgz#fd4ca5b063554307e8327b4564bd56d3b73924a3"
@@ -1704,13 +1685,6 @@
   integrity sha512-SwUDyjWnah1AaNl7kxsa7cfLhlTYoiyhDAIgyh+El30YvXs/o7OLXpYH88Zdhyx9JExKrmHDJ+10bwIcY80Jmw==
   dependencies:
     "@sinonjs/commons" "^2.0.0"
-
-"@sinonjs/fake-timers@^9.1.2":
-  version "9.1.2"
-  resolved "https://registry.yarnpkg.com/@sinonjs/fake-timers/-/fake-timers-9.1.2.tgz#4eaab737fab77332ab132d396a3c0d364bd0ea8c"
-  integrity sha512-BPS4ynJW/o92PUR4wgriz2Ud5gpST5vz6GQfMixEDK0Z8ZCUv2M7SkBLykH56T++Xs+8ln9zTGbOvNGIe02/jw==
-  dependencies:
-    "@sinonjs/commons" "^1.7.0"
 
 "@types/babel__core@^7.1.14":
   version "7.1.20"
@@ -5106,19 +5080,7 @@ jest-each@^29.5.0:
     jest-util "^29.5.0"
     pretty-format "^29.5.0"
 
-jest-environment-node@^29.2.1:
-  version "29.3.1"
-  resolved "https://registry.yarnpkg.com/jest-environment-node/-/jest-environment-node-29.3.1.tgz#5023b32472b3fba91db5c799a0d5624ad4803e74"
-  integrity sha512-xm2THL18Xf5sIHoU7OThBPtuH6Lerd+Y1NLYiZJlkE3hbE+7N7r8uvHIl/FkZ5ymKXJe/11SQuf3fv4v6rUMag==
-  dependencies:
-    "@jest/environment" "^29.3.1"
-    "@jest/fake-timers" "^29.3.1"
-    "@jest/types" "^29.3.1"
-    "@types/node" "*"
-    jest-mock "^29.3.1"
-    jest-util "^29.3.1"
-
-jest-environment-node@^29.5.0:
+jest-environment-node@^29.2.1, jest-environment-node@^29.5.0:
   version "29.5.0"
   resolved "https://registry.yarnpkg.com/jest-environment-node/-/jest-environment-node-29.5.0.tgz#f17219d0f0cc0e68e0727c58b792c040e332c967"
   integrity sha512-ExxuIK/+yQ+6PRGaHkKewYtg6hto2uGCgvKdb2nfJfKXgZ17DfXjvbZ+jA1Qt9A8EQSfPnt5FKIfnOO3u1h9qw==
@@ -5240,15 +5202,6 @@ jest-message-util@^29.5.0:
     pretty-format "^29.5.0"
     slash "^3.0.0"
     stack-utils "^2.0.3"
-
-jest-mock@^29.3.1:
-  version "29.3.1"
-  resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-29.3.1.tgz#60287d92e5010979d01f218c6b215b688e0f313e"
-  integrity sha512-H8/qFDtDVMFvFP4X8NuOT3XRDzOUTz+FeACjufHzsOIBAxivLqkB1PoLCaJx9iPPQ8dZThHPp/G3WRWyMgA3JA==
-  dependencies:
-    "@jest/types" "^29.3.1"
-    "@types/node" "*"
-    jest-util "^29.3.1"
 
 jest-mock@^29.4.3:
   version "29.4.3"
@@ -7104,16 +7057,7 @@ pretty-format@^26.5.2, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-pretty-format@^29.0.0, pretty-format@^29.4.3:
-  version "29.4.3"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-29.4.3.tgz#25500ada21a53c9e8423205cf0337056b201244c"
-  integrity sha512-cvpcHTc42lcsvOOAzd3XuNWTcvk1Jmnzqeu+WsOuiPmxUJTnkbAcFNsRKvEpBEUFVUgy/GTZLulZDcDEi+CIlA==
-  dependencies:
-    "@jest/schemas" "^29.4.3"
-    ansi-styles "^5.0.0"
-    react-is "^18.0.0"
-
-pretty-format@^29.5.0:
+pretty-format@^29.0.0, pretty-format@^29.4.3, pretty-format@^29.5.0:
   version "29.5.0"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-29.5.0.tgz#283134e74f70e2e3e7229336de0e4fce94ccde5a"
   integrity sha512-V2mGkI31qdttvTFX7Mt4efOqHXqJWMu4/r66Xh3Z3BwZaPfPJgp6/gbwoujRpPUtfEF6AUUWx3Jim3GCw5g/Qw==
@@ -7273,15 +7217,15 @@ react-native-codegen@^0.71.5:
     jscodeshift "^0.13.1"
     nullthrows "^1.1.1"
 
-react-native-gradle-plugin@^0.71.17:
-  version "0.71.17"
-  resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.17.tgz#cf780a27270f0a32dca8184eff91555d7627dd00"
-  integrity sha512-OXXYgpISEqERwjSlaCiaQY6cTY5CH6j73gdkWpK0hedxtiWMWgH+i5TOi4hIGYitm9kQBeyDu+wim9fA8ROFJA==
+react-native-gradle-plugin@^0.71.19:
+  version "0.71.19"
+  resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.19.tgz#3379e28341fcd189bc1f4691cefc84c1a4d7d232"
+  integrity sha512-1dVk9NwhoyKHCSxcrM6vY6cxmojeATsBobDicX0ZKr7DgUF2cBQRTKsimQFvzH8XhOVXyH8p4HyDSZNIFI8OlQ==
 
-react-native@0.71.7:
-  version "0.71.7"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.71.7.tgz#d0ae409f6ee4fc7e7a876b4ca9d8d28934133228"
-  integrity sha512-Id6iRLS581fJMFGbBl1jP5uSmjExtGOvw5Gvh7694zISXjsRAsFMmU+izs0pyCLqDBoHK7y4BT7WGPGw693nYw==
+react-native@0.71.10:
+  version "0.71.10"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.71.10.tgz#4294d289b4226a3f35bd627bb157fc1f18395d58"
+  integrity sha512-O+sWH9ln7euxhHdooVL8is2FiVc7CfAp2zsKgIRhbq/8lGbJr5ZyT6QkCQK0M8Sx1zNe9puebr+BE8uBFsartg==
   dependencies:
     "@jest/create-cache-key-function" "^29.2.1"
     "@react-native-community/cli" "10.2.2"
@@ -7308,7 +7252,7 @@ react-native@0.71.7:
     promise "^8.3.0"
     react-devtools-core "^4.26.1"
     react-native-codegen "^0.71.5"
-    react-native-gradle-plugin "^0.71.17"
+    react-native-gradle-plugin "^0.71.19"
     react-refresh "^0.4.0"
     react-shallow-renderer "^16.15.0"
     regenerator-runtime "^0.13.2"
