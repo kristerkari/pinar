@@ -1,23 +1,15 @@
-/**
- * Metro configuration for React Native
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
+const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
 const path = require("path");
 const exclusionList = require("metro-config/src/defaults/exclusionList");
 
-module.exports = {
-  transformer: {
-    getTransformOptions: async () => ({
-      transform: {
-        experimentalImportSupport: false,
-        inlineRequires: true,
-      },
-    }),
-  },
-  resolver: {
+/**
+ * Metro configuration
+ * https://facebook.github.io/metro/docs/configuration
+ *
+ * @type {import('metro-config').MetroConfig}
+ */
+const config = {
+    resolver: {
     blacklistRE: exclusionList([/\/pinar\/node_modules\/react-native\/.*/]),
     extraNodeModules: {
       react: path.resolve(__dirname, "node_modules/react"),
@@ -34,3 +26,5 @@ module.exports = {
     path.resolve(__dirname, "../node_modules"),
   ],
 };
+
+module.exports = mergeConfig(getDefaultConfig(__dirname), config);
