@@ -1820,10 +1820,10 @@
   resolved "https://registry.yarnpkg.com/@react-native/js-polyfills/-/js-polyfills-0.72.1.tgz#905343ef0c51256f128256330fccbdb35b922291"
   integrity sha512-cRPZh2rBswFnGt5X5EUEPs0r+pAsXxYsifv/fgy9ZLQokuT52bPH+9xjDR+7TafRua5CttGW83wP4TntRcWNDA==
 
-"@react-native/metro-config@^0.72.7":
-  version "0.72.7"
-  resolved "https://registry.yarnpkg.com/@react-native/metro-config/-/metro-config-0.72.7.tgz#2252fc796fbb487b8584161e1bcdd3eecf8d1aa6"
-  integrity sha512-v+RhvCcMzAUZOibBJQ0na6Ah/HEloGrOPGJmxhdwlxGp05L7ejfu/gPghKeYEx35nlp519YSLiOlO4VW4dI5+g==
+"@react-native/metro-config@^0.72.8":
+  version "0.72.8"
+  resolved "https://registry.yarnpkg.com/@react-native/metro-config/-/metro-config-0.72.8.tgz#9b030abe2e3062adb8f50c6c97cd215d95c2491c"
+  integrity sha512-ZUeBUgixhB++ho42nM8CqeYocsP1gPWDP/XWsLDfU9OOEoWshuTkENME1Wb7tLj40CJ7BrtAwAGHuToWbZ8wbQ==
   dependencies:
     "@react-native/js-polyfills" "^0.72.1"
     metro-config "0.76.5"
