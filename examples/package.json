@@ -22,7 +22,7 @@
     "react-native-screens": "^3.22.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.8",
+    "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "@babel/runtime": "^7.22.5",
     "@react-native/metro-config": "^0.72.9",
