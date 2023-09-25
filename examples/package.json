@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
-    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/native": "^6.1.8",
     "@react-navigation/native-stack": "^6.9.13",
     "react": "18.2.0",
     "react-native": "0.72.3",
