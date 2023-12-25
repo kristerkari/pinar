@@ -12,21 +12,23 @@ If you need more advanced things like animations, lazy loading of images, or par
 
 ## Table of contents
 
-- [Install](#install)
-- [Basic example](#basic-example)
-- [More examples](#more-examples)
-- [Properties](#properties)
-  - [Basic carousel properties](#basic-carousel-properties)
-  - [Callbacks](#callbacks)
-  - [Methods](#methods)
-  - [Custom styling properties](#custom-styling-properties)
-  - [Custom render properties](#custom-render-properties)
-  - [Properties of `<ScrollView />`](#properties-of-scrollview)
-- [Dependencies](#dependencies)
-- [Development](#development)
-- [Automated tests](#automated-tests)
-- [Special thanks](#special-thanks)
-- [License](#license)
+- [Table of contents](#table-of-contents)
+  - [Install](#install)
+  - [Basic example](#basic-example)
+  - [More examples](#more-examples)
+  - [Properties](#properties)
+    - [Basic carousel properties](#basic-carousel-properties)
+    - [Callbacks](#callbacks)
+    - [Methods](#methods)
+    - [Custom styling properties](#custom-styling-properties)
+    - [Custom render properties](#custom-render-properties)
+    - [Properties of `<ScrollView />`](#properties-of-scrollview-)
+  - [Dependencies](#dependencies)
+  - [Development](#development)
+    - [How to develop locally](#how-to-develop-locally)
+    - [Automated tests](#automated-tests)
+  - [Special thanks](#special-thanks)
+  - [License](#license)
 
 ### Install
 
@@ -41,10 +43,10 @@ yarn add pinar --save
 
 ```jsx
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import Carousel from "pinar";
 
-const styles = {
+const styles = StyleSheet.create({
   slide1: {
     flex: 1,
     justifyContent: "center",
@@ -69,7 +71,7 @@ const styles = {
     fontSize: 48,
     fontWeight: "bold"
   }
-};
+});
 
 export default () => (
   <Carousel>
