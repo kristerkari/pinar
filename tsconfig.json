@@ -16,7 +16,8 @@
     "noImplicitThis": true,
     "pretty": true,
     "removeComments": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "skipLibCheck": true
   },
   "include": ["**/*"],
   "exclude": ["node_modules"]
