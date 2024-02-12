@@ -27,7 +27,7 @@
     "@babel/runtime": "^7.23.9",
     "@react-native/babel-preset": "0.73.20",
     "@react-native/metro-config": "0.73.4",
-    "@tsconfig/react-native": "^3.0.2",
+    "@tsconfig/react-native": "^3.0.3",
     "@types/jest": "^29.5.2",
     "@types/react": "^18.2.53",
     "@types/react-test-renderer": "^18.0.0",
