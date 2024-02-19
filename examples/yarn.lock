@@ -2450,16 +2450,6 @@
   resolved "https://registry.yarnpkg.com/@react-native/js-polyfills/-/js-polyfills-0.73.1.tgz#730b0a7aaab947ae6f8e5aa9d995e788977191ed"
   integrity sha512-ewMwGcumrilnF87H4jjrnvGZEaPFCAC4ebraEK+CurDDmwST/bIicI4hrOAv+0Z0F7DEK4O4H7r8q9vH7IbN4g==
 
-"@react-native/metro-babel-transformer@0.73.14":
-  version "0.73.14"
-  resolved "https://registry.yarnpkg.com/@react-native/metro-babel-transformer/-/metro-babel-transformer-0.73.14.tgz#a4ee02c729216e4ab5b7c7aa28abbfe8e0a943a8"
-  integrity sha512-5wLeYw/lormpSqYfI9H/geZ/EtPmi+x5qLkEit15Q/70hkzYo/M+aWztUtbOITfgTEOP8d6ybROzoGsqgyZLcw==
-  dependencies:
-    "@babel/core" "^7.20.0"
-    "@react-native/babel-preset" "0.73.20"
-    hermes-parser "0.15.0"
-    nullthrows "^1.1.1"
-
 "@react-native/metro-babel-transformer@0.73.15":
   version "0.73.15"
   resolved "https://registry.yarnpkg.com/@react-native/metro-babel-transformer/-/metro-babel-transformer-0.73.15.tgz#c516584dde62d65a46668074084359c03e6a50f1"
@@ -2470,13 +2460,13 @@
     hermes-parser "0.15.0"
     nullthrows "^1.1.1"
 
-"@react-native/metro-config@0.73.4":
-  version "0.73.4"
-  resolved "https://registry.yarnpkg.com/@react-native/metro-config/-/metro-config-0.73.4.tgz#475feab57a60734c5f40c60ef92f4552dec6174c"
-  integrity sha512-4IpWb9InOY23ssua6z/ho2B4uRqF4QaNHGg4aV3D/og5yiVF39GEm/REHU36i+KoHRO3GcB6DrI7N9KrcvgGBw==
+"@react-native/metro-config@0.73.5":
+  version "0.73.5"
+  resolved "https://registry.yarnpkg.com/@react-native/metro-config/-/metro-config-0.73.5.tgz#791242ca93057d7299ce18379ea11d3bdb368ea9"
+  integrity sha512-3bNWoHzOzP/+qoLJtRhOVXrnxKmSY3i4y5PXyMQlIvvOI/GQbXulPpEZxK/yUrf1MmeXHLLFufFbQWlfDEDoxA==
   dependencies:
     "@react-native/js-polyfills" "0.73.1"
-    "@react-native/metro-babel-transformer" "0.73.14"
+    "@react-native/metro-babel-transformer" "0.73.15"
     metro-config "^0.80.3"
     metro-runtime "^0.80.3"
 
