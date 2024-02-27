@@ -3504,9 +3504,9 @@ detect-newline@^3.0.0:
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
 
 detox@^20.18.1:
-  version "20.18.1"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-20.18.1.tgz#9c595d86f6d30966e4f4824eaa9d73c5f71a683a"
-  integrity sha512-GMwtoNr5E//ReIGUNtvqye+sHUj4qf9xar/I91HZeP2DAwCTogZ/rysyWH/Y/F3lvVcRxZYh7/qXaxsHNFsduQ==
+  version "20.18.3"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-20.18.3.tgz#f6236e6aca120da9ceb4a7b558c4e5dff41648b1"
+  integrity sha512-ssC7pWLDOs48Rocu7TDdLaYWiDWF5A8EAf/YcCsseHIqAqr6ECX6Hve8MIh3wUkPGYWoZaJHQfT9cyZjklt8AQ==
   dependencies:
     ajv "^8.6.3"
     bunyan "^1.8.12"
@@ -7792,12 +7792,7 @@ signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.3, signal-exit@^3.0.7:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-signal-exit@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.0.1.tgz#96a61033896120ec9335d96851d902cc98f0ba2a"
-  integrity sha512-uUWsN4aOxJAS8KOuf3QMyFtgm1pkb6I+KRZbRF/ghdf5T7sM+B1lLLzPDxswUjkmHyxQAVzEgG35E3NzDM9GVw==
-
-signal-exit@^4.1.0:
+signal-exit@^4.0.1, signal-exit@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.1.0.tgz#952188c1cbd546070e2dd20d0f41c0ae0530cb04"
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
@@ -7912,14 +7907,7 @@ stream-chain@^2.2.5:
   resolved "https://registry.yarnpkg.com/stream-chain/-/stream-chain-2.2.5.tgz#b30967e8f14ee033c5b9a19bbe8a2cba90ba0d09"
   integrity sha512-1TJmBx6aSWqZ4tx7aTpBDXK0/e2hhcNSTV8+CbFJtDjbb+I1mZ8lHit0Grw9GRT+6JbIrrDd8esncgBi8aBXGA==
 
-stream-json@^1.7.4:
-  version "1.7.5"
-  resolved "https://registry.yarnpkg.com/stream-json/-/stream-json-1.7.5.tgz#2ff0563011f22cea4f6a28dbfc0344a53c761fe4"
-  integrity sha512-NSkoVduGakxZ8a+pTPUlcGEeAGQpWL9rKJhOFCV+J/QtdQUEU5vtBgVg6eJXn8JB8RZvpbJWZGvXkhz70MLWoA==
-  dependencies:
-    stream-chain "^2.2.5"
-
-stream-json@^1.7.5:
+stream-json@^1.7.4, stream-json@^1.7.5:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/stream-json/-/stream-json-1.8.0.tgz#53f486b2e3b4496c506131f8d7260ba42def151c"
   integrity sha512-HZfXngYHUAr1exT4fxlbc1IOce1RYxp2ldeaf97LYCOPSoOqY/1Psp7iGvpb+6JIOgkra9zDYnPX01hGAHzEPw==
