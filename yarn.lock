@@ -3315,9 +3315,9 @@ detect-newline@^3.0.0:
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
 
 detox@^20.18.1:
-  version "20.18.3"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-20.18.3.tgz#f6236e6aca120da9ceb4a7b558c4e5dff41648b1"
-  integrity sha512-ssC7pWLDOs48Rocu7TDdLaYWiDWF5A8EAf/YcCsseHIqAqr6ECX6Hve8MIh3wUkPGYWoZaJHQfT9cyZjklt8AQ==
+  version "20.18.5"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-20.18.5.tgz#b0421b32a2674db6aa5518e33748bafe9e4f6ba0"
+  integrity sha512-J6f7rbUdVbmKaxqIA5M2EvTSHA60j6rZayXgmxcwb1sN0ug6iQykGX5DcC98GPP8s2ziIpAcyIdbjI/L9B+/Og==
   dependencies:
     ajv "^8.6.3"
     bunyan "^1.8.12"
