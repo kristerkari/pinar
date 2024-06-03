@@ -22,7 +22,7 @@
     "react-native-screens": "^3.31.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.4",
+    "@babel/core": "^7.24.6",
     "@babel/preset-env": "^7.24.5",
     "@babel/runtime": "^7.24.4",
     "@react-native/babel-preset": "0.74.83",
