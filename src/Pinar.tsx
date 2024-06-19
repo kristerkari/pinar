@@ -131,6 +131,7 @@ export class Pinar extends React.PureComponent<Props, State> {
 
     clearTimeout(this.autoplayTimer);
 
+    // @ts-expect-error Type 'Timeout' is not assignable to type 'number'.
     this.autoplayTimer = setTimeout((): void => {
       const { loop } = this.props;
       const { total, activePageIndex } = this.state;
@@ -153,13 +154,13 @@ export class Pinar extends React.PureComponent<Props, State> {
   };
 
   private onScrollBeginDrag = (
-    _: NativeSyntheticEvent<NativeScrollEvent>
+    _: NativeSyntheticEvent<NativeScrollEvent>,
   ): void => {
     this.internals.isScrolling = true;
   };
 
   private onScrollEndDrag = (
-    e: NativeSyntheticEvent<NativeScrollEvent>
+    e: NativeSyntheticEvent<NativeScrollEvent>,
   ): void => {
     const { contentOffset } = e.nativeEvent;
     const { horizontal } = this.props;
@@ -198,7 +199,7 @@ export class Pinar extends React.PureComponent<Props, State> {
   };
 
   private onMomentumScrollEnd = (
-    e: NativeSyntheticEvent<NativeScrollEvent>
+    e: NativeSyntheticEvent<NativeScrollEvent>,
   ): void => {
     const { onMomentumScrollEnd } = this.props;
 
@@ -218,7 +219,7 @@ export class Pinar extends React.PureComponent<Props, State> {
     if (!diff) return;
 
     const nextActivePageIndex = Math.floor(
-      activePageIndex + Math.round(diff / step)
+      activePageIndex + Math.round(diff / step),
     );
 
     if (nextActivePageIndex === activePageIndex) {
@@ -275,7 +276,7 @@ export class Pinar extends React.PureComponent<Props, State> {
                 animated: false,
               });
             });
-          }
+          },
         );
       } else {
         this.setState({ ...newState, offset }, (): void => {
@@ -602,7 +603,7 @@ export class Pinar extends React.PureComponent<Props, State> {
               : [styles.dot, dotStyle];
             return <View key={i} style={mergeStyles ? mergeStyle : style} />;
             /* eslint-enable react/no-array-index-key */
-          }
+          },
         )}
       </View>
     );
