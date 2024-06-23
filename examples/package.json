@@ -36,7 +36,7 @@
     "metro-react-native-babel-preset": "0.77.0",
     "patch-package": "^8.0.0",
     "react-test-renderer": "18.2.0",
-    "typescript": "5.4.5"
+    "typescript": "5.5.2"
   },
   "engines": {
     "node": ">=18"
