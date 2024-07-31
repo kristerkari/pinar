@@ -25,7 +25,7 @@
     "@babel/core": "^7.24.9",
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
-    "@react-native/babel-preset": "0.74.85",
+    "@react-native/babel-preset": "0.74.86",
     "@react-native/metro-config": "0.74.85",
     "@tsconfig/react-native": "^3.0.5",
     "@types/jest": "^29.5.12",
