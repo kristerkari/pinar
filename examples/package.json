@@ -28,7 +28,7 @@
     "@react-native/babel-preset": "0.74.87",
     "@react-native/metro-config": "0.74.87",
     "@tsconfig/react-native": "^3.0.5",
-    "@types/jest": "^29.5.12",
+    "@types/jest": "^29.5.13",
     "@types/react": "^18.2.79",
     "@types/react-test-renderer": "^18.0.7",
     "eslint": "8.57.0",
