@@ -3989,9 +3989,9 @@ eslint-plugin-jest@^28.2.0:
     "@typescript-eslint/utils" "^6.0.0 || ^7.0.0 || ^8.0.0"
 
 eslint-plugin-react-native-a11y@^3.0.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-native-a11y/-/eslint-plugin-react-native-a11y-3.5.0.tgz#61692b6a780928185ad5b91909950c5595cc6e9e"
-  integrity sha512-eu+uigjcTSfRorliejGaecSY/Ja4T/eoakFC6tJRph7j6qG95d6E0dCTlCYNx4QrrW9+iLtXiHaI3yslXPgbNw==
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-native-a11y/-/eslint-plugin-react-native-a11y-3.5.1.tgz#370339a308cace74409bfe582e9cfe627921f38a"
+  integrity sha512-vqnXZpAiov0lxYNfEYgwABpkiBYRrt0dbtOafPkw6QaFeA0uZ+s3w9opeEMoFmV36WFxLiCxHb9fvOJ+EUc2xQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ast-types-flow "^0.0.7"
