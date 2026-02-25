@@ -2,5 +2,5 @@
 
 After making changes to the project, always run:
 
-- `yarn test` - Run unit tests
-- `yarn functional` - Run functional tests
+- `npm test` - Run unit tests
+- `npm run functional` - Run functional tests

@@ -25,16 +25,19 @@ jobs:
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
 
+      - name: Update npm to latest
+        run: npm install -g npm@latest
+
       - name: Install npm dependencies
-        run: cd examples && yarn install && cd .. && yarn install
+        run: cd examples && npm install && cd .. && npm install --legacy-peer-deps
 
       - name: Run Jest tests
-        run: yarn test
+        run: npm test
         if: "!(startsWith(matrix.os, 'ubuntu') && matrix.node == env.NODE)"
